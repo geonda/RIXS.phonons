@@ -7,6 +7,7 @@ class inputp(object):
         super(inputp, self).__init__()
         self.dict_problem=cg.dict_problem_file
         self.dict_input=cg.dict_input_file
+
     def upload_dict(self):
         try :
             with open(self.dict_problem) as fp:
@@ -20,7 +21,7 @@ class inputp(object):
                 dict=json.load(fp)
             return dict
         except:
-            print('no previous input file')
+            print('no input file found')
             pass
     def update(self,name,discrip,dict):
             print(discrip+str(dict[name]))
@@ -47,16 +48,16 @@ class inputp(object):
         'exp broadening (eV):' ]
         list_features=['nf','nm','energy_ex','omega_in',\
         'gamma','gamma_ph','alpha_exp']
-        dict_problem=self.upload_dict()
+        self.dict_problem=self.upload_dict()
         list_names_main,list_features_main=[],[]
-        for i in range(int(dict_problem['vib_space'])):
+        for i in range(int(self.dict_problem['vib_space'])):
             list_names_main.append(str(i)+' mode electron phonon coupling (eV): ')
             list_names_main.append(str(i)+' mode vibrational energy (eV): ')
-            list_features_main.append('coupling')
-            list_features_main.append('omega_ph')
+            list_features_main.append('coupling'+str(i))
+            list_features_main.append('omega_ph'+str(i))
         list_names_main.extend(list_names)
         list_features_main.extend(list_features)
-        print(list_names_main)
+        # print(list_names_main)
         return list_features_main,list_names_main
     def create_input(self):
         list_rixs,list_rixs_names=self.check_problem_type()
@@ -68,7 +69,11 @@ class inputp(object):
             dict_temp={}
             for name,discrip in zip(list_rixs,list_rixs_names):
                 dict_temp=self.create(name,discrip,dict_temp)
-        print(dict_temp)
+        # print(dict_temp)
+        for i in range(int(self.dict_problem['vib_space'])):
+            dict_temp['g'+str(i)]=(dict_temp['coupling'+str(i)]\
+                                            /dict_temp['omega_ph'+str(i)])**2
+        # print(dict_temp)
         with open('input.json', 'w') as fp:
             json.dump(dict_temp,fp)
         print(' >>>>> input created ')

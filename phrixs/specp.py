@@ -2,10 +2,10 @@ import json
 import numpy as np
 from scipy.special import wofz
 import config as cg
-class spectra(object):
+class spec(object):
     """docstring for spectra."""
     def __init__(self,dict,nruns=1):
-        super(spectra, self).__init__()
+        super(spec, self).__init__()
         self.nruns=str(nruns)
         self.auto_save=cg.temp_rixs_file+\
                         '_run_'+self.nruns+cg.extension_final
