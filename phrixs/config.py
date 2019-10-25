@@ -1,0 +1,8 @@
+outdir='./'
+dict_problem_file='problem.json'
+dict_input_file='input.json'
+dict_scan_file='scan.json'
+extension_final='.npy'
+temp_rixs_file='temp_0'
+temp_rixs_full_file='temp_1'
+temp_rixs_noel_file='temp_2'
