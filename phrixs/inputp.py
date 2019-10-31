@@ -7,7 +7,6 @@ class inputp(object):
         super(inputp, self).__init__()
         self.dict_problem=cg.dict_problem_file
         self.dict_input=cg.dict_input_file
-
     def upload_dict(self):
         try :
             with open(self.dict_problem) as fp:

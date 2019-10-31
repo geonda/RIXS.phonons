@@ -10,7 +10,7 @@ class graph(object):
         self.app=app
         self.win=win
         self.x,self.y=np.load(file+'_run_'+self.nruns+cg.extension_final)
-        self.y_norm=self.y/max(self.y)
+        self.y_norm=self.y#/max(self.y)
         pg.setConfigOptions(antialias=True)
         self.p=plot
     def simple(self):

@@ -20,7 +20,7 @@ class workspace(object):
         self.nruns=0
         self.en,self.st=0.,0.
     def initp(self,type_problem='rixs',method='fc',type_calc='model',\
-                                el_space=1, vib_space=2):
+                                el_space=1, vib_space=1):
         ip=init_problem(type_problem,method,type_calc,\
                                 el_space, vib_space)
         self.dict_problem=ip.dict_current
