@@ -4,11 +4,11 @@ import numpy as np
 import config as cg
 class graph(object):
     """docstring for plot."""
-    def __init__(self,app,win,plot,nruns=1,file=cg.temp_rixs_full_file):
+    def __init__(self,plot,nruns=1,file=cg.temp_rixs_full_file):
         super(graph, self).__init__()
         self.nruns=str(nruns)
-        self.app=app
-        self.win=win
+        # self.app=app
+        # self.win=win
         self.x,self.y=np.load(file+'_run_'+self.nruns+cg.extension_final)
         self.y_norm=self.y#/max(self.y)
         pg.setConfigOptions(antialias=True)

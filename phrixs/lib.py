@@ -41,6 +41,7 @@ class workspace(object):
     def run_scan(self):
         [self.runp() for _ in tqdm(range(self.dict_scan['nruns']))]
     def runp(self):
+        self.dict_total=inputp().update_total(self.dict_total)
         self.nruns+=1
         rixs_model(self.dict_total,nruns=self.nruns).cross_section()
         spec(self.dict_total,nruns=self.nruns).run_broad()
@@ -51,13 +52,16 @@ class workspace(object):
         self.win.resize(800,400)
         # self.win.setWindowTitle()
         self.plot=self.win.addPlot()
-        [graph(self.app,self.win,self.plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\
+        [graph(self.plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\
                                                 for runs in range(self.nruns)]
         self.plot.setXRange(0.,0.3)
         self.win.show()
-        self.app.exec_()
+        # self.app.exec_()
+    def plotp_app(self,plot):
 
-
+        [graph(plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\
+                                                for runs in range(self.nruns)]
+        plot.setXRange(0.,0.3)
     def clear(self):
         os.system('rm ./temp*')
         os.system('rm ./scan.json')

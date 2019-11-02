@@ -13,6 +13,7 @@ class Window(QMainWindow):
         widget.setLayout(self.layout)
         self.setCentralWidget(widget)
 
+
 class qbox(object):
     """spinBox widgets"""
     def __init__(self,layout,dict,labels):
@@ -37,11 +38,13 @@ class app(object):
     def __init__(self, dict):
         super(app, self).__init__()
         _app = QApplication(sys.argv)
-        window=Window()
+        self.window=Window()
         for labels in dict:
-            qbox(window.layout,dict,labels)
-        self.win=window
+            qbox(self.window.layout,dict,labels)
+
+
         self.app=_app
+
         # window.show()
         # _app.exec_()
         # sys.exit(_app.exec_())

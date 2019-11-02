@@ -1,1 +1,1 @@
-{"coupling0": 0.09, "omega_ph0": 0.1, "coupling1": 0.0, "omega_ph1": 0.1, "nf": 5.0, "nm": 30.0, "energy_ex": 1.0, "omega_in": 1.0, "gamma": 0.11, "gamma_ph": 0.005, "alpha_exp": 0.005, "g0": 0.8099999999999998, "g1": 0.0}
+{"coupling0": 0.11, "omega_ph0": 0.11, "nf": 10.0, "nm": 100.0, "energy_ex": 10.0, "omega_in": 10.0, "gamma": 0.11, "gamma_ph": 0.01, "alpha_exp": 0.01, "g0": 1.0}

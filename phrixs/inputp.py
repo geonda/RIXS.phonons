@@ -92,3 +92,9 @@ class inputp(object):
         with open(cg.dict_scan_file, 'w') as fp:
             json.dump(dict_scan,fp)
         return dict_scan
+
+    def update_total(self,dict_total):
+        for i in range(int(dict_total['problem']['vib_space'])):
+            dict_total['input']['g'+str(i)]=(dict_total['input']['coupling'+str(i)]\
+                                            /dict_total['input']['omega_ph'+str(i)])**2
+        return dict_total

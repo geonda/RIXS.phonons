@@ -9,6 +9,8 @@ class rixs_model(object):
     """docstring for calculations."""
     def __init__(self,dict,nruns=1,dict_input=cg.dict_input_file,dict_scan=cg.dict_scan_file):
         super(rixs_model, self).__init__()
+        print('nruns:'+str(nruns)+' coupling:'+str(dict['input']['coupling0'])+\
+        ' omega:'+str(dict['input']['omega_ph0']))
         self.nruns=str(nruns)
         self.dict=dict
         self.nmodes=int(dict['problem']['vib_space'])
