@@ -13,8 +13,9 @@ class graph(object):
         self.y_norm=self.y#/max(self.y)
         pg.setConfigOptions(antialias=True)
         self.p=plot
-    def simple(self):
-        self.p.plot(self.x,self.y_norm,\
+        self.max_=max(self.y)
+    def simple(self,scale=1):
+        self.p.plot(self.x,self.y_norm*scale,\
                             pen=(int(self.nruns),4),linewidth=100)
         # lr = pg.LinearRegionItem([0.1,0.5])
         # lr.setZValue(-10)

@@ -19,23 +19,11 @@ class rixs_model(object):
         self.nproc=int(dict['input']['nf'])
         self.auto_save=cg.temp_rixs_file\
                             +'_run_'+self.nruns+cg.extension_final
-        # try:
-        #     with open(dict_scan) as fp:
-        #         dict_scan=json.load(fp)
-        # except: self.scan=False
-        # with open(dict_input) as fp:
-        #     dict=json.load(fp)
-        # self.omega=dict['omega_ph']
-        # # self.m_coupling=dict['coupling']
-        # self.det=1.j*dict['gamma']+dict['energy_ex']-dict['omega_in']
+
         self.m=int(dict['input']['nm'])
         self.f=int(dict['input']['nf'])
         self.i=int(0)
-        # if self.scan:
-        #     self.m_coupling=dict_scan['coupling'][nruns-1]
-        # else: self.m_coupling=dict['coupling']
-        # self.g=(self.m_coupling/self.omega)**2
-
+        
     def amplitude(self,f,i):
         def func_temp(m):
             return self.franck_condon_factors(f,m,self.dict['input']['g0'])\

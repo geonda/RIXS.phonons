@@ -17,19 +17,24 @@ class workspace(object):
     """docstring for workspace."""
     def __init__(self):
         super(workspace, self).__init__()
+        self.ninputs=0
+        self.nproblems=0
         self.nruns=0
         self.en,self.st=0.,0.
+        self.max=[]
     def initp(self,type_problem='rixs',method='fc',type_calc='model',\
                                 el_space=1, vib_space=1):
+        self.nproblems+=1
         ip=init_problem(type_problem,method,type_calc,\
                                 el_space, vib_space)
         self.dict_problem=ip.dict_current
     def inputp(self, type='ask'):
+        self.ninputs+=1
         if type=='ask' :
-            self.dict_input=inputp().create_input()
+            self.dict_input=inputp(self.ninputs,self.nproblems).create_input()
             # self.win_input,self._app_input=app(dict)
         elif type=='skip':
-            with open(cg.dict_input_file) as f:
+            with open(cg.dict_input_file+'_'+str(self.nproblems)+'_'+str(self.ninputs)+'.json') as f:
                 self.dict_input=json.load(f)
                 # ws2=app(dict)
             # self.win_input,self.app_input=ws2.win,ws2.app
@@ -41,22 +46,26 @@ class workspace(object):
     def run_scan(self):
         [self.runp() for _ in tqdm(range(self.dict_scan['nruns']))]
     def runp(self):
-        self.dict_total=inputp().update_total(self.dict_total)
+        self.dict_total=inputp(self.ninputs,self.nproblems).update_total(self.dict_total)
         self.nruns+=1
         rixs_model(self.dict_total,nruns=self.nruns).cross_section()
         spec(self.dict_total,nruns=self.nruns).run_broad()
     def plotp(self):
         pg.mkQApp()
+
         self.win=pg.GraphicsWindow()
         self.app = QtGui.QApplication([])
         self.win.resize(800,400)
         # self.win.setWindowTitle()
         self.plot=self.win.addPlot()
-        [graph(self.plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\
-                                                for runs in range(self.nruns)]
+        for runs in range(self.nruns):
+            gs=graph(self.plot,nruns=runs+1,file=cg.temp_rixs_noel_file)
+            gs.simple()
+            self.max.append(gs.max_)
+
         self.plot.setXRange(0.,0.3)
         self.win.show()
-        # self.app.exec_()
+        self.app.exec_()
     def plotp_app(self,plot):
 
         [graph(plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\

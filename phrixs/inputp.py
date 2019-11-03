@@ -3,10 +3,13 @@ import config as cg
 import numpy as np
 class inputp(object):
     """docstring for read_input."""
-    def __init__(self):
+    def __init__(self, nproblems,ninputs):
         super(inputp, self).__init__()
+        self.nproblems=nproblems
+        self.ninputs=ninputs
         self.dict_problem=cg.dict_problem_file
-        self.dict_input=cg.dict_input_file
+        self.dict_input=cg.dict_input_file+'_'+str(self.nproblems)+'_'+str(self.ninputs)\
+        +'.json'
     def upload_dict(self):
         try :
             with open(self.dict_problem) as fp:
@@ -73,7 +76,7 @@ class inputp(object):
             dict_temp['g'+str(i)]=(dict_temp['coupling'+str(i)]\
                                             /dict_temp['omega_ph'+str(i)])**2
         # print(dict_temp)
-        with open('input.json', 'w') as fp:
+        with open('input_'+str(self.nproblems)+'_'+str(self.ninputs)+'.json', 'w') as fp:
             json.dump(dict_temp,fp)
         print(' >>>>> input created ')
         print(dict_temp)

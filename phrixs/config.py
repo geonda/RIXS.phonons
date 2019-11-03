@@ -1,6 +1,6 @@
 outdir='./'
 dict_problem_file='problem.json'
-dict_input_file='input.json'
+dict_input_file='input'
 dict_scan_file='scan.json'
 extension_final='.npy'
 temp_rixs_file='temp_0'
