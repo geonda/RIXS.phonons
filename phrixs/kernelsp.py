@@ -52,12 +52,12 @@ class rixs_model(object):
                 if self.dict['problem']['type_calc']!='dd':
                     return abs(self.amplitude(f,self.i))**2#*np.conj(self.amplitude(f,self.i)))
                 else:
-                    return abs(self.amplitude_dd(f,self.i)*np.conj(self.amplitude_dd(f,self.i)))
+                    return abs(self.amplitude_dd(f,self.i))*2#*np.conj(self.amplitude_dd(f,self.i)))
             x,y=np.array(range(self.f))*self.dict['input']['omega_ph0'], list(map(func_temp,range(self.f)))
         elif self.nmodes==2:
             ws=[[f1,f2] for f1 in range(self.f) for f2 in range(self.f)]
             def func_temp(f):
-                return abs(self.amplitude_2_(f,self.i)*np.conj(self.amplitude_2_(f,self.i)))
+                return abs(self.amplitude_2_(f,self.i))**2#*np.conj(self.amplitude_2_(f,self.i)))
             fr=np.array(ws).T[0]*self.dict['input']['omega_ph0']+np.array(ws).T[1]*self.dict['input']['omega_ph1']
             ws=np.array(ws)
             x,y=np.array(fr), list(tqdm(pool(processes=self.nproc).map(func_temp,tqdm(ws))))

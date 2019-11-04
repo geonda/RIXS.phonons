@@ -61,14 +61,15 @@ class workspace(object):
         self.app = QtGui.QApplication([])
 
         self.plot = self.win.addPlot()
-        self.plot.addLegend(offset=(300,50))
+        self.plot.addLegend(offset=(300,10))
 
-        gs=graph(self.plot,nruns=self.nruns,file=cg.temp_rixs_noel_file)
+        gs=graph(plot=self.plot,nruns=self.nruns,file=cg.temp_rixs_noel_file)
         gs.fill_between(self.win,self.plot)
-        self.max.append(gs.max_)
-        gs.figure_2d(scale=float(gs.max_))
 
-        self.plot.setXRange(0.,0.25)
+        # gs.figure_2d(scale=float(gs.max_))
+
+        self.plot.setXRange(-0.025,0.360)
+        self.plot.setYRange(-0.1,7.5)
         self.win.show()
         self.app.exec_()
 
@@ -78,12 +79,13 @@ class workspace(object):
         pg.setConfigOption('foreground', 'k')
         self.win=pg.GraphicsWindow()
         self.app = QtGui.QApplication([])
-        self.win.resize(600,400)
-        self.plot=self.win.addPlot()
-        self.plot.addLegend(offset=(300,50))
-        [graph(self.plot,nruns=runs+1,file=cg.temp_rixs_noel_file).figure_dd()
-                                                for runs in range(self.nruns)]
-        self.plot.setXRange(0.,5)
+        self.win.resize(500,600)
+
+        # graph(file=cg.temp_rixs_noel_file).plot_pes(self.win,0.7)
+        graph(file=cg.temp_rixs_noel_file).figure_dd(self.win)
+            # self.win.nextRow()
+        # self.plot.setXRange(0.,5)
+
         self.win.show()
         self.app.exec_()
 
@@ -93,14 +95,14 @@ class workspace(object):
         self.app = QtGui.QApplication([])
         self.win.resize(800,400)
         self.plot=self.win.addPlot()
-        [graph(self.plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple() \
+        [graph(plot=self.plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple() \
                                                 for runs in range(self.nruns)]
         self.plot.setXRange(0.,0.3)
         self.win.show()
         self.app.exec_()
 
     def plotp_app(self,plot):
-        [graph(plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\
+        [graph(plot=plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\
                                                 for runs in range(self.nruns)]
         plot.setXRange(0.,0.3)
     def clear(self):
