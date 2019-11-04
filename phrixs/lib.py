@@ -50,32 +50,62 @@ class workspace(object):
         self.nruns+=1
         rixs_model(self.dict_total,nruns=self.nruns).cross_section()
         spec(self.dict_total,nruns=self.nruns).run_broad()
-    def plotp(self):
+    def figure_2d(self):
         pg.mkQApp()
 
+        pg.setConfigOption('background', 'w')
+        pg.setConfigOption('foreground', 'k')
+
+        self.win = pg.GraphicsWindow()
+        self.win.resize(600,400)
+        self.app = QtGui.QApplication([])
+
+        self.plot = self.win.addPlot()
+        self.plot.addLegend(offset=(300,50))
+
+        gs=graph(self.plot,nruns=self.nruns,file=cg.temp_rixs_noel_file)
+        gs.fill_between(self.win,self.plot)
+        self.max.append(gs.max_)
+        gs.figure_2d(scale=float(gs.max_))
+
+        self.plot.setXRange(0.,0.25)
+        self.win.show()
+        self.app.exec_()
+
+    def figure_dd(self):
+        pg.mkQApp()
+        pg.setConfigOption('background', 'w')
+        pg.setConfigOption('foreground', 'k')
+        self.win=pg.GraphicsWindow()
+        self.app = QtGui.QApplication([])
+        self.win.resize(600,400)
+        self.plot=self.win.addPlot()
+        self.plot.addLegend(offset=(300,50))
+        [graph(self.plot,nruns=runs+1,file=cg.temp_rixs_noel_file).figure_dd()
+                                                for runs in range(self.nruns)]
+        self.plot.setXRange(0.,5)
+        self.win.show()
+        self.app.exec_()
+
+    def plotp(self):
+        pg.mkQApp()
         self.win=pg.GraphicsWindow()
         self.app = QtGui.QApplication([])
         self.win.resize(800,400)
-        # self.win.setWindowTitle()
         self.plot=self.win.addPlot()
-        for runs in range(self.nruns):
-            gs=graph(self.plot,nruns=runs+1,file=cg.temp_rixs_noel_file)
-            gs.simple()
-            self.max.append(gs.max_)
-
+        [graph(self.plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple() \
+                                                for runs in range(self.nruns)]
         self.plot.setXRange(0.,0.3)
         self.win.show()
         self.app.exec_()
-    def plotp_app(self,plot):
 
+    def plotp_app(self,plot):
         [graph(plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\
                                                 for runs in range(self.nruns)]
         plot.setXRange(0.,0.3)
     def clear(self):
         os.system('rm ./temp*')
         os.system('rm ./scan.json')
-
-
     def timer_start(self):
         self.st=time()
     def timer_round(self,label):

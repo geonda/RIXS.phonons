@@ -15,7 +15,7 @@ class init_problem(object):
                     'type_calc':type_calc,'el_space':str(el_space),\
                     'vib_space':str(vib_space)}
         dict_full={'type_problem':['rixs','xas'],'method':['gf','fc'],\
-                    'type_calc':['model','fit'],'el_space':'1',\
+                    'type_calc':['model','fit','1d','2d','dd'],'el_space':'1',\
                     'vib_space':['1','2','3']}
         for key in dict_current:
                 if not (dict_current[key] in dict_full[key]) :

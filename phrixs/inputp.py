@@ -57,9 +57,13 @@ class inputp(object):
             list_names_main.append(str(i)+' mode vibrational energy (eV): ')
             list_features_main.append('coupling'+str(i))
             list_features_main.append('omega_ph'+str(i))
+        if self.dict_problem['type_calc']=='dd':
+            list_names_main.extend(['excited state phonon energy (eV): '])
+            list_features_main.extend(['omega_ph_ex'])
         list_names_main.extend(list_names)
         list_features_main.extend(list_features)
         # print(list_names_main)
+
         return list_features_main,list_names_main
     def create_input(self):
         list_rixs,list_rixs_names=self.check_problem_type()
