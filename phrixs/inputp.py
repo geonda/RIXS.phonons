@@ -54,7 +54,7 @@ class inputp(object):
         list_names_main,list_features_main=[],[]
         for i in range(int(self.dict_problem['vib_space'])):
             list_names_main.append(str(i)+' mode electron phonon coupling (eV): ')
-            list_names_main.append(str(i)+' mode vibrational energy (eV): ')
+            list_names_main.append(str(i)+' mode phonon energy (eV): ')
             list_features_main.append('coupling'+str(i))
             list_features_main.append('omega_ph'+str(i))
         if self.dict_problem['type_calc']=='dd':

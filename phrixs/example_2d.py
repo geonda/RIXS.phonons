@@ -13,7 +13,7 @@ list_omega=[0.025,0.1]
 for omega,coupling in zip(list_omega,list_coupling):
     ws.dict_total['input']['omega_ph0']=float(omega)
     ws.dict_total['input']['coupling0']=float(coupling)
-    ws.dict_total['input']['nm']=int(30)
+    ws.dict_total['input']['nm']=int(15)
     print(ws.dict_total)
     ws.runp()
 
@@ -25,7 +25,7 @@ for i,set in enumerate(zip(list_omega,list_coupling)):
     print(set)
     ws.dict_total['input']['coupling'+str(i)]=float(set[1])
     ws.dict_total['input']['omega_ph'+str(i)]=float(set[0])
-    ws.dict_total['input']['nm']=int(30)
+    ws.dict_total['input']['nm']=int(10)
     print(ws.dict_total)
 ws.runp()
 

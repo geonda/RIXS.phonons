@@ -52,43 +52,19 @@ class workspace(object):
         spec(self.dict_total,nruns=self.nruns).run_broad()
     def figure_2d(self):
         pg.mkQApp()
-
         pg.setConfigOption('background', 'w')
         pg.setConfigOption('foreground', 'k')
-
         self.win = pg.GraphicsWindow()
         self.win.resize(600,400)
         self.app = QtGui.QApplication([])
-
         self.plot = self.win.addPlot()
         self.plot.addLegend(offset=(300,10))
-
         gs=graph(plot=self.plot,nruns=self.nruns,file=cg.temp_rixs_noel_file)
-        gs.fill_between(self.win,self.plot)
-
-        # gs.figure_2d(scale=float(gs.max_))
-
+        gs.fill_between_2d(self.win,self.plot)
         self.plot.setXRange(-0.025,0.360)
         self.plot.setYRange(-0.1,7.5)
         self.win.show()
         self.app.exec_()
-
-    def figure_dd(self):
-        pg.mkQApp()
-        pg.setConfigOption('background', 'w')
-        pg.setConfigOption('foreground', 'k')
-        self.win=pg.GraphicsWindow()
-        self.app = QtGui.QApplication([])
-        self.win.resize(500,600)
-
-        # graph(file=cg.temp_rixs_noel_file).plot_pes(self.win,0.7)
-        graph(file=cg.temp_rixs_noel_file).figure_dd(self.win)
-            # self.win.nextRow()
-        # self.plot.setXRange(0.,5)
-
-        self.win.show()
-        self.app.exec_()
-
     def plotp(self):
         pg.mkQApp()
         self.win=pg.GraphicsWindow()
@@ -100,7 +76,6 @@ class workspace(object):
         self.plot.setXRange(0.,0.3)
         self.win.show()
         self.app.exec_()
-
     def plotp_app(self,plot):
         [graph(plot=plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\
                                                 for runs in range(self.nruns)]
