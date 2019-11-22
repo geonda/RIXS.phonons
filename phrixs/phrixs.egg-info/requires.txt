@@ -1,6 +1,0 @@
-numpy
-pyqtgraph
-json
-scipy
-tqdm
-pathos
