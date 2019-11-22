@@ -7,12 +7,12 @@ class inputp(object):
         super(inputp, self).__init__()
         self.nproblems=nproblems
         self.ninputs=ninputs
-        self.dict_problem=cg.dict_problem_file
-        self.dict_input=cg.dict_input_file+'_'+str(self.nproblems)+'_'+str(self.ninputs)\
-        +'.json'
+        self.dict_problem_file=cg.dict_problem_file
+        self.dict_problem=self.upload_dict()
+        self.dict_input=cg.dict_input_file+'_'+str(self.dict_problem['type_problem'])+'_'+str(self.nproblems)+'_'+str(self.ninputs)+'.json'
     def upload_dict(self):
         try :
-            with open(self.dict_problem) as fp:
+            with open(self.dict_problem_file) as fp:
                 dict=json.load(fp)
             return dict
         except:
@@ -42,15 +42,26 @@ class inputp(object):
         except ValueError:
             print('value error')
     def check_problem_type(self):
-        list_names=['max number of final state vibrational levels: ', \
+        list_names_fc=['max number of final state vibrational levels: ', \
          'max number of intermediate state vibrational levels: ',\
          'excitation energy (eV): ','incoming photon energy (eV): ',\
         'inverse core-hole lifetime (eV): ',\
         'inverse phonon lifetime (eV): ',\
         'exp broadening (eV):' ]
-        list_features=['nf','nm','energy_ex','omega_in',\
+        list_features_fc=['nf','nm','energy_ex','omega_in',\
         'gamma','gamma_ph','alpha_exp']
-        self.dict_problem=self.upload_dict()
+
+        list_names_gf=['max number of final state vibrational levels: ',\
+        'max number of time steps: ', 't_max: ',\
+         'excitation energy (eV): ','incoming photon energy (eV): ',\
+        'inverse core-hole lifetime (eV): ',\
+        'inverse phonon lifetime (eV): ',\
+        'exp broadening (eV):' ]
+        list_features_gf=['nf','nstep','maxt','energy_ex','omega_in',\
+        'gamma','gamma_ph','alpha_exp']
+
+
+        #self.dict_problem=self.upload_dict()
         list_names_main,list_features_main=[],[]
         for i in range(int(self.dict_problem['vib_space'])):
             list_names_main.append(str(i)+' mode electron phonon coupling (eV): ')
@@ -60,8 +71,17 @@ class inputp(object):
         if self.dict_problem['type_calc']=='dd':
             list_names_main.extend(['excited state phonon energy (eV): '])
             list_features_main.extend(['omega_ph_ex'])
-        list_names_main.extend(list_names)
-        list_features_main.extend(list_features)
+        if self.dict_problem['type_problem']=='rixs_q':
+            list_names_main.extend(['number of q points: '])
+            list_features_main.extend(['nq'])
+            list_names_main.extend(['rixs q: '])
+            list_features_main.extend(['qx'])
+        if self.dict_problem['method']=='fc':
+            list_names_main.extend(list_names_fc)
+            list_features_main.extend(list_features_fc)
+        elif self.dict_problem['method']=='gf':
+            list_names_main.extend(list_names_gf)
+            list_features_main.extend(list_features_gf)
         # print(list_names_main)
 
         return list_features_main,list_names_main
@@ -80,7 +100,7 @@ class inputp(object):
             dict_temp['g'+str(i)]=(dict_temp['coupling'+str(i)]\
                                             /dict_temp['omega_ph'+str(i)])**2
         # print(dict_temp)
-        with open('input_'+str(self.nproblems)+'_'+str(self.ninputs)+'.json', 'w') as fp:
+        with open(self.dict_input, 'w') as fp:
             json.dump(dict_temp,fp)
         print(' >>>>> input created ')
         print(dict_temp)

@@ -1,5 +1,6 @@
 import json
 import numpy as np
+import math
 from math import factorial
 from scipy.special import eval_hermite as H
 import functools
@@ -25,7 +26,10 @@ class rixs_model(object):
             self.beta=np.sqrt(float(dict['input']['omega_ph_ex'])/float(dict['input']['omega_ph0']))
             print(self.beta)
             self.omega_ex=dict['input']['omega_ph_ex']
-        self.m=int(dict['input']['nm'])
+        try:
+            self.m=int(dict['input']['nm'])
+        except:
+            pass
         self.f=int(dict['input']['nf'])
         self.i=int(0)
 
@@ -49,10 +53,21 @@ class rixs_model(object):
     def cross_section(self):
         if self.nmodes==1:
             def func_temp(f):
-                if self.dict['problem']['type_calc']!='dd':
-                    return abs(self.amplitude(f,self.i))**2#*np.conj(self.amplitude(f,self.i)))
+                if self.dict['problem']['method']=='fc':
+                    if self.dict['problem']['type_calc']=='model':
+                        return abs(self.amplitude(f,self.i))**2
+                    elif self.dict['problem']['type_calc']=='dd':
+                        return abs(self.amplitude_dd(f,self.i))**2
+                    else:
+                        print('error in kernelsp')
                 else:
-                    return abs(self.amplitude_dd(f,self.i))*2#*np.conj(self.amplitude_dd(f,self.i)))
+                    if self.dict['problem']['type_problem']=='rixs':
+                        return abs(self.amplitude_gf(f))
+                    elif self.dict['problem']['type_problem']=='rixs_q':
+                        return abs(self.amplitude_gf_q(f,self.i))**2
+                    else:
+                        print('error in kernelsp')
+
             x,y=np.array(range(self.f))*self.dict['input']['omega_ph0'], list(map(func_temp,range(self.f)))
         elif self.nmodes==2:
             ws=[[f1,f2] for f1 in range(self.f) for f2 in range(self.f)]
@@ -101,3 +116,58 @@ class rixs_model(object):
                 /factorial(no-l)/factorial(mi-no+l)/factorial(l)
         part2=list(map(functools.partial(func), range(no+1)))
         return part1*np.sum(part2)
+
+    def goertzel(self,samples, sample_rate, freqs):
+        window_size = len(samples)
+        f_step = sample_rate / float(window_size)
+        f_step_normalized = 1./ window_size
+        kx=int(math.floor(freqs / f_step))
+        n_range = range(0, window_size)
+        freq = [];power=[]
+        f = kx * f_step_normalized
+        w_real = math.cos(2.0 * math.pi * f)
+        w_imag = math.sin(2.0 * math.pi * f)
+        dr1, dr2 = 0.0, 0.0
+        di1,di2 = 0.0, 0.0
+        for n in n_range:
+            yrt  = samples[n].real + 2*w_real*dr1-dr2
+            dr2, dr1 = dr1, yrt
+            yit  = samples[n].imag + 2*w_real * di1 - di2
+            di2, di1 = di1, yit
+        yr=dr1*w_real-dr2+1.j*w_imag*dr1
+        yi=di1*w_real-di2+1.j*w_imag*di1
+        y=(1.j*yr+yi)/(window_size)
+        power.append(np.abs(y))
+        freq.append(freqs)
+        return np.array(freqs), np.array(power)
+    def greens_func_cumulant(self):
+        self.maxt=self.dict['input']['maxt']
+        self.nstep=self.dict['input']['nstep']
+        step=self.maxt/self.nstep
+        t=np.linspace(0.,self.maxt,self.nstep)
+        omegaq=self.dict['input']['omega_ph0']*2*np.pi
+        G0x=-1.j*np.exp(1.j*(np.pi*2.*self.dict['input']['omega_in'])*t)
+        Fx=np.exp(self.dict['input']['g0']*(np.exp(1.j*omegaq*t)-1.j*omegaq*t-1))
+        G=G0x*Fx*np.exp(-2*np.pi*self.dict['input']['gamma']*t)
+        GW=np.fft.fft(G)
+        w=np.fft.fftfreq(self.nstep,step)
+        x=w[0:len(w)/2]
+        y=abs(GW[0:len(GW)/2].imag)
+        y=y/(sum(y)*(x[1]-x[0]))
+        return x,y
+    def amplitude_gf(self,nf):
+        self.maxt=self.dict['input']['maxt']
+        self.nstep=self.dict['input']['nstep']
+        step=self.maxt/self.nstep
+        t=np.linspace(0.,self.maxt,self.nstep)
+        G0x=-1.j*np.exp(-1.j*(np.pi*2.*self.dict['input']['energy_ex'])*t)
+        G=G0x
+        om=self.dict['input']['omega_ph0']*2*np.pi
+        gx=self.dict['input']['g0']
+        Ck=gx*(np.exp(-1.j*om*t)+1.j*om*t-1)
+        Dk=(np.sqrt(gx))*(np.exp(-1.j*om*t)-1)
+        G=G*(Dk**nf)/np.sqrt(factorial(nf))
+        Fx=np.exp(Ck)
+        G=G*Fx*np.exp(-2*np.pi*self.dict['input']['gamma']*t)
+        omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['energy_ex'])
+        return float((intx)[0])**2

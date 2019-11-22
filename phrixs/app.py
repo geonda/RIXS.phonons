@@ -2,7 +2,7 @@ import sys
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
-import qdarkgraystyle
+# import qdarkgraystyle
 import pyqtgraph as pg
 from lib import *
 from tqdm import tqdm
@@ -55,7 +55,7 @@ class ExampleWidget(QGroupBox):
 
         self.tabs.addTab(self.tab1,"input".format(self.numAddWidget))
         self.tabs.addTab(self.tab2,"problem")
-        
+
         self.plot=plot
         self.ws=workspace()
         self.ws.timer_start()
@@ -172,7 +172,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     # app.setStyleSheet(qdarkgraystyle.load_stylesheet())
     w = MyApp()
-
-
-
     sys.exit(app.exec_())

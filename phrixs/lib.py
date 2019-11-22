@@ -25,6 +25,7 @@ class workspace(object):
     def initp(self,type_problem='rixs',method='fc',type_calc='model',\
                                 el_space=1, vib_space=1):
         self.nproblems+=1
+        self.type_problem=type_problem
         ip=init_problem(type_problem,method,type_calc,\
                                 el_space, vib_space)
         self.dict_problem=ip.dict_current
@@ -34,7 +35,7 @@ class workspace(object):
             self.dict_input=inputp(self.ninputs,self.nproblems).create_input()
             # self.win_input,self._app_input=app(dict)
         elif type=='skip':
-            with open(cg.dict_input_file+'_'+str(self.nproblems)+'_'+str(self.ninputs)+'.json') as f:
+            with open(cg.dict_input_file+'_'+str(self.type_problem)+'_'+str(self.nproblems)+'_'+str(self.ninputs)+'.json') as f:
                 self.dict_input=json.load(f)
                 # ws2=app(dict)
             # self.win_input,self.app_input=ws2.win,ws2.app

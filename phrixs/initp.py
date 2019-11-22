@@ -14,7 +14,7 @@ class init_problem(object):
         dict_current={'type_problem':type_problem,'method':method,\
                     'type_calc':type_calc,'el_space':str(el_space),\
                     'vib_space':str(vib_space)}
-        dict_full={'type_problem':['rixs','xas'],'method':['gf','fc'],\
+        dict_full={'type_problem':['rixs','xas','rixs_q'],'method':['gf','fc'],\
                     'type_calc':['model','fit','1d','2d','dd'],'el_space':'1',\
                     'vib_space':['1','2','3']}
         for key in dict_current:
@@ -26,7 +26,7 @@ class init_problem(object):
                 json.dump(dict_current,fp)
         self.dict_current=dict_current
     def help(self):
-        print('type_problem: rixs (default), xas ')
+        print('type_problem: rixs (default), xas, rixs_q ')
         print('method: gf, fc (default) ')
         print('type_clac: model (default), fit ')
         print('el_space: 1 (default) ')
