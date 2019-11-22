@@ -1,8 +1,5 @@
 import pyqtgraph as pg
 from pyqtgraph.Qt import QtCore, QtGui
-from mpl_toolkits.axes_grid1.inset_locator import inset_axes
-from matplotlib.ticker import MaxNLocator
-import matplotlib.pyplot as plt
 import numpy as np
 import config as cg
 

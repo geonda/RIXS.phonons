@@ -4,7 +4,7 @@ from math import factorial
 from scipy.special import eval_hermite as H
 import functools
 import config as cg
-import multiprocessing as multi
+# import multiprocessing as multi
 from tqdm import tqdm
 from pathos.multiprocessing import ProcessingPool as pool
 class rixs_model(object):
