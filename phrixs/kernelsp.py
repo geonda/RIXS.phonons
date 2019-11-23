@@ -1,12 +1,13 @@
 import json
 import numpy as np
-import math
 from math import factorial
+import math
 from scipy.special import eval_hermite as H
 import functools
 import config as cg
-# import multiprocessing as multi
+import phonon_info
 from tqdm import tqdm
+from scipy.special import wofz
 from pathos.multiprocessing import ProcessingPool as pool
 class rixs_model(object):
     """docstring for calculations."""
@@ -58,13 +59,15 @@ class rixs_model(object):
                         return abs(self.amplitude(f,self.i))**2
                     elif self.dict['problem']['type_calc']=='dd':
                         return abs(self.amplitude_dd(f,self.i))**2
+                    elif self.dict['problem']['type_calc']=='2d':
+                        return abs(self.amplitude(f,self.i))**2
                     else:
                         print('error in kernelsp')
                 else:
                     if self.dict['problem']['type_problem']=='rixs':
                         return abs(self.amplitude_gf(f))
                     elif self.dict['problem']['type_problem']=='rixs_q':
-                        return abs(self.amplitude_gf_q(f,self.i))**2
+                        print('better use kernelsp.rixs_model_q()')
                     else:
                         print('error in kernelsp')
 
@@ -140,6 +143,7 @@ class rixs_model(object):
         power.append(np.abs(y))
         freq.append(freqs)
         return np.array(freqs), np.array(power)
+
     def greens_func_cumulant(self):
         self.maxt=self.dict['input']['maxt']
         self.nstep=self.dict['input']['nstep']
@@ -155,6 +159,7 @@ class rixs_model(object):
         y=abs(GW[0:len(GW)/2].imag)
         y=y/(sum(y)*(x[1]-x[0]))
         return x,y
+
     def amplitude_gf(self,nf):
         self.maxt=self.dict['input']['maxt']
         self.nstep=self.dict['input']['nstep']
@@ -171,3 +176,144 @@ class rixs_model(object):
         G=G*Fx*np.exp(-2*np.pi*self.dict['input']['gamma']*t)
         omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['energy_ex'])
         return float((intx)[0])**2
+
+class rixs_model_q(object):
+    """docstring for rixs_model_q."""
+    def __init__(self,dict,nruns=1,dict_input=cg.dict_input_file):
+        super(rixs_model_q, self).__init__()
+        self.dict=dict
+        self.nruns=str(nruns)
+        self.auto_save=cg.temp_rixs_file\
+                            +'_run_'+self.nruns+cg.extension_final
+        self.q=np.linspace(-1,1,self.dict['input']['nq'])
+        self.omegaq=phonon_info.energy(self.dict).omegaq
+        self.fitomega=np.polyfit(self.q,self.omegaq,3)
+        func_omega=np.poly1d(self.fitomega)
+        self.omegax=func_omega
+        self.gkq=phonon_info.coupling(self.omegaq,self.dict).gkq
+        fitg=np.polyfit(self.q,self.gkq,3)
+        func_g=np.poly1d(fitg)
+        self.gx=func_g
+        self.cumulant_kq=self.fkq()
+        self.gkqx=self.gx(self.dict['input']['qx'])
+        self.omegaqx=self.omegax(self.dict['input']['qx'])
+        self.qx=self.dict['input']['qx']
+        self.maxt=self.dict['input']['maxt']
+        self.nstep=self.dict['input']['nstep']
+        self.t=np.linspace(0.,self.maxt,self.nstep)
+
+    def fkq(self):
+        step=self.dict['input']['maxt']/self.dict['input']['nstep']
+        t=np.linspace(0.,self.dict['input']['maxt'],self.dict['input']['nstep'])
+        self.omegaq_cumulant=self.omegaq*2*np.pi
+        Fkq=1.
+        for gkqi,omegaqi in zip(self.gkq,self.omegaq_cumulant):
+            Fkq=Fkq*np.exp(gkqi*(np.exp(-1.j*omegaqi*t)+1.j*omegaqi*t-1)/self.dict['input']['nq'])
+        return Fkq
+
+    def single_phonon(self,nph):
+        G=-1.j*np.exp(-1.j*(np.pi*2.*self.dict['input']['energy_ex'])*self.t)
+        self.frx=self.omegaqx*2*np.pi
+        Ck=self.gkqx*(np.exp(-1.j*self.frx*self.t)+1.j*self.frx*self.t-1)
+        Dk=(np.sqrt(self.gkqx))*(np.exp(-1.j*self.frx*self.t)-1)
+        G=G*(Dk**nph)/np.sqrt(factorial(nph))
+        G=G*self.cumulant_kq*np.exp(-2*np.pi*self.dict['input']['gamma']*self.t)
+        omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['energy_ex'])
+        return float(intx[0])**2
+
+    def multi_phonon(self,qmap,nph):
+        G=-1.j*np.exp(-1.j*(np.pi*2.*self.dict['input']['energy_ex'])*self.t)
+        D=1.;
+        for n in range(nph):
+            Dk=(np.sqrt(self.gkq[qmap[n]]))*(np.exp(-1.j*self.omegaq[qmap[n]]*2.*np.pi*self.t)-1.)
+            D=D*Dk
+        G=G*(D)/np.sqrt(factorial(nph))
+        G=G*self.cumulant_kq*np.exp(-2*np.pi*self.dict['input']['gamma']*self.t)
+        omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['energy_ex'])
+        return float(intx[0])**2
+
+    def cross_section(self):
+        loss=[];r=[]
+        for nph in tqdm(range(4)):
+            if nph==0:
+                loss_temp,r_temp=[self.omegaqx*nph],[self.single_phonon(nph)]
+            elif nph==1:
+                loss_temp,r_temp=[self.omegaqx*nph],[self.single_phonon(nph)]
+            elif nph==2:
+                qmap=init_map(self.dict).phonon_sec_q()
+                r_temp=list(map(lambda x: self.multi_phonon(x,2), qmap))
+                r_temp=np.array(r_temp)/len(qmap)
+                loss_temp=list(map(lambda x: self.omegaq[x[0]]+self.omegaq[x[1]], qmap))
+            elif nph==3:
+                qmap=init_map(self.dict).phonon_thr()
+                r_temp=list(map(lambda x: self.multi_phonon(x,3), qmap))
+                r_temp=np.array(r_temp)/len(qmap)
+                loss_temp=list(map(lambda x: self.omegaq[x[0]]+self.omegaq[x[1]]+self.omegaq[x[2]], qmap))
+            loss.extend(loss_temp)
+            r.extend(r_temp)
+        print(len(r),len(loss))
+        np.save(self.auto_save,np.vstack((loss,r)))
+
+    def goertzel(self,samples, sample_rate, freqs):
+        window_size = len(samples)
+        f_step = sample_rate / float(window_size)
+        f_step_normalized = 1./ window_size
+        kx=int(math.floor(freqs / f_step))
+        n_range = range(0, window_size)
+        freq = [];power=[]
+        f = kx * f_step_normalized
+        w_real = math.cos(2.0 * math.pi * f)
+        w_imag = math.sin(2.0 * math.pi * f)
+        dr1, dr2 = 0.0, 0.0
+        di1,di2 = 0.0, 0.0
+        for n in n_range:
+            yrt  = samples[n].real + 2*w_real*dr1-dr2
+            dr2, dr1 = dr1, yrt
+            yit  = samples[n].imag + 2*w_real * di1 - di2
+            di2, di1 = di1, yit
+        yr=dr1*w_real-dr2+1.j*w_imag*dr1
+        yi=di1*w_real-di2+1.j*w_imag*di1
+        y=(1.j*yr+yi)/(window_size)
+        power.append(np.abs(y))
+        freq.append(freqs)
+        return np.array(freqs), np.array(power)
+
+class init_map(object):
+    """docstring for _init_map."""
+    def __init__(self,dict):
+        super(init_map, self).__init__()
+        self.dict=dict
+        self.Nq=int(self.dict['input']['nq'])
+        self.q=np.linspace(-1.,1.,self.Nq)
+        self.qx=self.dict['input']['qx']
+    def phonon_sec(self):
+        qmap=[]
+        for i in range(self.Nq):
+            for j in range(self.Nq):
+                if np.round(self.q[i]+self.q[j]-self.qx,5) == 0.:
+                    qmap.append([i,j])
+        return (qmap)
+    def phonon_sec_q(self):
+        qmap=[]
+        for i in range(self.Nq):
+            for j in range(self.Nq):
+                if np.round(self.q[i]+self.q[j]-self.qx,5) == 0.:
+                    qmap.append([i,j])
+        return (qmap)
+    def phonon_thr(self):
+        qmap=[]
+        for i in range(self.Nq):
+            for j in range(self.Nq):
+                for k in range(self.Nq):
+                    if np.round(self.q[i]+self.q[j]+self.q[k]-self.qx,5)==0.:
+                        qmap.append([i,j,k])
+        return np.array(qmap)
+    def phonon_fou(self):
+        qmap=[]
+        for i in range(self.Nq):
+            for j in range(self.Nq):
+                for k in range(self.Nq):
+                    for l in range(self.Nq):
+                        if np.round(self.q[i]+self.q[j]+self.q[k]+self.q[l]-self.qx,5)==0.:
+                            qmap.append([i,j,k,l])
+        return np.array(qmap)

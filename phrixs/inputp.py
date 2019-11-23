@@ -9,7 +9,9 @@ class inputp(object):
         self.ninputs=ninputs
         self.dict_problem_file=cg.dict_problem_file
         self.dict_problem=self.upload_dict()
-        self.dict_input=cg.dict_input_file+'_'+str(self.dict_problem['type_problem'])+'_'+str(self.nproblems)+'_'+str(self.ninputs)+'.json'
+        self.dict_input=cg.dict_input_file+'_'+str(self.dict_problem['type_calc'])+'_'\
+                +str(self.dict_problem['type_problem'])+'_'+str(self.nproblems)+\
+                                                '_'+str(self.ninputs)+'.json'
     def upload_dict(self):
         try :
             with open(self.dict_problem_file) as fp:
@@ -88,6 +90,8 @@ class inputp(object):
     def create_input(self):
         list_rixs,list_rixs_names=self.check_problem_type()
         dict_temp=self.upload_dict_soft()
+        if self.dict_problem['type_problem']=='rixs_q':
+            print('to modify coupling constant check phonon_info.py')
         if dict_temp:
             for name,discrip in zip(list_rixs,list_rixs_names):
                 dict_temp=self.update(name,discrip,dict_temp)

@@ -16,7 +16,6 @@ class graph(object):
             pass
         self.p=plot
         pg.setConfigOptions(antialias=True)
-
     def simple(self,scale=1):
         self.color_list=['r','b','g']
         self.p.plot(self.x,self.y*scale,\
@@ -33,7 +32,6 @@ class graph(object):
         self.p.addItem(lr)
         self.p.setLabel('left', "RIXS Intensity", units='arb. units')
         self.p.setLabel('bottom', "Energy Loss", units='eV')
-
     def fill_between_2d(self,win,p,scale=1):
         scale_fig=100
         self.x_1,self.y_1=np.load('temp_2_run_1.npy')
@@ -70,3 +68,17 @@ class graph(object):
         self.p.getAxis("bottom").setStyle(tickTextOffset = 10)
         self.p.getAxis("left").tickFont = font
         self.p.getAxis("left").setStyle(tickTextOffset = 10)
+    def plot_omega_q(self,scale=1):
+        q,omegaq=np.loadtxt('phonon_energy_vs_q')
+        self.color_list=['r','b','g']
+        self.p.plot(q,omegaq,\
+                            pen=pg.mkPen('b',width=2))
+        self.p.setLabel('left', "Energy", units='eV')
+        self.p.setLabel('bottom', "q", units='pi/a')
+    def plot_g_q(self,scale=1):
+        q,omegaq=np.loadtxt('eph_coupling_vs_q')
+        self.color_list=['r','b','g']
+        self.p.plot(q,omegaq,\
+                            pen=pg.mkPen('b',width=2))
+        self.p.setLabel('left', "coupling", units='eV')
+        self.p.setLabel('bottom', "q", units='pi/a')

@@ -5,12 +5,12 @@ ws.timer_start()
 
 #displaced osc
 ws.initp()
-ws.inputp('ask') # ws.inputp('skip')
+ws.inputp('skip') # use ws.inputp('ask') to modify input
 ws.runp()
 
 #distorted and displaced osc
 ws.initp(type_calc='dd')
-ws.inputp('ask')
+ws.inputp('skip') # use ws.inputp('ask') to modify input
 
 #list_omega=[0.02,0.15]
 #for omega in list_omega:
