@@ -1,0 +1,6 @@
+numpy
+pyqtgraph
+scipy
+tqdm
+pathos
+matplotlib

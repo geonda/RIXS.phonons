@@ -1,0 +1,7 @@
+README.md
+setup.py
+phrixs.egg-info/PKG-INFO
+phrixs.egg-info/SOURCES.txt
+phrixs.egg-info/dependency_links.txt
+phrixs.egg-info/requires.txt
+phrixs.egg-info/top_level.txt
