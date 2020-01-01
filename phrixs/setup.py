@@ -7,7 +7,7 @@ setuptools.setup(
     name="phrixs",
     version="0.0.0",
     author="Andrey Geondzhian",
-    # author_email="andrey@example.com",
+    # author_email="andrey.geondzhian@gmail.com",
     description="Phonon contirbution in RIXS",
     long_description=long_description,
     long_description_content_type="text/markdown",

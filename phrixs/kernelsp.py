@@ -25,7 +25,7 @@ class rixs_model(object):
                             +'_run_'+self.nruns+cg.extension_final
         if self.dict['problem']['type_calc']=='dd':
             self.beta=np.sqrt(float(dict['input']['omega_ph_ex'])/float(dict['input']['omega_ph0']))
-            print(self.beta)
+            print('beta=',self.beta)
             self.omega_ex=dict['input']['omega_ph_ex']
         try:
             self.m=int(dict['input']['nm'])

@@ -9,9 +9,6 @@ import os
 import json
 from tqdm import tqdm
 from timeit import default_timer as time
-import pyqtgraph as pg
-from pyqtgraph.Qt import QtCore, QtGui
-
 
 class workspace(object):
     """docstring for workspace."""
@@ -57,56 +54,14 @@ class workspace(object):
 
         spec(self.dict_total,nruns=self.nruns).run_broad()
     def figure_2d(self):
-        pg.mkQApp()
-        pg.setConfigOption('background', 'w')
-        pg.setConfigOption('foreground', 'k')
-        self.win = pg.GraphicsWindow()
-        self.win.resize(600,400)
-        self.app = QtGui.QApplication([])
-        self.plot = self.win.addPlot()
-        self.plot.addLegend(offset=(300,10))
-        gs=graph(plot=self.plot,nruns=self.nruns,file=cg.temp_rixs_noel_file)
-        gs.fill_between_2d(self.win,self.plot)
-        self.plot.setXRange(-0.025,0.360)
-        self.plot.setYRange(-0.1,7.5)
-        self.win.show()
-        self.app.exec_()
+        gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
+        gh.plot_2do()
     def figure_q(self):
-        pg.mkQApp()
-        # pg.setConfigOption('background', 'w')
-        # pg.setConfigOption('foreground', 'k')
-        self.win = pg.GraphicsWindow()
-        self.win.resize(900,400)
-        self.app = QtGui.QApplication([])
-        self.plot_oq = self.win.addPlot()
-        self.plot_oq.addLegend(offset=(300,10))
-        graph(plot=self.plot_oq).plot_omega_q()
-        self.plot_oq.addLine(x=self.dict_total['input']['qx'])
-        self.plot_gq = self.win.addPlot()
-        self.plot_gq.addLegend(offset=(300,10))
-        graph(plot=self.plot_gq).plot_g_q()
-        self.plot_gq.addLine(x=self.dict_total['input']['qx'])
-        self.plot = self.win.addPlot()
-        self.plot.addLegend(offset=(300,10))
-        gs=graph(plot=self.plot,nruns=self.nruns,file=cg.temp_rixs_noel_file)
-        gs.simple()
-
-        self.plot.setXRange(-0.025,0.360)
-        self.plot_oq.setXRange(-1,1)
-        self.plot_gq.setXRange(-1,1)
-        self.win.show()
-        self.app.exec_()
+        gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file,dict_total=self.dict_total)
+        gh.plot_rixsq()
     def plotp(self):
-        pg.mkQApp()
-        self.win=pg.GraphicsWindow()
-        self.app = QtGui.QApplication([])
-        self.win.resize(800,400)
-        self.plot=self.win.addPlot()
-        [graph(plot=self.plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple() \
-                                                for runs in range(self.nruns)]
-        self.plot.setXRange(0.,0.3)
-        self.win.show()
-        self.app.exec_()
+        gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
+        gh.simple()
     def plotp_app(self,plot):
         [graph(plot=plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\
                                                 for runs in range(self.nruns)]

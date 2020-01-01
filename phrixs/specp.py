@@ -14,8 +14,10 @@ class spec(object):
         #     dict=json.load(fp)
         self.x,self.y=np.load(self.auto_save)
         if int(dict['problem']['vib_space'])==1:
-            self.xmin=-0.1#-dict['input']['omega_ph0']
-            self.xmax=0.5#dict['input']['omega_ph0']*dict['input']['nf']
+            # self.xmin=-dict['input']['omega_ph0']
+            # self.xmax=dict['input']['omega_ph0']*dict['input']['nf']
+            self.xmin=-0.1
+            self.xmax=0.5
         elif int(dict['problem']['vib_space'])==2:
             max_=max(dict['input']['omega_ph0'],dict['input']['omega_ph1'])
             self.xmin=-max_
