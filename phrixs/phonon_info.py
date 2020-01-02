@@ -7,11 +7,12 @@ class energy(object):
 		super(energy, self).__init__()
 		self.dict = dict
 		# flat dispersion
-		self.omega_func = (lambda x: self.dict['input']['omega_ph0']*(10+x)/(10+x))
+		self.omega_func = (lambda x: self.dict['input']['omega_ph0']*(0.93+0.07*np.cos(np.pi*x)))
 
 		self.q = np.linspace(-1,1,self.dict['input']['nq'])
 
 		self.omegaq = self.omega_func(self.q)
+
 		np.savetxt('phonon_energy_vs_q',np.vstack((self.q,self.omegaq)))
 
 	def plot(self):
@@ -27,11 +28,12 @@ class coupling(object):
 	"""docstring for coupling_dispersion."""
 	def __init__(self,omegaq,dict):
 		super(coupling, self).__init__()
+
 		self.omegaq = omegaq
-		
+
 		self.dict = dict
 		# cos up dispersion
-		self.func = lambda x: 0.3*(1.5-0.5*abs(np.cos(x*np.pi/2)))
+		self.func = lambda x: 0.2*(1+0.4*x*x*x*x)#*(1.5-0.5*abs(np.cos(x*np.pi/2)))
 
 		self.q = np.linspace(-1.,1.,self.dict['input']['nq'])
 

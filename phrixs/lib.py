@@ -59,9 +59,19 @@ class workspace(object):
     def figure_q(self):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file,dict_total=self.dict_total)
         gh.plot_rixsq()
+
+    def figure_q_exp(self,file):
+        gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file,dict_total=self.dict_total)
+        gh.plot_rixsq_exp(file=file)
+    def figure_2d_x(self):
+        gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file,dict_total=self.dict_total)
+        gh.plot_2do_matplot_x()
     def plotp(self):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
         gh.simple()
+    def plot_model_exp(self):
+        gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
+        gh.simple_and_exp('rixs_c.csv')
     def plotp_app(self,plot):
         [graph(plot=plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\
                                                 for runs in range(self.nruns)]
