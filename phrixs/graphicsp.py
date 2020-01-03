@@ -52,7 +52,7 @@ class graph(object):
 
         self.p.setLabel('left', "RIXS Intensity", units='arb. units')
         self.p.setLabel('bottom', "Energy Loss", units='eV')
-        self.p.setXRange(0.,0.35)
+        # self.p.setXRange(0.,0.35)
         self.win.show()
         self.app.exec_()
     def simple_matplot(self,scale=1):
@@ -86,7 +86,6 @@ class graph(object):
             self.app.exec_()
         else:
             self.simple_matplot(scale)
-
     def plot_2do_qt(self,scale=1):
         pg.mkQApp()
         pg.setConfigOption('background', 'w')
@@ -135,7 +134,6 @@ class graph(object):
         self.p.setYRange(-0.1,7.5)
         self.win.show()
         self.app.exec_()
-
     def plot_2do_matplot_x(self,scale=1):
         import scipy.interpolate
 
@@ -223,7 +221,6 @@ class graph(object):
 
         # plt.tight_layout()
         plt.show()
-
     def plot_2do_matplot(self,scale=1):
         self.fig = plt.figure()
         self.p = self.fig.add_subplot(1, 1, 1)

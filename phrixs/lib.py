@@ -59,7 +59,6 @@ class workspace(object):
     def figure_q(self):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file,dict_total=self.dict_total)
         gh.plot_rixsq()
-
     def figure_q_exp(self,file):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file,dict_total=self.dict_total)
         gh.plot_rixsq_exp(file=file)
