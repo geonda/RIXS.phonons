@@ -6,8 +6,8 @@ class energy(object):
 	def __init__(self,dict):
 		super(energy, self).__init__()
 		self.dict = dict
-		# flat dispersion
-		self.omega_func = (lambda x: self.dict['input']['omega_ph0']*(0.93+0.07*np.cos(np.pi*x)))
+
+		self.omega_func = (lambda x: self.dict['input']['omega_ph0']*(0.93+0.07*(np.cos(np.pi*x))))
 
 		self.q = np.linspace(-1,1,self.dict['input']['nq'])
 
@@ -33,7 +33,7 @@ class coupling(object):
 
 		self.dict = dict
 		# cos up dispersion
-		self.func = lambda x: 0.2*(1+0.4*x*x*x*x)#*(1.5-0.5*abs(np.cos(x*np.pi/2)))
+		self.func = lambda x: 0.2*(1+0.4*(abs(x*x)))#*(1.5-0.5*abs(np.cos(x*np.pi/2)))
 
 		self.q = np.linspace(-1.,1.,self.dict['input']['nq'])
 
