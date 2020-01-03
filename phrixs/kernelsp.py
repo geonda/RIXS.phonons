@@ -234,7 +234,7 @@ class rixs_model_q(object):
 
     def cross_section(self):
         loss=[];r=[]
-        for nph in tqdm(range(4)):
+        for nph in tqdm(range(int(self.dict['input']['nf']))):
             if nph==0:
                 loss_temp,r_temp=[self.omegaqx*nph],[self.single_phonon(nph)]
             elif nph==1:
@@ -249,6 +249,12 @@ class rixs_model_q(object):
                 r_temp=list(map(lambda x: self.multi_phonon(x,3), qmap))
                 r_temp=np.array(r_temp)/len(qmap)
                 loss_temp=list(map(lambda x: self.omegaq[x[0]]+self.omegaq[x[1]]+self.omegaq[x[2]], qmap))
+            elif nph==4:
+                qmap=init_map(self.dict).phonon_fou()
+                r_temp=list(map(lambda x: self.multi_phonon(x,4), qmap))
+                r_temp=np.array(r_temp)/len(qmap)
+                loss_temp=list(map(lambda x: self.omegaq[x[0]]+self.omegaq[x[1]]\
+                            +self.omegaq[x[2]]+self.omegaq[x[3]], qmap))
             loss.extend(loss_temp)
             r.extend(r_temp)
         print(len(r),len(loss))
@@ -286,6 +292,7 @@ class init_map(object):
         self.Nq=int(self.dict['input']['nq'])
         self.q=np.linspace(-1.,1.,self.Nq)
         self.qx=self.dict['input']['qx']
+
     def phonon_sec(self):
         qmap=[]
         for i in range(self.Nq):
@@ -293,6 +300,7 @@ class init_map(object):
                 if np.round(self.q[i]+self.q[j]-self.qx,5) == 0.:
                     qmap.append([i,j])
         return (qmap)
+
     def phonon_sec_q(self):
         qmap=[]
         for i in range(self.Nq):
@@ -300,6 +308,7 @@ class init_map(object):
                 if np.round(self.q[i]+self.q[j]-self.qx,5) == 0.:
                     qmap.append([i,j])
         return (qmap)
+
     def phonon_thr(self):
         qmap=[]
         for i in range(self.Nq):
@@ -308,6 +317,7 @@ class init_map(object):
                     if np.round(self.q[i]+self.q[j]+self.q[k]-self.qx,5)==0.:
                         qmap.append([i,j,k])
         return np.array(qmap)
+
     def phonon_fou(self):
         qmap=[]
         for i in range(self.Nq):
