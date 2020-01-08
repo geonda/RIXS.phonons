@@ -53,6 +53,7 @@ class workspace(object):
             rixs_model(self.dict_total,nruns=self.nruns).cross_section()
 
         spec(self.dict_total,nruns=self.nruns).run_broad()
+
     def figure_2d(self):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
         gh.plot_2do()
@@ -66,6 +67,9 @@ class workspace(object):
     def plotp(self):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
         gh.simple()
+    def plotp_model_and_exp(self,file):
+        gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
+        gh.simple_and_exp(file)
 
     def plotp_app(self,plot):
         [graph(plot=plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\

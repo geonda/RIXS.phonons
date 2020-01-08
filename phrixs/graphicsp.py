@@ -74,13 +74,28 @@ class graph(object):
             self.simple_matplot(scale)
     def add_exp(self,plot=1,file=1):
         self.xexp,self.yexp=np.loadtxt(file).T
-        self.simple_qt_model(scale=0)
+        # self.simple_qt_model(scale=0)
         s1 = pg.ScatterPlotItem(size=10, pen=pg.mkPen(None), brush=pg.mkBrush(255, 255, 255, 120))
         s1.addPoints(self.xexp,self.yexp/max(self.yexp))
         plot.addItem(s1)
-    def simple_and_exp(self,file,scale=1):
+    def simple_and_exp(self,file,scale=0):
         if lib_pyqgrapth:
-            self.simple_qt_model(scale=0)
+            pg.mkQApp()
+            pg.setConfigOptions(antialias=True)
+            self.win=pg.GraphicsWindow()
+            self.app = QtGui.QApplication([])
+            self.win.resize(800,400)
+            self.p=self.win.addPlot()
+            self.color_list=['r','b','g']
+            for irun in range(self.nruns):
+                if scale==0:  scale=1./max(self.dict_y[irun])
+                self.p.plot(self.dict_x[irun],self.dict_y[irun]*scale,\
+                    pen=pg.mkPen(self.color_list[irun],width=2))
+
+            self.p.setLabel('left', "RIXS Intensity", units='arb. units')
+            self.p.setLabel('bottom', "Energy Loss", units='eV')
+            # self.p.setXRange(0.,0.35)
+
             self.add_exp(plot=self.p,file=file)
             self.win.show()
             self.app.exec_()
