@@ -23,7 +23,7 @@ class init_problem(object):
                     print('error in arguments')
         if self.error==False:
             with open('problem.json', 'w') as fp:
-                json.dump(dict_current,fp)
+                json.dump(dict_current,fp,indent=1)
         self.dict_current=dict_current
     def help(self):
         print('type_problem: rixs (default), xas, rixs_q ')

@@ -105,7 +105,7 @@ class inputp(object):
                                             /dict_temp['omega_ph'+str(i)])**2
         # print(dict_temp)
         with open(self.dict_input, 'w') as fp:
-            json.dump(dict_temp,fp)
+            json.dump(dict_temp,fp,indent=1)
         print(' >>>>> input created ')
         print(dict_temp)
         return dict_temp
@@ -121,7 +121,7 @@ class inputp(object):
         gmax=float(input())
         dict_scan['coupling']=list(np.linspace(gmin,gmax,dict_scan['nruns']))
         with open(cg.dict_scan_file, 'w') as fp:
-            json.dump(dict_scan,fp)
+            json.dump(dict_scan,fp,indent=1)
         return dict_scan
 
     def update_total(self,dict_total):

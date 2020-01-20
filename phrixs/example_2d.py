@@ -5,7 +5,7 @@ ws.timer_start()
 # two 1d osc
 ws.initp(type_calc='2d')
 ws.timer_round('init done [s]: ')
-ws.inputp('skip') # use ws.inputp('ask') to modify input
+ws.inputp('ask') # use ws.inputp('ask') to modify input
 ws.timer_round('input done [s]: ')
 list_coupling=[0.05,0.08]
 list_omega=[0.025,0.1]
@@ -20,7 +20,7 @@ for omega,coupling in zip(list_omega,list_coupling):
 # one 2d osc
 ws.initp(type_calc='2d',vib_space=2)
 
-ws.inputp('skip') # use ws.inputp('ask') to modify input
+ws.inputp('ask') # use ws.inputp('ask') to modify input
 for i,set in enumerate(zip(list_omega,list_coupling)):
     print(set)
     ws.dict_total['input']['coupling'+str(i)]=float(set[1])

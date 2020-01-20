@@ -6,7 +6,10 @@ try:
     from pyqtgraph.Qt import QtGui
     lib_pyqgrapth=True
 except ImportError:
-    lib_pyqgrapth=False
+    pass
+##### ad hoc fix to use matplotlib only
+lib_pyqgrapth=False
+#######################################
 class graph(object):
     """docstring for plot."""
     def __init__(self,nruns=1,file=cg.temp_rixs_full_file,dict_total={}):
