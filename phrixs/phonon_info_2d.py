@@ -8,25 +8,25 @@ import math
 
 class energy(object):
 	"""docstring for model_dispertion."""
-	def __init__(self,dict):
+	def __init__(self):
 		super(energy, self).__init__()
 		self.q_path={}
 		self.phonon_energy={}
 		self.e2d=[]
 		self.q2d={'x':[],'y':[]}
 		self.dict = dict
-		self.omega_func = (lambda x: self.dict['input']['omega_ph0']*(0.93+0.07*(np.cos(np.pi*x))))
-		self.q = np.linspace(-1,1,self.dict['input']['nq'])
-		self.omegaq = self.omega_func(self.q)
-		np.savetxt('phonon_energy_vs_q',np.vstack((self.q,self.omegaq)))
-	def plot(self):
-		plt.plot(self.q,self.omegaq,linewidth=2)
-		plt.axvline(0,linestyle='--',color='grey')
-		plt.xlabel('$\mathrm{q_x, \ (\pi/a)} $',fontsize=20)
-		plt.ylabel('$\mathrm{\omega} $',fontsize=20)
-		plt.ylim([min(self.omegaq)*0.8,max(self.omegaq)*(1.2)])
-		plt.xlim([max(self.q),min(self.q)])
-		plt.show()
+		# self.omega_func = (lambda x: self.dict['input']['omega_ph0']*(0.93+0.07*(np.cos(np.pi*x))))
+		# self.q = np.linspace(-1,1,self.dict['input']['nq'])
+		# self.omegaq = self.omega_func(self.q)
+		# §np.savetxt('phonon_energy_vs_q',np.vstack((self.q,self.omegaq)))
+	# def plot(self):
+	# 	plt.plot(self.q,self.omegaq,linewidth=2)
+	# 	plt.axvline(0,linestyle='--',color='grey')
+	# 	plt.xlabel('$\mathrm{q_x, \ (\pi/a)} $',fontsize=20)
+	# 	plt.ylabel('$\mathrm{\omega} $',fontsize=20)
+	# 	plt.ylim([min(self.omegaq)*0.8,max(self.omegaq)*(1.2)])
+	# 	plt.xlim([max(self.q),min(self.q)])
+	# 	plt.show()
 	def get_phonon(self):
 		sym_directions=['gamma-k','k-m','gamma-m']
 		transform={\
@@ -54,7 +54,7 @@ class energy(object):
 		ax = fig.add_subplot(131)
 		ax.set_ylabel(r'Phonon Energy, eV',fontsize=15)
 		ax.plot(self.q_path['gamma-k']*self.q_bz[0],self.phonon_energy['gamma-k'],'-o',color='grey')
-		plt.xticks([min(self.q_path['gamma-k']*self.q_bz[0]),max(self.q_path['gamma-k']*self.q_bz[0])],(r'$\Gamma$',r'$M$'),fontsize=20)
+		plt.xticks([min(self.q_path['gamma-k']*self.q_bz[0]),max(self.q_path['gamma-k']*self.q_bz[0])],(r'$\Gamma$',r'$K$'),fontsize=20)
 		ax.set_ylim([0.14,0.2])
 		ax = fig.add_subplot(132)
 		ax.plot(self.q_path['k-m']*self.q_bz[1],self.phonon_energy['k-m'],'-o',color='grey',label='exp')
@@ -83,8 +83,9 @@ class energy(object):
 		plt.text(1.,0.65,r'$M$',fontsize=15)
 		cbar = plt.colorbar(ims)
 		cbar.set_label(r'Phonon Energy, eV')
-		ax.scatter(self.q2d['x'],self.q2d['y'])
-		ax.scatter(self.x,self.y)
+		ax.scatter(self.q2d['x'],self.q2d['y'],label='exp',edgecolor='k',facecolor='none')
+		# ax.scatter(self.x,self.y,label='exp',edgecolor='k',facecolor='none')
+		plt.legend()
 		hx=rp((0,0), 6, radius=4./3., orientation=np.pi/2.,facecolor="none",edgecolor='grey')
 		ax.add_patch(hx)
 		ax.set_xlabel(r'$q_x,\ \frac{\pi}{a}$',fontsize=15)
@@ -108,41 +109,39 @@ class energy(object):
 					y.append(self.grid_rect_y[i][j])
 		self.x,self.y,self.z=x,y,z
 
-class coupling(object):
+class full_data(object):
 	"""docstring for coupling_dispersion."""
 
-	def __init__(self,omegaq,dict):
-		super(coupling, self).__init__()
-
+	def __init__(self):
+		super(full_data, self).__init__()
 		self.q_path={}
-
 		self.coupling_qpath={}
 
 		self.e2d=[]
 
 		self.q2d={'x':[],'y':[]}
 
-		self.phonon=energy(dict)
+		self.phonon=energy()
 
 		self.phonon.get_phonon()
 
 		# self.phonon.plot_dispersion()
 
-		self.omegaq = omegaq
-
-		self.dict = dict
-		# cos up dispersion
-		self.func = lambda x: 0.2*(1+0.4*(abs(x*x)))#*(1.5-0.5*abs(np.cos(x*np.pi/2)))
-
-		self.q = np.linspace(-1.,1.,self.dict['input']['nq'])
-
-		self.mkq = self.func(self.q)
-
-		self.gkq = list(map(lambda x,y: x*x/y/y, self.mkq,self.omegaq))
-
-		np.savetxt('eph_coupling_vs_q',np.vstack((self.q,self.mkq)))
-
-		np.savetxt('eph_strength_vs_q',np.vstack((self.q,self.gkq)))
+		# self.omegaq = omegaq
+		#
+		# self.dict = dict
+		# # cos up dispersion
+		# self.func = lambda x: 0.2*(1+0.4*(abs(x*x)))#*(1.5-0.5*abs(np.cos(x*np.pi/2)))
+		#
+		# self.q = np.linspace(-1.,1.,self.dict['input']['nq'])
+		#
+		# self.mkq = self.func(self.q)
+		#
+		# self.gkq = list(map(lambda x,y: x*x/y/y, self.mkq,self.omegaq))
+		#
+		# np.savetxt('eph_coupling_vs_q',np.vstack((self.q,self.mkq)))
+		#
+		# np.savetxt('eph_strength_vs_q',np.vstack((self.q,self.gkq)))
 
 		self.sym_directions=['gamma-k','k-m','gamma-m']
 
@@ -182,10 +181,23 @@ class coupling(object):
 		# plt.show()
 
 	def create_coupling(self):
+
 		self.func_obj={}
-		self.func_obj['gamma-k'] = lambda x: 0.2*(1+0.4*(abs(x*x)))
-		self.func_obj['k-m'] = lambda x: 0.28*(100+x)/(100+x)
-		self.func_obj['gamma-m'] = lambda x: 0.2*(1+0.4*(abs(x*x)))
+
+		a=0.2
+
+		sa=0.155
+
+		b=0.
+
+		sb=a+sa
+
+		self.func_obj['gamma-k'] = lambda x: a+sa*abs((x))
+
+		self.func_obj['k-m'] = lambda  x: a+sa*abs(np.sqrt(1-x))# a+sa*(abs(x-1)**4)  #(b*(sb+1)-a*(sa+1))*x+a*(sa+1)
+
+		self.func_obj['gamma-m'] = lambda x: 0*(x+100)/(x+100)  #b*(1.+sb*(abs(x*x*x)))
+
 		for i,direction in enumerate(self.sym_directions):
 			q=np.linspace(0,1,8)
 			# print(direction,self.func_obj[direction](q))
@@ -209,11 +221,8 @@ class coupling(object):
 				self.q2d['x'].extend(self.q_bz[0]-self.q_path[names][:] * transform[names]['x'])
 			else:
 				self.q2d['x'].extend(self.q_path[names][:] * transform[names]['x'])
-			self.q2d['y'].extend(self.q_path[names][:] *transform[names]['y'])
+			self.q2d['y'].extend(self.q_path[names][:] * transform[names]['y'])
 			self.e2d.extend(self.coupling_qpath[names])
-
-		# print(self.coupling_qpath['gamma-k'])
-
 		self.interpolate(self.q2d['x'],self.q2d['y'],self.e2d)
 		# self.reshape_local()
 	def plot_dispersion(self):
@@ -222,20 +231,25 @@ class coupling(object):
 		ax = fig.add_subplot(131)
 		ax.set_ylabel(r'Coupling Constant, eV',fontsize=15)
 		ax.plot(self.q_path['gamma-k']*self.q_bz[0],self.coupling_qpath['gamma-k'],'-o',color='grey')
-		plt.xticks([min(self.q_path['gamma-k']*self.q_bz[0]),max(self.q_path['gamma-k']*self.q_bz[0])],(r'$\Gamma$',r'$M$'),fontsize=20)
-		ax.set_ylim([0.14,0.4])
+		plt.xticks([min(self.q_path['gamma-k']*self.q_bz[0]),max(self.q_path['gamma-k']*self.q_bz[0])],(r'$\Gamma$',r'$K$'),fontsize=20)
+
+		ax.set_ylim([min(self.coupling_qpath['gamma-k']),max(self.coupling_qpath['gamma-k'])*1.2])
+		# ax.set_ylim([0.14,max(self.coupling_qpath['gamma-k'])*1.2])
 		ax = fig.add_subplot(132)
-		ax.plot(self.q_path['k-m']*self.q_bz[1],self.coupling_qpath['k-m'],'-o',color='grey',label='exp')
+		ax.plot(self.q_path['k-m']*self.q_bz[1],self.coupling_qpath['k-m'],'-o',color='grey',label='model')
 		plt.xticks([min(self.q_path['k-m']*self.q_bz[1]),max(self.q_path['k-m']*self.q_bz[1])],(r'$K$',r'$M$'),fontsize=20)
 		ax.set_yticks([])
-		ax.set_ylim([0.14,0.4])
+		ax.set_ylim([min(self.coupling_qpath['gamma-k']),max(self.coupling_qpath['gamma-k'])*1.2])
+		# ax.set_ylim([0.14,max(self.coupling_qpath['gamma-k'])*1.2])
 		plt.legend()
 		ax.set_xlabel(r'$q \ path$',fontsize=15)
 		ax = fig.add_subplot(133)
 		ax.set_yticks([])
-		ax.set_ylim([0.14,0.4])
+		ax.set_ylim([min(self.coupling_qpath['gamma-k']),max(self.coupling_qpath['gamma-k'])*1.2])
 		ax.plot(self.q_path['gamma-m']*self.q_bz[2],self.coupling_qpath['gamma-m'],'-o',color='grey',label='exp')
+
 		plt.xticks([min(self.q_path['gamma-m']*self.q_bz[2]),max(self.q_path['gamma-m']*self.q_bz[2])],(r'$\Gamma$',r'$M$'),fontsize=20)
+
 		plt.gca().invert_xaxis()
 		plt.tight_layout()
 		plt.show(block=False)
@@ -291,21 +305,3 @@ class coupling(object):
 					x.append(self.grid_rect_x[i][j])
 					y.append(self.grid_rect_y[i][j])
 		self.x,self.y,self.z=x,y,z
-
-	def plot(self):
-		plt.plot(self.q,self.mkq,linewidth=2,color='r',label='model2')
-		plt.axvline(0,linestyle='--',color='grey')
-		plt.xlabel('$\mathrm{q_x, \ (\pi/a)} $',fontsize=20)
-		plt.ylabel('$\mathrm{M_k^q, \ (eV)} $',fontsize=20)
-		plt.ylim([min(self.mkq)*0.8,max(self.mkq)*(1.3)])
-		plt.xlim([max(self.q),min(self.q)])
-		plt.show()
-
-	def plot_strength(self):
-		plot(self.q,self.gkq,linewidth=2,color='r')
-		plt.axvline(0,linestyle='--',color='grey')
-		plt.xlabel('$\mathrm{q_x, \ (\pi/a)} $',fontsize=20)
-		plt.ylabel('$\mathrm{g_k^q} $',fontsize=20)
-		plt.ylim([min(self.gkq)*0.8,max(self.gkq)*(1.3)])
-		plt.xlim([max(self.q),min(self.q)])
-		plt.show()

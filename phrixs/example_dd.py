@@ -7,7 +7,6 @@ ws.timer_start()
 ws.initp(type_calc='model')
 ws.inputp('skip') # use ws.inputp('ask') to modify input
 ws.runp()
-
 #distorted and displaced osc
 ws.initp(type_calc='dd')
 ws.inputp('skip') # use ws.inputp('ask') to modify input or call ws.dict_total['input']['parameter_name']

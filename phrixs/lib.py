@@ -48,18 +48,19 @@ class workspace(object):
         self.dict_total=inputp(self.ninputs,self.nproblems).update_total(self.dict_total)
         self.nruns+=1
         if self.dict_total['problem']['type_problem']=='rixs_q':
-            rixs_model_q(self.dict_total,nruns=self.nruns).cross_section()
+            rixs_model_q_2d(self.dict_total,nruns=self.nruns).cross_section()
         else:
             rixs_model(self.dict_total,nruns=self.nruns).cross_section()
-
         spec(self.dict_total,nruns=self.nruns).run_broad()
 
     def figure_2d(self):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
         gh.plot_2do()
+
     def figure_q(self):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file,dict_total=self.dict_total)
         gh.plot_rixsq()
+
     def figure_q_and_exp(self,file):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file,dict_total=self.dict_total)
         gh.plot_rixsq_exp(file=file)
