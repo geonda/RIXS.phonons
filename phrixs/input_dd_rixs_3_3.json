@@ -1,6 +1,7 @@
 {
- "coupling0": 0.4,
- "omega_ph0": 0.1,
+ "coupling0": 0.07,
+ "omega_ph0": 0.05,
+ "omega_ph_ex": 0.025,
  "nf": 10.0,
  "nm": 20.0,
  "energy_ex": 1.0,

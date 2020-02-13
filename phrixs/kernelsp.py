@@ -1,8 +1,11 @@
 import json
 import numpy as np
 from math import factorial
+from scipy.misc import *
+from scipy.special import factorial2
 import math
 from scipy.special import eval_hermite as H
+from scipy.special import binom
 import functools
 import config as cg
 import phonon_info
@@ -101,14 +104,32 @@ class rixs_model(object):
         out=list(map(functools.partial(fun), (range(min(l,k)+1))))
         return b1*b2*b3*np.sum(out)
 
+    def X_chang(self,n,n_p,beta):
+        alpha=self.dict['input']['omega_ph0']
+        alphap=self.dict['input']['omega_ph_ex']
+        A=2*np.sqrt(float(alpha*alphap))/(alpha+alphap)
+        F=A/float((factorial(n)*factorial(n_p)*(2.**(n+n_p))))
+        ws=np.array([(k,kp) for k in range(n+1) for kp in range(n_p+1)])
+        def func_temp(ws):
+            k,kp=ws[0],ws[1]
+            O1=binom(n_p, kp)*binom(n,k)
+            O2=H(n_p-kp,0)*H(n-k,0)
+            O3=((2*np.sqrt(alphap))**kp)*((2*np.sqrt(alpha))**k)
+            if (k+kp) % 2 != 0:
+                return 0.
+            else:
+                return O1*O2*O3*factorial2(int(k+kp-1))\
+                                /np.sqrt((alpha+alphap)**(k+kp))
+        out=np.sum(list(map(functools.partial(func_temp),ws)))
+        return np.sqrt(float(F))*out
+
     def amplitude_dd(self,f,i):
         def func_temp(ws):
             m,l,k=ws[0],ws[1],ws[2]
-            return np.conj(self.X(i,k,self.beta))*\
-            self.X(f,l,self.beta)*\
-            self.franck_condon_factors(l,m,self.dict['input']['coupling0'])*\
-            self.franck_condon_factors(m,i,self.dict['input']['coupling0'])\
-            /(self.omega_ex*(m-self.dict['input']['coupling0'])-self.det)
+            return  np.conj(self.X_chang(i,k,self.beta))*\
+                        self.X_chang(l,f,self.beta)*\
+                self.franck_condon_factors(k,m,float(self.dict['input']['g0']))*self.franck_condon_factors(m,l,float(self.dict['input']['g0']))\
+                        / (self.dict['input']['omega_ph0']*(m-self.dict['input']['g0'])-self.det)
         workspace=np.array([(m,l,k) for m in range(self.m) for l in range(self.m) for k in range(self.m)])
         return np.sum(list(map(functools.partial(func_temp),workspace)))
 

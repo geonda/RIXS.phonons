@@ -20,8 +20,10 @@ class graph(object):
         self.color_list=['r','b','g']
         try:
             for irun in range(self.nruns):
-                self.dict_x[irun],self.dict_y[irun]=\
+                data_temp=\
                         np.load(file+'_run_'+str(irun+1)+cg.extension_final)
+                self.dict_x[irun]=data_temp[0]
+                self.dict_y[irun]=data_temp[1]
         except:
             pass
     def simple_qt_model(self,scale=1):
@@ -49,7 +51,7 @@ class graph(object):
         self.p=self.win.addPlot()
         self.color_list=['r','b','g']
         for irun in range(self.nruns):
-            if scale==0:  scale=self.dict_y[irun]/max(self.dict_y[irun])
+            if scale==0:  scale=1./max(self.dict_y[irun][:])
             self.p.plot(self.dict_x[irun],self.dict_y[irun]*scale,\
                 pen=pg.mkPen(self.color_list[irun],width=2))
 
@@ -59,11 +61,13 @@ class graph(object):
         self.win.show()
         self.app.exec_()
     def simple_matplot(self,scale=1):
+        self.scale=scale
         self.fig = plt.figure()
         self.p = self.fig.add_subplot(1, 1, 1)
         print('nruns:',self.nruns)
         for irun in range(self.nruns):
-            if scale==0:  scale=self.dict_y[irun]/max(self.dict_y[irun])
+            # print(self.dict_y[irun].size)
+            if self.scale==0:  scale=1./max(self.dict_y[irun][:])
             self.p.plot(self.dict_x[irun],self.dict_y[irun]*scale,\
                     linewidth=2,color=self.color_list[irun])
         self.p.set_xlabel("$\mathrm{Energy\ Loss, \ eV}$",fontsize=15)
@@ -210,7 +214,6 @@ class graph(object):
             self.plot_rixsq_qt(scale=scale)
         else:
             self.plot_rixsq_matplot(scale=scale)
-
     def plot_rixsq_qt(self,scale=1):
         pg.mkQApp()
         # pg.setConfigOption('background', 'w')
