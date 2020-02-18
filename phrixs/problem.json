@@ -1,7 +1,7 @@
 {
  "type_problem": "rixs",
  "method": "fc",
- "type_calc": "model",
+ "type_calc": "dd",
  "el_space": "1",
  "vib_space": "1"
 }

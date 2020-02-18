@@ -14,11 +14,11 @@ data_bet_big=\
 
 
 
-data_bet_big[1]=data_bet_big[1]/1000
-data_bet_small[1]=data_bet_small[1]/1000
-data_bet_1[1]=data_bet_1[1]/1000
+data_bet_big[1]=data_bet_big[1]/10
+data_bet_small[1]=data_bet_small[1]/10
+data_bet_1[1]=data_bet_1[1]/10
 
-omega_ph=0.05 ########### !
+omega_ph=0.1 ########### !
 
 
 
@@ -26,15 +26,17 @@ fig = plt.figure(figsize=(5, 6),facecolor='white')
 
 ax = fig.add_subplot(311)
 
-plt.fill_between(data_bet_1[0]/omega_ph,data_bet_1[1],data_bet_big[1],alpha=0.5,color='grey')
+plt.fill_between(data_bet_1[0]/omega_ph,data_bet_1[1]*max(data_bet_big[1])/max(data_bet_1[1]),data_bet_big[1],alpha=0.5,color='grey')
 
-plt.plot(data_bet_1[0]/omega_ph,data_bet_1[1],linewidth=2,color='grey')
+plt.plot(data_bet_1[0]/omega_ph,data_bet_1[1]*max(data_bet_big[1])/max(data_bet_1[1]),linewidth=2,color='grey')
 
 plt.plot(data_bet_big[0]/omega_ph,data_bet_big[1],linewidth=2,color='green')
 
 plt.xlim([-0.5,7])
+ax.set_yticks([0,2,4,6])
+
 # plt.axis([0, 1, 1.1*np.amin(s), 2*np.amax(s)])
-plt.text(2.5,1.5,r'$\beta=1.02$')
+plt.text(2.5,4.5,r'$\beta=1.1$')
 
 
 # plt.ylabel('r$\mathrm{RIXS \ Intensity,\ arb. \ units }$')
@@ -63,7 +65,7 @@ inset_axes_0.set_ylim([0,4.2])
 inset_axes_0.set_yticks([])
 inset_axes_0.set_xticks([])
 inset_axes_0.set_xlabel(r'$R,\ (arb. \ units)$',fontsize=7)
-inset_axes_0.set_ylabel(r'$\mathrm{PES},\ (arb.\ units)$',fontsize=7)
+inset_axes_0.set_ylabel(r'$\mathrm{PE},\ (arb.\ units)$',fontsize=7)
 for side in ['top','right']:
     inset_axes_0.spines[side].set_visible(False)
 
@@ -88,7 +90,7 @@ ax_big = fig.add_subplot(312)
 
 plt.plot(data_bet_1[0]/omega_ph,data_bet_1[1],linewidth=2,color='blue')
 
-plt.text(2.5,1.5,r'$\beta=1$')
+plt.text(2.5,4,r'$\beta=1$')
 
 plt.xlim([-0.5,7])
 
@@ -118,7 +120,7 @@ inset_axes_1.set_ylim([0,4.2])
 inset_axes_1.set_yticks([])
 inset_axes_1.set_xticks([])
 inset_axes_1.set_xlabel(r'$R,\ (arb. \ units)$',fontsize=7)
-inset_axes_1.set_ylabel(r'$\mathrm{PES},\ (arb.\ units)$',fontsize=7)
+inset_axes_1.set_ylabel(r'$\mathrm{PE},\ (arb.\ units)$',fontsize=7)
 for side in ['top','right']:
     inset_axes_1.spines[side].set_visible(False)
 
@@ -139,17 +141,17 @@ plt.yticks([])
 
 ax_small = fig.add_subplot(313)
 
-plt.text(2.5,1.5,r'$\beta=0.98$')
+plt.text(2.5,3.5,r'$\beta=0.9$')
 
-plt.fill_between(data_bet_1[0]/omega_ph,data_bet_1[1],data_bet_small[1],alpha=0.5,color='grey')
+plt.fill_between(data_bet_1[0]/omega_ph,data_bet_1[1]*max(data_bet_small[1])/max(data_bet_1[1]),data_bet_small[1],alpha=0.5,color='grey')
 
-plt.plot(data_bet_1[0]/omega_ph,data_bet_1[1],linewidth=2,color='grey')
+plt.plot(data_bet_1[0]/omega_ph,data_bet_1[1]*max(data_bet_small[1])/max(data_bet_1[1]),linewidth=2,color='grey')
 
 plt.plot(data_bet_big[0]/omega_ph,data_bet_small[1],linewidth=2,color='red')
 
 # plt.axis([0, 1, 1.1*np.amin(s), 2*np.amax(s)])
 
-plt.xlabel('$\omega_{loss}/\omega_{gs}$',fontsize=15)
+plt.xlabel('$\omega_{loss}/\omega_{0}$',fontsize=15)
 plt.xlim([-0.5,7])
 # plt.ylabel('r$\mathrm{RIXS \ Intensity,\ arb. \ units }$')
 
@@ -177,7 +179,7 @@ inset_axes_2.set_ylim([0,4.2])
 inset_axes_2.set_yticks([])
 inset_axes_2.set_xticks([])
 inset_axes_2.set_xlabel(r'$R,\ (arb. \ units)$',fontsize=7)
-inset_axes_2.set_ylabel(r'$\mathrm{PES},\ (arb.\ units)$',fontsize=7)
+inset_axes_2.set_ylabel(r'$\mathrm{PE},\ (arb.\ units)$',fontsize=7)
 for side in ['top','right']:
     inset_axes_2.spines[side].set_visible(False)
 
@@ -192,6 +194,7 @@ inset_axes_2.arrow(-1, 0, 0, 4.2, fc='k', ec='k', lw = 0.1,
 # #plt.title('Probability')
 plt.xticks([])
 plt.yticks([])
+plt.savefig('./fig_4_dd.eps', format='eps')
 # fig.tight_layout()
 plt.show()
 
