@@ -108,8 +108,7 @@ class graph(object):
             self.p.getAxis("left").tickFont = font
             self.p.getAxis("left").setStyle(tickTextOffset = 10)
             self.p.setXRange(-0.1,0.7)
-
-            # self.add_exp(plot=self.p,file=file)
+            self.add_exp(plot=self.p,file=file)
             self.win.show()
             self.app.exec_()
         else:

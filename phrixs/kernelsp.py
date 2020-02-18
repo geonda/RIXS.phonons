@@ -327,12 +327,12 @@ class rixs_model_q_2d(object):
         # self.qx=self.dict['input']['qx']
 
         self.maxt=self.dict['input']['maxt']
-        self.nstep=self.dict['input']['nstep']
+        self.nstep=int(self.dict['input']['nstep'])
         self.t=np.linspace(0.,self.maxt,self.nstep)
 
     def fkq(self):
         step=self.dict['input']['maxt']/self.dict['input']['nstep']
-        t=np.linspace(0.,self.dict['input']['maxt'],self.dict['input']['nstep'])
+        t=np.linspace(0.,self.dict['input']['maxt'],int(self.dict['input']['nstep']))
         self.omegaq_cumulant=self.phonon_energy*2*np.pi
         Fkq=1.
         for gkqi,omegaqi in zip(self.coupling_strength,self.omegaq_cumulant):

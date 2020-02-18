@@ -7,3 +7,4 @@ from phonon_info_2d import *
 
 full_data().plot_dispersion()
 full_data().plot_colormap()
+plt.show()

@@ -192,11 +192,17 @@ class full_data(object):
 
 		sb=a+sa
 
-		self.func_obj['gamma-k'] = lambda x: a+sa*abs((x))
+		gamma=0.05
 
-		self.func_obj['k-m'] = lambda  x: a+sa*abs(np.sqrt(1-x))# a+sa*(abs(x-1)**4)  #(b*(sb+1)-a*(sa+1))*x+a*(sa+1)
+		ak=0.04
 
-		self.func_obj['gamma-m'] = lambda x: 0*(x+100)/(x+100)  #b*(1.+sb*(abs(x*x*x)))
+		ag=0.03
+
+		self.func_obj['gamma-k'] = lambda x:ag*np.imag(1/(x-1.j*gamma))+ak*np.imag(1/(x-1-1.j*gamma))#+a*(1-(x-1)**2)
+
+		self.func_obj['k-m'] = lambda  x: ak*np.imag(1/(x-1.j*gamma))# a+sa*(abs(x-1)**4)  #(b*(sb+1)-a*(sa+1))*x+a*(sa+1)
+
+		self.func_obj['gamma-m'] = lambda x: ag*np.imag(1/(x-1.j*gamma))  #b*(1.+sb*(abs(x*x*x)))
 
 		for i,direction in enumerate(self.sym_directions):
 			q=np.linspace(0,1,8)
@@ -227,25 +233,25 @@ class full_data(object):
 		# self.reshape_local()
 	def plot_dispersion(self):
 		self.get_coupling()
-		fig = plt.figure(figsize=(5,3))
+		fig = plt.figure(figsize=(10,5))
 		ax = fig.add_subplot(131)
 		ax.set_ylabel(r'Coupling Constant, eV',fontsize=15)
 		ax.plot(self.q_path['gamma-k']*self.q_bz[0],self.coupling_qpath['gamma-k'],'-o',color='grey')
 		plt.xticks([min(self.q_path['gamma-k']*self.q_bz[0]),max(self.q_path['gamma-k']*self.q_bz[0])],(r'$\Gamma$',r'$K$'),fontsize=20)
 
-		ax.set_ylim([min(self.coupling_qpath['gamma-k']),max(self.coupling_qpath['gamma-k'])*1.2])
+		ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
 		# ax.set_ylim([0.14,max(self.coupling_qpath['gamma-k'])*1.2])
 		ax = fig.add_subplot(132)
 		ax.plot(self.q_path['k-m']*self.q_bz[1],self.coupling_qpath['k-m'],'-o',color='grey',label='model')
 		plt.xticks([min(self.q_path['k-m']*self.q_bz[1]),max(self.q_path['k-m']*self.q_bz[1])],(r'$K$',r'$M$'),fontsize=20)
 		ax.set_yticks([])
-		ax.set_ylim([min(self.coupling_qpath['gamma-k']),max(self.coupling_qpath['gamma-k'])*1.2])
+		ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
 		# ax.set_ylim([0.14,max(self.coupling_qpath['gamma-k'])*1.2])
 		plt.legend()
 		ax.set_xlabel(r'$q \ path$',fontsize=15)
 		ax = fig.add_subplot(133)
 		ax.set_yticks([])
-		ax.set_ylim([min(self.coupling_qpath['gamma-k']),max(self.coupling_qpath['gamma-k'])*1.2])
+		ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
 		ax.plot(self.q_path['gamma-m']*self.q_bz[2],self.coupling_qpath['gamma-m'],'-o',color='grey',label='exp')
 
 		plt.xticks([min(self.q_path['gamma-m']*self.q_bz[2]),max(self.q_path['gamma-m']*self.q_bz[2])],(r'$\Gamma$',r'$M$'),fontsize=20)
