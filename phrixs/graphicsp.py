@@ -21,6 +21,24 @@ class graph(object):
                         np.load(file+'_run_'+str(irun+1)+cg.extension_final)
         except:
             pass
+    def simple_xas(self):
+        self.fig = plt.figure()
+        self.p = self.fig.add_subplot(1, 1, 1)
+        xas=np.load('xas.npy')
+        self.p.plot(xas[0],xas[1]/max(xas[1]),\
+                    linewidth=2,color='b',label='xas  multi q')
+        # xas=np.load('xas_gamma.npy')
+        # self.p.plot(xas[0],xas[1]/max(xas[1]),\
+        #             linewidth=2,color='grey',label='xas one q')
+        ph=np.loadtxt('1phvsdet')
+        self.p.plot(ph[0]+self.dict_total['input']['omega_in'],ph[1]/max(ph[1]),\
+                    linewidth=2,color='r',label='1ph q = 0')
+        self.p.axvline(self.dict_total['input']['omega_in'],color='grey')
+        self.p.set_xlabel("$\mathrm{Energy, \ eV}$",fontsize=15)
+        self.p.set_ylabel("$\mathrm{XAS\ Intensity, \ arb.\ units}$",fontsize=15)
+        self.p.set_xlim([4,6])
+        plt.legend()
+
     def simple_qt_model(self,scale=1):
         pg.mkQApp()
         pg.setConfigOptions(antialias=True)
@@ -73,7 +91,7 @@ class graph(object):
         else:
             self.simple_matplot(scale)
     def add_exp(self,plot=1,file=1):
-        self.xexp,self.yexp=np.loadtxt(file).T
+        self.xexp,self.yexp=np.loadtxt(file)
         # self.simple_qt_model(scale=0)
         # s1 = pg.ScatterPlotItem(size=10, pen=pg.mkPen(None), brush=pg.mkBrush(255,255,255,120))
         s1 = pg.ScatterPlotItem(size=10, pen=pg.mkPen('k'), brush=pg.mkBrush(None))

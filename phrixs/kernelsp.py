@@ -1,5 +1,6 @@
 import json
 import numpy as np
+
 from math import factorial
 import math
 from scipy.special import eval_hermite as H
@@ -340,17 +341,55 @@ class rixs_model_q_2d(object):
         return Fkq
 
     def single_phonon(self,qmap,nph):
-        G=-1.j*np.exp(-1.j*(np.pi*2.*self.dict['input']['energy_ex'])*self.t)
+        G=-1.j*np.exp(1.j*(-np.pi*2.*self.dict['input']['energy_ex'])*self.t)
         self.frx=self.phonon_energy[qmap[0]]*2*np.pi
         self.gkqx=self.coupling_strength[qmap[0]]
         log(self.gkqx)
-        Ck=self.gkqx*(np.exp(-1.j*self.frx*self.t)+1.j*self.frx*self.t-1)
         Dk=(np.sqrt(self.gkqx))*(np.exp(-1.j*self.frx*self.t)-1)
         G=G*(Dk**nph)/np.sqrt(factorial(nph))
         G=G*self.cumulant_kq*np.exp(-2*np.pi*self.dict['input']['gamma']*self.t)
         # G=G*np.exp(Ck)*np.exp(-2*np.pi*self.dict['input']['gamma']*self.t)
-        omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['energy_ex'])
+        omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['omega_in'])
+        # det=np.linspace(-1,1,200)
+        # def temp(d):
+        #     omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['omega_in']+d)
+        #     return abs(intx[0])**2
+        # np.savetxt('1phvsdet',np.vstack((det,list(map(temp,det)))))
         return float(intx[0])**2
+
+    def greens_func_cumulant(self):
+        self.maxt=self.dict['input']['maxt']
+        self.nstep=self.dict['input']['nstep']
+        step=self.maxt/self.nstep
+        t=np.linspace(0.,self.maxt,int(self.nstep))
+        G0x=-1.j*np.exp(-1.j*(np.pi*2.*self.dict['input']['energy_ex'])*t)
+        G=G0x*self.cumulant_kq*np.exp(-2*np.pi*self.dict['input']['gamma']*t)
+        GW=np.fft.ifft(G)
+        w=np.fft.fftfreq(int(self.nstep),step)
+        x=w[0:int(len(w)/2)]
+        y=abs(GW[0:int(len(GW)/2)].imag)
+        y=y/(sum(y)*(x[1]-x[0]))
+        return x,y
+
+    def greens_func_cumulant_gamma(self):
+        qmap=init_map_2d(self.qx,self.qy,0,0).phonon_fir()
+        self.maxt=self.dict['input']['maxt']
+        self.nstep=self.dict['input']['nstep']
+        step=self.maxt/self.nstep
+        t=np.linspace(0.,self.maxt,int(self.nstep))
+        G0x=-1.j*np.exp(1.j*(np.pi*2.*self.dict['input']['omega_in'])*t)
+        self.frx=self.phonon_energy[qmap[0]]*2*np.pi
+        self.gkqx=self.coupling_strength[qmap[0]]
+        log(self.gkqx)
+        Ck=self.gkqx*(np.exp(1.j*self.frx*self.t)-1.j*self.frx*self.t-1)
+        G=G0x*np.exp(Ck)*np.exp(-2*np.pi*self.dict['input']['gamma']*t)
+        GW=np.fft.fft(G)
+        w=np.fft.fftfreq(int(self.nstep),step)
+        x=w[0:int(len(w)/2)]
+        y=abs(GW[0:int(len(GW)/2)].imag)
+        y=y/(sum(y)*(x[1]-x[0]))
+        return x,y
+
 
     def multi_phonon(self,qmap,nph):
         G=-1.j*np.exp(-1.j*(np.pi*2.*self.dict['input']['energy_ex'])*self.t)
@@ -359,18 +398,29 @@ class rixs_model_q_2d(object):
             # if nph==2:
             #     Dk=(np.sqrt(self.coupling_strength[qmap]))*(np.exp(-1.j*self.phonon_energy[qmap]*2.*np.pi*self.t)-1.)
             # else:
-            Dk=(np.sqrt(self.coupling_strength[qmap[n]]))*(np.exp(-1.j*self.phonon_energy[qmap[n]]*2.*np.pi*self.t)-1.)
+            Dk=(np.sqrt(self.coupling_strength[qmap[n]]))*(np.exp(1.j*self.phonon_energy[qmap[n]]*2.*np.pi*self.t)-1.)
             D=D*Dk
         G=G*(D)/np.sqrt(factorial(nph))
         G=G*self.cumulant_kq*np.exp(-2*np.pi*self.dict['input']['gamma']*self.t)
-        omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['energy_ex'])
+        omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['omega_in'])
         # print(qmap,'e:',self.phonon_energy[qmap[0]],self.phonon_energy[qmap[1]],\
             # 'g:',self.coupling_strength[qmap[0]],self.coupling_strength[qmap[1]],
             # 'I:',float(intx[0])**2)
+
         return float(intx[0])**2
 
     def cross_section(self):
         loss=[];r=[]
+        # try:
+        if self.dict['input']['extra']=='xas':
+            x,y=self.greens_func_cumulant()
+            np.save('xas.npy',np.vstack((x,y)))
+            x,y=self.greens_func_cumulant_gamma()
+            np.save('xas_gamma.npy',np.vstack((x,y)))
+            print('xas done')
+        # except:
+            # pass
+            # print('no xas')
         for nph in tqdm(range(int(self.dict['input']['nf']))):
 
             if nph==0:
@@ -412,6 +462,7 @@ class rixs_model_q_2d(object):
                 loss_temp=list(map(lambda x: self.phonon_energy[x[0]]+self.phonon_energy[x[1]]\
                             +self.phonon_energy[x[2]]+self.phonon_energy[x[3]], qmap))
 
+
         # print(len(r),len(loss))
         # print(loss_temp,r_temp)
             loss.extend(loss_temp)
@@ -438,7 +489,7 @@ class rixs_model_q_2d(object):
         yr=dr1*w_real-dr2+1.j*w_imag*dr1
         yi=di1*w_real-di2+1.j*w_imag*di1
         y=(1.j*yr+yi)/(window_size)
-        power.append(np.abs(y))
+        power.append(abs(y))
         freq.append(freqs)
         return np.array(freqs), np.array(power)
 

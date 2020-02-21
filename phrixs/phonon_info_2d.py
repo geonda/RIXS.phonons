@@ -48,6 +48,7 @@ class energy(object):
 		# print(self.phonon_energy['gamma-k'])
 		self.interpolate(self.q2d['x'],self.q2d['y'],self.e2d)
 		self.reshape_local()
+
 	def plot_dispersion(self):
 		self.get_phonon()
 		fig = plt.figure(figsize=(8,4))
@@ -94,7 +95,7 @@ class energy(object):
 	def interpolate(self,x,y,z):
 		points=np.vstack((x,y))
 		# print(max(x),max(y))
-		self.grid_rect_x, self.grid_rect_y = np.mgrid[-max(x):max(x):11j, -max(y):max(y):11j]
+		self.grid_rect_x, self.grid_rect_y = np.mgrid[-max(x):max(x):13j, -max(y):max(y):13j]
 		self.grid_rect_z = griddata(points.T,z,(self.grid_rect_x, self.grid_rect_y), method='cubic')
 		# print('phonon length',len(self.grid_rect_z))
 	def reshape_local(self):
@@ -152,6 +153,7 @@ class full_data(object):
 		# print(len(self.x),len(self.y),len(self.z),len(self.phonon.z),len(self.phonon.x))
 
 		self.qx,self.qy = self.x,self.y
+		print(len(self.qx))
 
 		self.phonon_energy = self.phonon.z
 
@@ -192,20 +194,26 @@ class full_data(object):
 
 		sb=a+sa
 
-		gamma=0.05
+		gammak=0.1
 
-		ak=0.04
+		gammag=0.04
 
-		ag=0.03
+		ak=0.09
 
-		self.func_obj['gamma-k'] = lambda x:ag*np.imag(1/(x-1.j*gamma))+ak*np.imag(1/(x-1-1.j*gamma))#+a*(1-(x-1)**2)
+		ag=0.015
 
-		self.func_obj['k-m'] = lambda  x: ak*np.imag(1/(x-1.j*gamma))# a+sa*(abs(x-1)**4)  #(b*(sb+1)-a*(sa+1))*x+a*(sa+1)
+		sigmag=0.05
 
-		self.func_obj['gamma-m'] = lambda x: ag*np.imag(1/(x-1.j*gamma))  #b*(1.+sb*(abs(x*x*x)))
+		sigmak=0.05
+
+		self.func_obj['gamma-k'] = lambda x:ag*np.imag(1/(x-1.j*gammag))+ak*np.imag(1/(x-0.8-1.j*gammak))#+a*(1-(x-1)**2) #ag*np.exp(-x**2/sigmag)+ak*np.exp(-(x-1)**2/sigmak)
+
+		self.func_obj['k-m'] = lambda  x:  ak*np.imag(1/(x-0.2-1.j*gammak))# ak*np.exp(-(x-0.2)**2/sigmak)# a+sa*(abs(x-1)**4)  #(b*(sb+1)-a*(sa+1))*x+a*(sa+1)
+
+		self.func_obj['gamma-m'] = lambda x:ag*np.imag(1/(x-1.j*gammag))# ag*np.imag(1/(x-1.j*gamma))  #b*(1.+sb*(abs(x*x*x)))
 
 		for i,direction in enumerate(self.sym_directions):
-			q=np.linspace(0,1,8)
+			q=np.linspace(0,1,41)
 			# print(direction,self.func_obj[direction](q))
 			with open('../../storage/coupling_'+str(direction)+'.csv','w') as f:
 				data_temp=np.vstack((q,self.func_obj[direction](q)))
@@ -238,7 +246,8 @@ class full_data(object):
 		ax.set_ylabel(r'Coupling Constant, eV',fontsize=15)
 		ax.plot(self.q_path['gamma-k']*self.q_bz[0],self.coupling_qpath['gamma-k'],'-o',color='grey')
 		plt.xticks([min(self.q_path['gamma-k']*self.q_bz[0]),max(self.q_path['gamma-k']*self.q_bz[0])],(r'$\Gamma$',r'$K$'),fontsize=20)
-
+		ax.axvline(0.08,color='r')
+		ax.axvline(0.011,color='b')
 		ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
 		# ax.set_ylim([0.14,max(self.coupling_qpath['gamma-k'])*1.2])
 		ax = fig.add_subplot(132)

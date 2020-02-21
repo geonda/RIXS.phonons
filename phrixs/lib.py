@@ -76,6 +76,9 @@ class workspace(object):
         [graph(plot=plot,nruns=runs+1,file=cg.temp_rixs_noel_file).simple()\
                                                 for runs in range(self.nruns)]
         plot.setXRange(0.,0.3)
+    def plotxasp(self):
+        gh=graph(nruns=self.nruns,dict_total=self.dict_total).simple_xas()
+        plt.show()
     def clear(self):
         os.system('rm ./temp*')
         os.system('rm ./scan.json')
