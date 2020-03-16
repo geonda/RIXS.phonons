@@ -10,19 +10,35 @@ full_data().plot_dispersion()
 
 ws.timer_round('init done [s]: ')
 ws.inputp('skip') # use ws.inputp('ask') to modify
-ws.dict_total['input']['extra']='xs'
+
 ws.timer_round('input done [s]: ')
 
 ws.timer_round('run done [s]: ')
 ws.timer_total('total [s]: ')
-
+ws.dict_total['input']['extra']='x'
 # ws.initp(type_problem='model,method='gf')
 # ws.plotp_model_and_exp('../../storage/rixs_c.csv')
+
+ws.dict_total['input']['omega_in']=ws.dict_total['input']['energy_ex']
+
 ws.runp()
+
+
+ws.plotp_model_and_exp('292')
+
+#
+# ws.dict_total['input']['omega_in']=ws.dict_total['input']['energy_ex']
+# ws.runp()
 # ws.plotp_model_and_exp('292')
-ws.dict_total['input']['omega_in']=ws.dict_total['input']['energy_ex']-0.2
-ws.runp()
-ws.plotp_model_and_exp('291.8')
+#
+# ws.dict_total['input']['omega_in']=ws.dict_total['input']['energy_ex']-0.2
+# ws.runp()
+# ws.plotp_model_and_exp('292.2')
+# # ws.dict_total['input']['omega_in']=ws.dict_total['input']['energy_ex']
+# ws.runp()
+# ws.plotp(scale=0)
+
+# ws.plotp_model_and_exp('292')
 # ws.plot_model_exp()
 # ws.clear()
 # ws.plotxasp()

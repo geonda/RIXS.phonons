@@ -65,9 +65,9 @@ class workspace(object):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file,dict_total=self.dict_total)
         gh.plot_rixsq_exp(file=file)
 
-    def plotp(self):
+    def plotp(self,scale=1):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
-        gh.simple()
+        gh.simple(scale=scale)
     def plotp_model_and_exp(self,file):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
         gh.simple_and_exp(file)

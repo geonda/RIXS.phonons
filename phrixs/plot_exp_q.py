@@ -18,8 +18,10 @@ for i,files in enumerate(detfiles):
     exp[files]['x']=np.loadtxt(mypath+files).T[0]
     exp[files]['y']=np.loadtxt(mypath+files).T[1]
     name=files
-    plt.plot(exp[name]['x'],exp[name]['y']/max(exp[name]['y']),label=name)#/max(exp[name]['y'])
-
+    if i==1:
+        plt.plot(exp[name]['x'],exp[name]['y']/max(exp[name]['y']),label=name)#/max(exp[name]['y'])
+    elif i==2:
+        plt.plot(exp[name]['x'],exp[name]['y']/max(exp[name]['y']),label=name)
 [print(labels) for labels in exp]
 
 # name_list=['291.4','291.8','292','292.2']
@@ -34,4 +36,10 @@ for i,files in enumerate(detfiles):
 # #
 plt.legend()
 
+plt.show()
+
+x=np.linspace(-1,1,100)
+gamma=0.25
+plt.grid()
+plt.plot(x,abs(np.imag(1./(x-1.j*gamma))))
 plt.show()

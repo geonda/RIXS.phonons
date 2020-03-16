@@ -6,15 +6,23 @@ from scipy.interpolate import griddata
 import matplotlib.ticker as ticker
 import math
 
+
+
+
+
+
 class energy(object):
 	"""docstring for model_dispertion."""
 	def __init__(self):
 		super(energy, self).__init__()
+		self.path_to_file='../../storage/TO/'
 		self.q_path={}
 		self.phonon_energy={}
 		self.e2d=[]
 		self.q2d={'x':[],'y':[]}
 		self.dict = dict
+		self.nq=11j
+
 		# self.omega_func = (lambda x: self.dict['input']['omega_ph0']*(0.93+0.07*(np.cos(np.pi*x))))
 		# self.q = np.linspace(-1,1,self.dict['input']['nq'])
 		# self.omegaq = self.omega_func(self.q)
@@ -27,6 +35,7 @@ class energy(object):
 	# 	plt.ylim([min(self.omegaq)*0.8,max(self.omegaq)*(1.2)])
 	# 	plt.xlim([max(self.q),min(self.q)])
 	# 	plt.show()
+
 	def get_phonon(self):
 		sym_directions=['gamma-k','k-m','gamma-m']
 		transform={\
@@ -37,7 +46,7 @@ class energy(object):
 		for i,names in enumerate(sym_directions):
 			# print(i,names)
 			self.q_path[names],self.phonon_energy[names]=\
-						np.loadtxt('../../storage/'+names+'.csv').T
+						np.loadtxt(self.path_to_file+names+'.csv').T
 			self.q_path[names]=self.q_path[names] * self.q_bz[i]
 			if names=='k-m':
 				self.q2d['x'].extend(self.q_bz[0]-self.q_path[names][:] * transform[names]['x'])
@@ -72,6 +81,7 @@ class energy(object):
 		plt.gca().invert_xaxis()
 		plt.tight_layout()
 		# plt.show()
+
 	def plot_colormap(self):
 		self.get_phonon()
 		fig = plt.figure()
@@ -95,9 +105,10 @@ class energy(object):
 	def interpolate(self,x,y,z):
 		points=np.vstack((x,y))
 		# print(max(x),max(y))
-		self.grid_rect_x, self.grid_rect_y = np.mgrid[-max(x):max(x):13j, -max(y):max(y):13j]
+		self.grid_rect_x, self.grid_rect_y = np.mgrid[-max(x):max(x):self.nq, -max(y):max(y):self.nq]
 		self.grid_rect_z = griddata(points.T,z,(self.grid_rect_x, self.grid_rect_y), method='cubic')
 		# print('phonon length',len(self.grid_rect_z))
+
 	def reshape_local(self):
 		x,y,z=[],[],[]
 		for i in range(len(self.grid_rect_z)):
@@ -108,6 +119,7 @@ class energy(object):
 					z.append(self.grid_rect_z[i][j])
 					x.append(self.grid_rect_x[i][j])
 					y.append(self.grid_rect_y[i][j])
+					# print('q=',self.grid_rect_x[i][j],self.grid_rect_y[i][j],'omega=',self.grid_rect_z[i][j])
 		self.x,self.y,self.z=x,y,z
 
 class full_data(object):
@@ -153,13 +165,18 @@ class full_data(object):
 		# print(len(self.x),len(self.y),len(self.z),len(self.phonon.z),len(self.phonon.x))
 
 		self.qx,self.qy = self.x,self.y
-		print(len(self.qx))
+
+		# print(len(self.qx))
 
 		self.phonon_energy = self.phonon.z
 
 		self.coupling_constant = self.z
-
+		# print(len(self.z),len(self.phonon.z))
 		self.coupling_strength = (np.array(self.z)/np.array(self.phonon.z))**2
+
+		for i in self.coupling_constant:
+			if math.isnan(i):
+				print('NAN')
 
 		np.savetxt('_temp_phonon_energy_vs_q_2d',np.vstack((self.qx,self.qy,self.phonon_energy)).T)
 
@@ -182,7 +199,7 @@ class full_data(object):
 		# ax.scatter(self.qx, self.qy, self.phonon_energy, c='red')
 		# plt.show()
 
-	def create_coupling(self):
+	def create_coupling(self,name='model'):
 
 		self.func_obj={}
 
@@ -196,26 +213,28 @@ class full_data(object):
 
 		gammak=0.1
 
-		gammag=0.04
+		gammag=0.01
 
-		ak=0.09
+		ak=0.2
 
-		ag=0.015
+		ag=0.5
 
-		sigmag=0.05
+		sigmag=0.1
 
 		sigmak=0.05
 
-		self.func_obj['gamma-k'] = lambda x:ag*np.imag(1/(x-1.j*gammag))+ak*np.imag(1/(x-0.8-1.j*gammak))#+a*(1-(x-1)**2) #ag*np.exp(-x**2/sigmag)+ak*np.exp(-(x-1)**2/sigmak)
+		offset=0.0
 
-		self.func_obj['k-m'] = lambda  x:  ak*np.imag(1/(x-0.2-1.j*gammak))# ak*np.exp(-(x-0.2)**2/sigmak)# a+sa*(abs(x-1)**4)  #(b*(sb+1)-a*(sa+1))*x+a*(sa+1)
+		self.func_obj['gamma-k'] = lambda x:ag*np.exp(-x**2/sigmag)/max(np.exp(-x**2/sigmag))+ak*np.imag(1/(x-1-1.j*gammak))/max(np.imag(1/(x-1-1.j*gammak)))#+a*(1-(x-1)**2) #ag*np.exp(-x**2/sigmag)+ak*np.exp(-(x-1)**2/sigmak)
 
-		self.func_obj['gamma-m'] = lambda x:ag*np.imag(1/(x-1.j*gammag))# ag*np.imag(1/(x-1.j*gamma))  #b*(1.+sb*(abs(x*x*x)))
+		self.func_obj['k-m'] = lambda  x:  ak*np.imag(1/(x-1.j*gammak))/max(np.imag(1/(x-1.j*gammak)))# ak*np.exp(-(x-0.2)**2/sigmak)# a+sa*(abs(x-1)**4)  #(b*(sb+1)-a*(sa+1))*x+a*(sa+1)
+
+		self.func_obj['gamma-m'] = lambda x: ag*np.exp(-x**2/sigmag)/max(np.exp(-x**2/sigmag))#ag*np.exp(-x**2/sigmag)#ag*np.imag(1/(x-1.j*gammag))# ag*np.imag(1/(x-1.j*gamma))  #b*(1.+sb*(abs(x*x*x)))
 
 		for i,direction in enumerate(self.sym_directions):
-			q=np.linspace(0,1,41)
+			q=np.linspace(0,1.01,101)
 			# print(direction,self.func_obj[direction](q))
-			with open('../../storage/coupling_'+str(direction)+'.csv','w') as f:
+			with open('../../storage/TO/'+name+'_coupling_'+str(direction)+'.csv','w') as f:
 				data_temp=np.vstack((q,self.func_obj[direction](q)))
 				np.savetxt(f,data_temp)
 
@@ -229,7 +248,7 @@ class full_data(object):
 		for i,names in enumerate(self.sym_directions):
 			# print(i,names)
 			self.q_path[names],self.coupling_qpath[names]\
-					=np.loadtxt('../../storage/coupling_'+names+'.csv')
+					=np.loadtxt('../../storage/TO/coupling_'+names+'.csv')
 			self.q_path[names]=self.q_path[names] * self.q_bz[i]
 			if names=='k-m':
 				self.q2d['x'].extend(self.q_bz[0]-self.q_path[names][:] * transform[names]['x'])
@@ -237,31 +256,66 @@ class full_data(object):
 				self.q2d['x'].extend(self.q_path[names][:] * transform[names]['x'])
 			self.q2d['y'].extend(self.q_path[names][:] * transform[names]['y'])
 			self.e2d.extend(self.coupling_qpath[names])
+			for i in self.e2d:
+				if math.isnan(i):
+					print('e2d:',i)
 		self.interpolate(self.q2d['x'],self.q2d['y'],self.e2d)
 		# self.reshape_local()
-	def plot_dispersion(self):
+
+	def plot_dispersion_strength(self):
 		self.get_coupling()
 		fig = plt.figure(figsize=(10,5))
+		self.coupling_qpath['gamma-k']/self.phonon.phonon_energy['gamma-k']
+
+		plt.tight_layout()
+		plt.show(block=False)
+
+	def plot_dispersion(self):
+		self.get_coupling()
+
+		ARPES_coupling_gamma=0.15
+		ARPES_coupling_k=0.2
+
+		LBNL_coupling_gamma=0.42
+		LBNL_coupling_k=0.21
+
+		BSE_coupling_gamma=0.75
+		BSE_coupling_k=0.475
+
+		fig = plt.figure(figsize=(10,5))
 		ax = fig.add_subplot(131)
+
+		plt.scatter(0,ARPES_coupling_gamma,marker='>',s=50,color='r')
+		plt.scatter(max(self.q_path['gamma-k']*self.q_bz[0]),ARPES_coupling_k,marker='>',s=50,color='r',label='ARPES')
+
+		plt.scatter(0,LBNL_coupling_gamma,marker='*',s=50,color='b')
+		plt.scatter(max(self.q_path['gamma-k']*self.q_bz[0]),LBNL_coupling_k,marker='*',s=50,color='b',label='LBNL')
+
+		plt.scatter(0,BSE_coupling_gamma,marker='s',s=50,color='g')
+		plt.scatter(max(self.q_path['gamma-k']*self.q_bz[0]),BSE_coupling_k,marker='s',s=50,color='g',label='BSE')
+
 		ax.set_ylabel(r'Coupling Constant, eV',fontsize=15)
-		ax.plot(self.q_path['gamma-k']*self.q_bz[0],self.coupling_qpath['gamma-k'],'-o',color='grey')
+		plt.legend()
+		ax.plot(self.q_path['gamma-k']*self.q_bz[0],self.coupling_qpath['gamma-k'],'-',color='grey')
 		plt.xticks([min(self.q_path['gamma-k']*self.q_bz[0]),max(self.q_path['gamma-k']*self.q_bz[0])],(r'$\Gamma$',r'$K$'),fontsize=20)
-		ax.axvline(0.08,color='r')
-		ax.axvline(0.011,color='b')
-		ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
+		# ax.axvline(0.08,color='b')
+		# ax.axvline(0.011,color='r')
+		ax.set_ylim([0,BSE_coupling_gamma*1.2])
 		# ax.set_ylim([0.14,max(self.coupling_qpath['gamma-k'])*1.2])
 		ax = fig.add_subplot(132)
-		ax.plot(self.q_path['k-m']*self.q_bz[1],self.coupling_qpath['k-m'],'-o',color='grey',label='model')
+		ax.plot(self.q_path['k-m']*self.q_bz[1],self.coupling_qpath['k-m'],'-',color='grey',label='model')
 		plt.xticks([min(self.q_path['k-m']*self.q_bz[1]),max(self.q_path['k-m']*self.q_bz[1])],(r'$K$',r'$M$'),fontsize=20)
 		ax.set_yticks([])
-		ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
+		ax.set_ylim([0,BSE_coupling_gamma*1.2])
+		# ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
 		# ax.set_ylim([0.14,max(self.coupling_qpath['gamma-k'])*1.2])
 		plt.legend()
 		ax.set_xlabel(r'$q \ path$',fontsize=15)
 		ax = fig.add_subplot(133)
 		ax.set_yticks([])
-		ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
-		ax.plot(self.q_path['gamma-m']*self.q_bz[2],self.coupling_qpath['gamma-m'],'-o',color='grey',label='exp')
+		ax.set_ylim([0,BSE_coupling_gamma*1.2])
+		# ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
+		ax.plot(self.q_path['gamma-m']*self.q_bz[2],self.coupling_qpath['gamma-m'],'-',color='grey',label='exp')
 
 		plt.xticks([min(self.q_path['gamma-m']*self.q_bz[2]),max(self.q_path['gamma-m']*self.q_bz[2])],(r'$\Gamma$',r'$M$'),fontsize=20)
 
@@ -270,9 +324,18 @@ class full_data(object):
 		plt.show(block=False)
 
 	def plot_colormap(self):
+
 		self.get_coupling()
 		self.interpolate_plot(self.q2d['x'],self.q2d['y'],self.e2d)
-		self.reshape_local()
+		# self.reshape_local()
+		# import matplotlib.pyplot as plt
+		# from mpl_toolkits.mplot3d import Axes3D
+		# fig = plt.figure()
+		# ax = fig.add_subplot(111, projection='3d')
+		# print(self.x[0],self.z)
+		# ax.plot(self.x,self.y,self.z)
+		# plt.show()
+		print(self.grid_rect_z.shape)
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
 		ims=ax.imshow(self.grid_rect_z.T, extent=(-max(self.q2d['x']),max(self.q2d['x']),-max(self.q2d['y']),max(self.q2d['y'])),origin='lower',cmap="plasma")
@@ -294,18 +357,23 @@ class full_data(object):
 	def interpolate_plot(self,x,y,z):
 		points=np.vstack((x,y))
 		# print(max(x),max(y))
-		self.grid_rect_x, self.grid_rect_y = np.mgrid[-max(x):max(x):100j, -max(y):max(y):100j]
+		self.grid_rect_x, self.grid_rect_y = np.mgrid[-max(x):max(x):110j, -max(y):max(y):110j]
+		# print('x:',self.grid_rect_x.shape)
+		# print('x ph:',self.phonon.x.shape)
 		# self.grid_rect_x, self.grid_rect_y = self.phonon.x,self.phonon.y
 		self.grid_rect_z = griddata(points.T,z,(self.grid_rect_x, self.grid_rect_y), method='cubic')
+		print(self.grid_rect_z.shape)
 		# print('coupling length',len(self.grid_rect_z))
-		self.x,self.y,self.z=self.grid_rect_x,self.grid_rect_y,self.grid_rect_z
+		# self.x,self.y,self.z=self.grid_rect_x,self.grid_rect_y,self.grid_rect_z
 
 	def interpolate(self,x,y,z):
 		points=np.vstack((x,y))
 		# print(max(x),max(y))
-		# self.grid_rect_x, self.grid_rect_y = np.mgrid[-max(x):max(x):21j, -max(y):max(y):21j]
+		# self.grid_rect_x, self.grid_rect_y = np.mgrid[-max(x):max(x):11j, -max(y):max(y):11j]
 		self.grid_rect_x, self.grid_rect_y = self.phonon.x,self.phonon.y
+
 		self.grid_rect_z = griddata(points.T,z,(self.grid_rect_x, self.grid_rect_y), method='cubic')
+		print(self.grid_rect_z.shape)
 		# print('coupling length',len(self.grid_rect_z))
 		self.x,self.y,self.z=self.grid_rect_x,self.grid_rect_y,self.grid_rect_z
 
@@ -316,7 +384,9 @@ class full_data(object):
 				if math.isnan(self.grid_rect_z[i][j]):
 					pass
 				else:
+					# print(self.grid_rect_z[i][j])
 					z.append(self.grid_rect_z[i][j])
 					x.append(self.grid_rect_x[i][j])
 					y.append(self.grid_rect_y[i][j])
 		self.x,self.y,self.z=x,y,z
+		# print(self.z)
