@@ -31,12 +31,12 @@ class graph(object):
         # self.p.plot(xas[0],xas[1]/max(xas[1]),\
         #             linewidth=2,color='grey',label='xas one q')
         ph=np.loadtxt('1phvsdet')
-        self.p.plot(ph[0]+self.dict_total['input']['omega_in'],ph[1]/max(ph[1]),\
-                    linewidth=2,color='r',label='1ph q = 0')
+        # self.p.plot(ph[0]+self.dict_total['input']['omega_in'],ph[1]/max(ph[1]),\
+                    # linewidth=2,color='r',label='1ph q = 0')
         self.p.axvline(self.dict_total['input']['omega_in'],color='grey')
         self.p.set_xlabel("$\mathrm{Energy, \ eV}$",fontsize=15)
         self.p.set_ylabel("$\mathrm{XAS\ Intensity, \ arb.\ units}$",fontsize=15)
-        self.p.set_xlim([4,6])
+        # self.p.set_xlim([4,6])
         plt.legend()
 
     def simple_qt_model(self,scale=1):
@@ -58,14 +58,16 @@ class graph(object):
     def simple_qt(self,scale=1):
         pg.mkQApp()
         pg.setConfigOptions(antialias=True)
+        pg.setConfigOption('background', 'w')
+        pg.setConfigOption('foreground', 'k')
         self.win=pg.GraphicsWindow()
         self.app = QtGui.QApplication([])
         self.win.resize(800,400)
         self.p=self.win.addPlot()
         self.color_list=['r','b','g']
         for irun in range(self.nruns):
-            if scale==0:  scale=self.dict_y[irun]/max(self.dict_y[irun])
-            self.p.plot(self.dict_x[irun],self.dict_y[irun]*scale,\
+            if scale==0:  scale=1/max(self.dict_y[irun][:])
+            self.p.plot(self.dict_x[irun],self.dict_y[irun]/max(self.dict_y[irun][:]),\
                 pen=pg.mkPen(self.color_list[irun],width=2))
 
         self.p.setLabel('left', "RIXS Intensity", units='arb. units')

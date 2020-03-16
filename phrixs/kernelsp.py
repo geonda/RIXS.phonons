@@ -394,6 +394,7 @@ class rixs_model_q_2d(object):
     def multi_phonon(self,qmap,nph):
         G=-1.j*np.exp(-1.j*(np.pi*2.*self.dict['input']['energy_ex'])*self.t)
         D=1.;
+        # print(qmap)
         for n in range(nph):
             # if nph==2:
             #     Dk=(np.sqrt(self.coupling_strength[qmap]))*(np.exp(-1.j*self.phonon_energy[qmap]*2.*np.pi*self.t)-1.)
@@ -418,17 +419,22 @@ class rixs_model_q_2d(object):
             x,y=self.greens_func_cumulant_gamma()
             np.save('xas_gamma.npy',np.vstack((x,y)))
             print('xas done')
+        print(max(self.qx),max(self.qy))
+        if self.dict['input']['extra']=='q':
+            qx=0.13333333#0.06666 #0.19047619
+        else:
+            qx=0
         # except:
             # pass
             # print('no xas')
         for nph in tqdm(range(int(self.dict['input']['nf']))):
 
             if nph==0:
-                qmap=init_map_2d(self.qx,self.qy,0,0).phonon_fir()
+                qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_fir()
                 loss_temp,r_temp=[nph],[self.single_phonon(qmap,nph)]
             elif nph==1:
-                qmap=init_map_2d(self.qx,self.qy,0,0).phonon_fir()
-                # log(len(qmap))
+                qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_fir()
+                log(len(qmap))
                 loss_temp,r_temp=[self.phonon_energy[qmap[0]]*nph],[self.single_phonon(qmap,1)]
                 #log(r_temp)
             elif nph==2:
@@ -436,10 +442,13 @@ class rixs_model_q_2d(object):
                 # log(len(qmap))
                 # loss_temp,r_temp=[self.phonon_energy[qmap[0]]*nph],[self.single_phonon(qmap,2)]
                 #log(r_temp)
-                qmap=init_map_2d(self.qx,self.qy,0,0).phonon_sec()
+                qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_sec()
+                # print(qmap)
                 log(len(qmap))
                 r_temp=list(map(lambda x: self.multi_phonon(x,2), qmap))
-                print(min(r_temp),max(r_temp))
+                # print('nph=2')
+                # print(r_temp)
+                # print(min(r_temp),max(r_temp))
                 r_temp=np.array(r_temp)/len(qmap)
                 loss_temp=list(map(lambda x: self.phonon_energy[x[0]]+self.phonon_energy[x[1]], qmap))
             elif nph==3:
@@ -447,15 +456,16 @@ class rixs_model_q_2d(object):
                 # # log(len(qmap))
                 # loss_temp,r_temp=[self.phonon_energy[qmap[0]]*nph],[self.single_phonon(qmap,3)]
                 # #log(r_temp)
-                qmap=init_map_2d(self.qx,self.qy,0,0).phonon_thr()
+                qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_thr()
                 log(len(qmap))
                 r_temp=list(map(lambda x: self.multi_phonon(x,nph), qmap))
                 r_temp=np.array(r_temp)/len(qmap)
-                print(min(r_temp),max(r_temp))
+                # print("ici")
+                # print(min(r_temp),max(r_temp))
                 loss_temp=list(map(lambda x:  self.phonon_energy[x[0]]\
                                 +self.phonon_energy[x[1]]+self.phonon_energy[x[2]], qmap))
             elif nph==4:
-                qmap=init_map_2d(self.qx,self.qy,0,0).phonon_fou()
+                qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_fou()
                 log(len(qmap))
                 r_temp=list(map(lambda x: self.multi_phonon(x,4), qmap))
                 r_temp=np.array(r_temp)/len(qmap)
