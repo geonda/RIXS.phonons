@@ -37,7 +37,7 @@ class energy(object):
 		for i,names in enumerate(sym_directions):
 			# print(i,names)
 			self.q_path[names],self.phonon_energy[names]=\
-						np.loadtxt('../../storage/'+names+'.csv').T
+						np.loadtxt('../../../storage/'+names+'.csv').T
 			self.q_path[names]=self.q_path[names] * self.q_bz[i]
 			if names=='k-m':
 				self.q2d['x'].extend(self.q_bz[0]-self.q_path[names][:] * transform[names]['x'])
@@ -215,7 +215,7 @@ class full_data(object):
 		for i,direction in enumerate(self.sym_directions):
 			q=np.linspace(0,1,41)
 			# print(direction,self.func_obj[direction](q))
-			with open('../../storage/coupling_'+str(direction)+'.csv','w') as f:
+			with open('../../../storage/coupling_'+str(direction)+'.csv','w') as f:
 				data_temp=np.vstack((q,self.func_obj[direction](q)))
 				np.savetxt(f,data_temp)
 
@@ -229,7 +229,7 @@ class full_data(object):
 		for i,names in enumerate(self.sym_directions):
 			# print(i,names)
 			self.q_path[names],self.coupling_qpath[names]\
-					=np.loadtxt('../../storage/coupling_'+names+'.csv')
+					=np.loadtxt('../../../storage/coupling_'+names+'.csv')
 			self.q_path[names]=self.q_path[names] * self.q_bz[i]
 			if names=='k-m':
 				self.q2d['x'].extend(self.q_bz[0]-self.q_path[names][:] * transform[names]['x'])
@@ -239,6 +239,7 @@ class full_data(object):
 			self.e2d.extend(self.coupling_qpath[names])
 		self.interpolate(self.q2d['x'],self.q2d['y'],self.e2d)
 		# self.reshape_local()
+		
 	def plot_dispersion(self):
 		self.get_coupling()
 		fig = plt.figure(figsize=(10,5))

@@ -18,11 +18,11 @@ ws.timer_total('total [s]: ')
 
 # ws.initp(type_problem='model,method='gf')
 # ws.plotp_model_and_exp('../../storage/rixs_c.csv')
-ws.runp()
-# ws.plotp_model_and_exp('292')
-ws.dict_total['input']['omega_in']=ws.dict_total['input']['energy_ex']-0.2
-ws.runp()
-ws.plotp_model_and_exp('291.8')
+# ws.runp()
+# # ws.plotp_model_and_exp('292')
+# ws.dict_total['input']['omega_in']=ws.dict_total['input']['energy_ex']-0.2
+# ws.runp()
+# ws.plotp_model_and_exp('291.8')
 # ws.plot_model_exp()
 # ws.clear()
 # ws.plotxasp()
