@@ -7,6 +7,8 @@ try:
     lib_pyqgrapth=True
 except ImportError:
     lib_pyqgrapth=False
+lib_pyqgrapth=False
+
 class graph(object):
     """docstring for plot."""
     def __init__(self,nruns=1,file=cg.temp_rixs_full_file,dict_total={}):
@@ -14,29 +16,31 @@ class graph(object):
         self.nruns=nruns
         self.dict_total=dict_total
         self.dict_x,self.dict_y={},{}
-        self.color_list=['r','b','g']
+        
+        self.color_list=['r','b','g','r','g','b','r','g','b']
         try:
             for irun in range(self.nruns):
                 self.dict_x[irun],self.dict_y[irun]=\
                         np.load(file+'_run_'+str(irun+1)+cg.extension_final)
         except:
             pass
+
     def simple_xas(self):
         self.fig = plt.figure()
         self.p = self.fig.add_subplot(1, 1, 1)
         xas=np.load('xas.npy')
         self.p.plot(xas[0],xas[1]/max(xas[1]),\
                     linewidth=2,color='b',label='xas  multi q')
-        # xas=np.load('xas_gamma.npy')
-        # self.p.plot(xas[0],xas[1]/max(xas[1]),\
-        #             linewidth=2,color='grey',label='xas one q')
+        xas=np.load('xas_gamma.npy')
+        self.p.plot(xas[0],xas[1]/max(xas[1]),\
+                    linewidth=2,color='grey',label='xas one q')
         ph=np.loadtxt('1phvsdet')
         # self.p.plot(ph[0]+self.dict_total['input']['omega_in'],ph[1]/max(ph[1]),\
                     # linewidth=2,color='r',label='1ph q = 0')
         self.p.axvline(self.dict_total['input']['omega_in'],color='grey')
         self.p.set_xlabel("$\mathrm{Energy, \ eV}$",fontsize=15)
         self.p.set_ylabel("$\mathrm{XAS\ Intensity, \ arb.\ units}$",fontsize=15)
-        # self.p.set_xlim([4,6])
+        self.p.set_xlim([4,6])
         plt.legend()
 
     def simple_qt_model(self,scale=1):
@@ -80,8 +84,8 @@ class graph(object):
         self.p = self.fig.add_subplot(1, 1, 1)
         print('nruns:',self.nruns)
         for irun in range(self.nruns):
-            if scale==0:  scale=self.dict_y[irun]/max(self.dict_y[irun])
-            self.p.plot(self.dict_x[irun],self.dict_y[irun]*scale,\
+            if scale==0:  scale=1/max(self.dict_y[irun][:])
+            self.p.plot(self.dict_x[irun],irun*5+self.dict_y[irun]*scale,\
                     linewidth=2,color=self.color_list[irun])
         self.p.set_xlabel("$\mathrm{Energy\ Loss, \ eV}$",fontsize=15)
         self.p.set_ylabel("$\mathrm{RIXS\ Intensity, \ arb.\ units}$",fontsize=15)
@@ -99,7 +103,7 @@ class graph(object):
         s1 = pg.ScatterPlotItem(size=10, pen=pg.mkPen('k'), brush=pg.mkBrush(None))
         s1.addPoints(self.xexp,self.yexp/max(self.yexp))
         plot.addItem(s1)
-    def simple_and_exp(self,file,scale=0):
+    def d_exp(self,file,scale=0):
         if lib_pyqgrapth:
             pg.mkQApp()
             pg.setConfigOption('background', 'w')
@@ -181,6 +185,7 @@ class graph(object):
         self.p.setYRange(-0.1,7.5)
         self.win.show()
         self.app.exec_()
+
     def plot_2do_matplot(self,scale=1):
         self.fig = plt.figure()
         self.p = self.fig.add_subplot(1, 1, 1)
@@ -211,12 +216,15 @@ class graph(object):
 
 
         plt.show()
+
     def plot_2do(self):
         if lib_pyqgrapth:
             self.plot_2do_qt()
         else:
             self.plot_2do_matplot()
+
     def plot_rixsq_matplot(self,scale=1):
+
         self.fig = plt.figure(figsize=(9,4))
         self.plot_oq = self.fig.add_subplot(1, 3, 1)
         q,omegaq=np.loadtxt('phonon_energy_vs_q')
@@ -249,6 +257,49 @@ class graph(object):
         self.plot_rixs.legend()
         plt.tight_layout()
         plt.show()
+
+    def plot_rixsq_matplot_exp(self,scale=1,file=1):
+        self.fig = plt.figure(figsize=(9,4))
+        # self.plot_oq = self.fig.add_subplot(1, 3, 1)
+        # q,omegaq=np.loadtxt('phonon_energy_vs_q')
+        # self.plot_oq.plot(q,omegaq,color='b',linewidth=2)
+        # self.plot_oq.set_ylabel("$\mathrm{Energy,\ eV}$",fontsize=15)
+        # self.plot_oq.set_xlabel("$q\ \pi/a$",fontsize=15)
+        # self.plot_oq.axvline(x=self.dict_total['input']['qx'],color='grey',linewidth=2)
+        #
+        # self.plot_gq = self.fig.add_subplot(1, 3, 2)
+        # q,omegaq=np.loadtxt('eph_coupling_vs_q')
+        # self.plot_gq.plot(q,omegaq,color='b',linewidth=2)
+        # self.plot_gq.set_ylabel("$\mathrm{Coupling,\ eV}$",fontsize=15)
+        # self.plot_gq.set_xlabel("$q\ \pi/a$",fontsize=15)
+        # self.plot_gq.axvline(x=self.dict_total['input']['qx'],color='grey',linewidth=2)
+        #
+        #
+        #
+        self.plot_rixs = self.fig.add_subplot(1, 1, 1)
+        self.xexp,self.yexp=np.loadtxt(file)
+
+        self.plot_rixs.scatter(self.xexp,self.yexp/max(self.yexp), facecolor='None',edgecolor='k',label='exp')
+
+        self.xtemp,self.ytemp=np.load('rixs_temp.npy')
+
+        self.plot_rixs.plot(self.xtemp,self.ytemp/max(self.ytemp), c='grey',alpha=0.5,label='single mode/q')
+        for irun in range(self.nruns):
+            if scale==0:  scale=self.dict_y[irun]/max(self.dict_y[irun])
+            self.plot_rixs.plot(self.dict_x[irun],self.dict_y[irun]/max(self.dict_y[irun]),\
+                    linewidth=2,color=self.color_list[self.nruns-1],label='$q=$'\
+                            +str(self.dict_total['input']['qx']))
+
+        self.plot_rixs.set_xlabel("$\mathrm{Energy\ Loss, \ eV}$",fontsize=15)
+        self.plot_rixs.set_ylabel("$\mathrm{RIXS\ Intensity, \ arb.\ units}$",fontsize=15)
+        self.plot_rixs.set_xlim([-0.1,0.8])
+        # self.plot_oq.set_xlim([-1,1])
+        # self.plot_gq.set_xlim([-1,1])
+        self.plot_rixs.set_yticks([])
+        self.plot_rixs.legend()
+        plt.tight_layout()
+        plt.show()
+
     def plot_rixsq(self,scale=1):
         if lib_pyqgrapth:
             self.plot_rixsq_qt(scale=scale)
@@ -278,11 +329,13 @@ class graph(object):
         self.plot_gq.setXRange(-1,1)
         self.win.show()
         self.app.exec_()
+
     def plot_rixsq_exp(self,file=1,scale=1):
         if lib_pyqgrapth:
             self.plot_rixsq_qt_exp(scale=0,file=file)
         else:
-            self.plot_rixsq_matplot(scale=scale)
+            self.plot_rixsq_matplot_exp(scale=0,file=file)
+
     def plot_rixsq_qt_exp(self,scale=0,file=1):
         pg.mkQApp()
         self.view = pg.GraphicsLayoutWidget()
@@ -311,6 +364,7 @@ class graph(object):
         self.plot_oq.setYRange(0,0.3)
         self.plot_gq.setXRange(-1,1)
         self.app.exec_()
+
     def simple_add_plot(self,plot=1,scale=0):
         for irun in range(self.nruns):
             if scale==0:  scale=1./max(self.dict_y[irun])

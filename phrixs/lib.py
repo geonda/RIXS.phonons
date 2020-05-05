@@ -39,19 +39,28 @@ class workspace(object):
             # self.win_input,self.app_input=ws2.win,ws2.app
         else : print('type input error')
         self.dict_total={'problem':self.dict_problem,'input':self.dict_input}
+
     def scan(self):
         self.dict_scan=inputp().scan_input()
         self.dict_total['scan']=self.dict_scan
+
     def run_scan(self):
         [self.runp() for _ in tqdm(range(self.dict_scan['nruns']))]
-    def runp(self):
+
+    def runp(self,x=[]):
         self.dict_total=inputp(self.ninputs,self.nproblems).update_total(self.dict_total)
         self.nruns+=1
         if self.dict_total['problem']['type_problem']=='rixs_q':
             rixs_model_q_2d(self.dict_total,nruns=self.nruns).cross_section()
         else:
             rixs_model(self.dict_total,nruns=self.nruns).cross_section()
-        spec(self.dict_total,nruns=self.nruns).run_broad()
+        try:
+            if self.dict_total['input']['extra_1'] == 'fit':
+                spec(self.dict_total,nruns=self.nruns).run_on_exp_points(x=x)
+            else:
+                spec(self.dict_total,nruns=self.nruns).run_broad()
+        except:
+            spec(self.dict_total,nruns=self.nruns).run_broad()
 
     def figure_2d(self):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
@@ -68,6 +77,7 @@ class workspace(object):
     def plotp(self,scale=1):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
         gh.simple(scale=scale)
+
     def plotp_model_and_exp(self,file):
         gh=graph(nruns=self.nruns,file=cg.temp_rixs_noel_file)
         gh.simple_and_exp(file)

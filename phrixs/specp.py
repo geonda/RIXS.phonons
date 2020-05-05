@@ -31,6 +31,19 @@ class spec(object):
         self.alpha_exp=dict['input']['alpha_exp']
         self.save_noel=cg.temp_rixs_noel_file+'_run_'+self.nruns+cg.extension_final
         self.save_full=cg.temp_rixs_full_file+'_run_'+self.nruns+cg.extension_final
+        # self.x=np.linspace(self.xmin,self.xmax,self.nspectra)
+
+    def run_on_exp_points(self,x=[]):
+        full, noelastic=np.zeros_like(x),np.zeros_like(x)
+        for en,int in zip(self.x, self.y):
+            shape=self.voigt(x-en,self.alpha_exp,self.gamma_ph)
+            norm=np.sum(shape)*abs(x[0]-x[1])
+            y=(shape)*int/norm
+            if en!=0: noelastic=noelastic+y
+            full=full+y
+        np.save(self.save_full,np.vstack((x,full)))
+        np.save(self.save_noel,np.vstack((x,noelastic)))
+
 
     def run_broad(self):
         x=np.linspace(self.xmin,self.xmax,self.nspectra)
