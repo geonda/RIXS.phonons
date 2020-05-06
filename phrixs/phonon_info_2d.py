@@ -14,7 +14,7 @@ class energy(object):
 
 	def __init__(self):
 		super(energy, self).__init__()
-		self.path_to_file='../../../storage/TO/'
+		self.path_to_file='./_exp_files/TO/'
 		self.q_path={}
 		self.phonon_energy={}
 		self.e2d=[]
@@ -105,6 +105,7 @@ class energy(object):
 		for i in range(len(self.grid_rect_z)):
 			for j in range(len(self.grid_rect_z)):
 				if math.isnan(self.grid_rect_z[i][j]):
+					# print(self.grid_rect_x[i][j],self.grid_rect_y[i][j],'NAN')
 					pass
 				else:
 					z.append(self.grid_rect_z[i][j])
@@ -161,15 +162,18 @@ class full_data(object):
 
 		self.qx, self.qy, self.phonon_energy, self.coupling_constant,self.coupling_strength \
 		 = self.reduce()
-		np.savetxt('_temp_phonon_energy_vs_q_2d',np.vstack((self.qx,self.qy,self.phonon_energy)).T)
-		np.savetxt('_temp_eph_coupling_vs_q_2d',np.vstack((self.qx,self.qy,self.coupling_constant)).T)
-		np.savetxt('_temp_eph_strength_vs_q_2d',np.vstack((self.qx,self.qy,self.coupling_strength)).T)
+		np.savetxt('./_out/_temp_phonon_energy_vs_q_2d',np.vstack((self.qx,self.qy,self.phonon_energy)).T)
+		np.savetxt('./_out/_temp_eph_coupling_vs_q_2d',np.vstack((self.qx,self.qy,self.coupling_constant)).T)
+		np.savetxt('./_out/_temp_eph_strength_vs_q_2d',np.vstack((self.qx,self.qy,self.coupling_strength)).T)
 
 		# print(self.coupling_strength)
 		# fig = plt.figure()
 		# ax = fig.add_subplot(121, projection='3d')
 		# ax.plot_trisurf(self.qx, self.qy, self.coupling_constant, color='white', edgecolors='grey', alpha=0.5)
 		# ax.scatter(self.qx, self.qy, self.coupling_constant, c='red')
+		# ax.set_xlabel('$q_x$')
+		# ax.set_ylabel('$q_y$')
+		# ax.set_zlabel('$M,\ eV $')
 		# # fig = plt.figure()
 		# # ax = fig.add_subplot(121, projection='3d')
 		# # ax.plot_trisurf(self.qx, self.qy, self.coupling_strength, color='white', edgecolors='grey', alpha=0.5)
@@ -177,7 +181,10 @@ class full_data(object):
 		# ax = fig.add_subplot(122, projection='3d')
 		# ax.plot_trisurf(self.qx, self.qy, self.phonon_energy, color='white', edgecolors='grey', alpha=0.5)
 		# ax.scatter(self.qx, self.qy, self.phonon_energy, c='b')
-		# plt.show(block=False)
+		# ax.set_xlabel('$q_x$')
+		# ax.set_ylabel('$q_y$')
+		# ax.set_zlabel(r'$\omega_{ph},\ eV $')
+		# plt.show()
 
 	def reduce(self):
 		print('initial size : ',len(self.qx))
@@ -198,25 +205,15 @@ class full_data(object):
 	def create_coupling(self,name=''):
 
 		self.func_obj={}
-		a=0.2
-		sa=0.155
-		b=0.
-		sb=a+sa
-		gammak=0.05
-		gammag=0.05
+
 		import json
-		with open('temp_input.json') as fp:
+		with open('./inputs/input_phonon_info.json') as fp:
 			ti=json.load(fp)
 
 		self.ak = ti['ak']
 		self.ag = ti['ag']
 		self.am = ti['am']
 
-		sigmag=0.05
-
-		sigmak=0.05
-
-		off=0.0
 
 		self.rk = ti['rk']
 
@@ -241,7 +238,7 @@ class full_data(object):
 		for i,direction in enumerate(self.sym_directions):
 			q=np.linspace(0,1.01,101)
 			# print(direction,self.func_obj[direction](q))
-			with open('../../../storage/TO/'+name+'_coupling_'+str(direction)+'.csv','w') as f:
+			with open('./_exp_files/TO/'+name+'_coupling_'+str(direction)+'.csv','w') as f:
 				data_temp=np.vstack((q,self.func_obj[direction](q)))
 				np.savetxt(f,data_temp)
 
@@ -255,7 +252,7 @@ class full_data(object):
 		for i,names in enumerate(self.sym_directions):
 			# print(i,names)
 			self.q_path[names],self.coupling_qpath[names]\
-					=np.loadtxt('../../../storage/TO/'+name+'_coupling_'+names+'.csv')
+					=np.loadtxt('./_exp_files/TO/'+name+'_coupling_'+names+'.csv')
 			self.q_path[names]=self.q_path[names] * self.q_bz[i]
 			if names=='k-m':
 				self.q2d['x'].extend(self.q_bz[0]-self.q_path[names][:] * transform[names]['x'])
@@ -368,7 +365,7 @@ class full_data(object):
 		points=np.vstack((x,y))
 		# print(max(x),max(y))
 
-		self.grid_rect_x, self.grid_rect_y = np.mgrid[-max(x):max(x):110j, -max(y):max(y):110j]
+		self.grid_rect_x, self.grid_rect_y = np.mgrid[-max(x):max(x):11j, -max(y):max(y):11j]
 
 
 		# print('x:',self.grid_rect_x.shape)
