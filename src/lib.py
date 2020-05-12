@@ -1,10 +1,10 @@
 
-from initp import *
-from inputp import *
-from kernelsp import *
-from graphicsp import *
-from specp import *
-from qtp import *
+from src.initp import *
+from src.inputp import *
+from src.kernelsp import *
+from src.graphicsp import *
+from src.specp import *
+from src.qtp import *
 import os
 import json
 from tqdm import tqdm
