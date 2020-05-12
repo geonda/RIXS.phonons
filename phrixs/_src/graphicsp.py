@@ -34,9 +34,12 @@ class graph(object):
         xas=np.load('./_out/xas_gamma.npy')
         self.p.plot(xas[0],xas[1]/max(xas[1]),\
                     linewidth=2,color='grey',label='xas one q')
-        # ph=np.loadtxt('1phvsdet')
-        # self.p.plot(ph[0]+self.dict_total['input']['omega_in'],ph[1]/max(ph[1]),\
-                    # linewidth=2,color='r',label='1ph q = 0')
+        ph=np.loadtxt('./_out/1ph_profile_model')
+        self.p.plot(ph[0]+self.dict_total['input']['energy_ex'],ph[1]/max(ph[1]),\
+                    linewidth=2,color='r',label='1ph q = 0')
+        ph2=np.loadtxt('./_out/2ph_profile_model')
+        self.p.plot(ph2[0]+self.dict_total['input']['energy_ex'],ph2[1]/max(ph[1]),\
+                            linewidth=2,color='g',label='1ph q = 0')
         self.p.axvline(self.dict_total['input']['omega_in'],color='grey')
         self.p.set_xlabel("$\mathrm{Energy, \ eV}$",fontsize=15)
         self.p.set_ylabel("$\mathrm{XAS\ Intensity, \ arb.\ units}$",fontsize=15)
@@ -307,11 +310,16 @@ class graph(object):
 
         self.plot_rixs.plot(self.xtemp,self.ytemp/max(self.ytemp), c='grey',alpha=0.5,label='single mode/q')
         for irun in range(self.nruns):
-            if scale==0:  scale=self.dict_y[irun]/max(self.dict_y[irun])
-            self.plot_rixs.plot(self.dict_x[irun],self.dict_y[irun]/max(self.dict_y[irun]),\
-                    linewidth=2,color=self.color_list[self.nruns-1],label='$q=$'\
+            # if scale==0:  scale=self.dict_y[irun]/max(self.dict_y[irun][:])
+            self.plot_rixs.plot(self.dict_x[irun][:],self.dict_y[irun][:]/max(self.dict_y[irun][:]),\
+                    linewidth=2,color=self.color_list[irun],label='$q=$'\
                             +str(self.dict_total['input']['qx']))
-
+        # xtemp,ytemp=np.load('./_out/rixs_bestfit_2.npy')
+        # self.plot_rixs.plot(xtemp,ytemp/max(ytemp),\
+        #         linewidth=2,color='green',label='narrow')
+        # xtemp,ytemp=np.load('./_out/rixs_bestfit_05.npy')
+        # self.plot_rixs.plot(xtemp,ytemp/max(ytemp),\
+        #         linewidth=2,color='b',label='broad')
         self.plot_rixs.set_xlabel("$\mathrm{Energy\ Loss, \ eV}$",fontsize=15)
         self.plot_rixs.set_ylabel("$\mathrm{RIXS\ Intensity, \ arb.\ units}$",fontsize=15)
         self.plot_rixs.set_xlim([-0.1,0.8])

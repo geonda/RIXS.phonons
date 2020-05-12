@@ -107,3 +107,11 @@ class workspace(object):
 
     def timer_total(self,label):
         print(label,np.round(time()-self.st,4))
+
+    def window(self,x,y,xmin,xmax):
+        x_new=[];y_new=[]
+        for xi,yi in zip(x,y):
+            if xi<=xmax and xi>=xmin:
+                x_new.append(xi)
+                y_new.append(yi)
+        return np.array(x_new), np.array(y_new)

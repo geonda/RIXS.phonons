@@ -205,6 +205,8 @@ class full_data(object):
 	def create_coupling(self,name=''):
 
 		self.func_obj={}
+		self.func_obj_2={}
+		self.func_obj_05={}
 
 		import json
 		with open('./inputs/input_phonon_info.json') as fp:
@@ -228,6 +230,32 @@ class full_data(object):
 
 		self.func_obj['gamma-m'] = lambda x: np.heaviside(self.rg-x,0.5)*self.ag + np.heaviside(x-1+self.rm,0.5)*self.am
 
+		self.ak_2 = ti['ak']*2#np.sqrt(2)
+		self.ag_2 = ti['ag']*2#np.sqrt(2)
+		self.rk_2 = ti['rk']/2
+
+		self.rg_2 = ti['rg']/2
+
+		self.rm = ti['rm']
+
+		self.func_obj_2['gamma-k'] = lambda x: np.heaviside(self.rg_2-x,0.5)*self.ag_2+np.heaviside(x-1+self.rk_2,0.5)*self.ak_2
+
+		self.func_obj_2['k-m'] = lambda  x: np.heaviside(self.rk_2-x,0.5)*self.ak_2 + np.heaviside(x-1+self.rm,0.5)*self.am
+
+		self.func_obj_2['gamma-m'] = lambda x: np.heaviside(self.rg_2-x,0.5)*self.ag_2 + np.heaviside(x-1+self.rm,0.5)*self.am
+
+		self.ak_05 = ti['ak']/2#np.sqrt(2)
+		self.ag_05 = ti['ag']/2#np.sqrt(2)
+		self.rk_05 = ti['rk']*2
+
+		self.rg_05 = ti['rg']*2
+
+		self.func_obj_05['gamma-k'] = lambda x: np.heaviside(self.rg_05-x,0.5)*self.ag_05+np.heaviside(x-1+self.rk_05,0.5)*self.ak_05
+
+		self.func_obj_05['k-m'] = lambda  x: np.heaviside(self.rk_05-x,0.5)*self.ak_05 + np.heaviside(x-1+self.rm,0.5)*self.am
+
+		self.func_obj_05['gamma-m'] = lambda x: np.heaviside(self.rg_05-x,0.5)*self.ag_05 + np.heaviside(x-1+self.rm,0.5)*self.am
+
 		#ag*np.exp(-x**2/sigmag)/max(np.exp(-x**2/sigmag))
 		# self.func_obj['gamma-k'] = lambda x: ag*np.imag(1/(x-1.j*gammag))/max(np.imag(1/(x-1.j*gammag)))+ak*np.imag(1/(x-1+off-1.j*gammak))/max(np.imag(1/(x-1+off-1.j*gammak)))
 		#
@@ -241,6 +269,13 @@ class full_data(object):
 			with open('./_exp_files/TO/'+name+'_coupling_'+str(direction)+'.csv','w') as f:
 				data_temp=np.vstack((q,self.func_obj[direction](q)))
 				np.savetxt(f,data_temp)
+			with open('./_exp_files/TO/'+'05'+'_coupling_'+str(direction)+'.csv','w') as f:
+				data_temp=np.vstack((q,self.func_obj_05[direction](q)))
+				np.savetxt(f,data_temp)
+			with open('./_exp_files/TO/'+'2'+'_coupling_'+str(direction)+'.csv','w') as f:
+				data_temp=np.vstack((q,self.func_obj_2[direction](q)))
+				np.savetxt(f,data_temp)
+
 
 	def get_coupling(self,name=''):
 		self.create_coupling()
@@ -274,8 +309,11 @@ class full_data(object):
 		plt.tight_layout()
 		plt.show(block=False)
 
-	def plot_dispersion(self):
-		self.get_coupling()
+	def plot_dispersion(self,name=''):
+		self.coupling_qpath['gamma-k']=[]
+		self.coupling_qpath['gamma-m']=[]
+		self.coupling_qpath['k-m']=[]
+		self.get_coupling(name=name)
 
 		ARPES_coupling_gamma=0.15
 		ARPES_coupling_k=0.2
@@ -285,47 +323,70 @@ class full_data(object):
 
 		BSE_coupling_gamma=0.75
 		BSE_coupling_k=0.475
+		if name=='':
+			fig = plt.figure(figsize=(10,5))
+			plt.subplot(131)
+			color = 'red'
+			plt.scatter(0,ARPES_coupling_gamma,marker='>',s=50,color='r')
+			plt.scatter(max(self.q_path['gamma-k']*self.q_bz[0]),ARPES_coupling_k,marker='>',s=50,color='r',label='ARPES')
 
-		fig = plt.figure(figsize=(10,5))
-		ax = fig.add_subplot(131)
+			plt.scatter(0,LBNL_coupling_gamma,marker='*',s=50,color='b')
+			plt.scatter(max(self.q_path['gamma-k']*self.q_bz[0]),LBNL_coupling_k,marker='*',s=50,color='b',label='LBNL')
 
-		plt.scatter(0,ARPES_coupling_gamma,marker='>',s=50,color='r')
-		plt.scatter(max(self.q_path['gamma-k']*self.q_bz[0]),ARPES_coupling_k,marker='>',s=50,color='r',label='ARPES')
+			plt.scatter(0,BSE_coupling_gamma,marker='s',s=50,color='g')
+			plt.scatter(max(self.q_path['gamma-k']*self.q_bz[0]),BSE_coupling_k,marker='s',s=50,color='g',label='BSE')
 
-		plt.scatter(0,LBNL_coupling_gamma,marker='*',s=50,color='b')
-		plt.scatter(max(self.q_path['gamma-k']*self.q_bz[0]),LBNL_coupling_k,marker='*',s=50,color='b',label='LBNL')
+			plt.ylabel(r'Coupling Constant, eV',fontsize=15)
+			plt.legend()
 
-		plt.scatter(0,BSE_coupling_gamma,marker='s',s=50,color='g')
-		plt.scatter(max(self.q_path['gamma-k']*self.q_bz[0]),BSE_coupling_k,marker='s',s=50,color='g',label='BSE')
+			plt.plot(self.q_path['gamma-k']*self.q_bz[0],self.coupling_qpath['gamma-k'],'-',color=color)
+			plt.xticks([min(self.q_path['gamma-k']*self.q_bz[0]),max(self.q_path['gamma-k']*self.q_bz[0])],(r'$\Gamma$',r'$K$'),fontsize=20)
+			# ax.axvline(0.08,color='b')
+			# ax.axvline(0.011,color='r')
+			plt.ylim([0,BSE_coupling_gamma*1.2])
+			# ax.set_ylim([0.14,max(self.coupling_qpath['gamma-k'])*1.2])
+			plt.subplot(132)
+			plt.plot(self.q_path['k-m']*self.q_bz[1],self.coupling_qpath['k-m'],'-',color=color,label='model')
+			plt.xticks([min(self.q_path['k-m']*self.q_bz[1]),max(self.q_path['k-m']*self.q_bz[1])],(r'$K$',r'$M$'),fontsize=20)
+			plt.yticks([])
+			plt.ylim([0,BSE_coupling_gamma*1.2])
+			# ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
+			# ax.set_ylim([0.14,max(self.coupling_qpath['gamma-k'])*1.2])
+			plt.legend()
+			plt.xlabel(r'$q \ path$',fontsize=15)
+			plt.subplot(133)
+			plt.yticks([])
+			plt.ylim([0,BSE_coupling_gamma*1.2])
+			# ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
+			plt.plot(self.q_path['gamma-m']*self.q_bz[2],self.coupling_qpath['gamma-m'],'-',color=color,label='exp')
 
-		ax.set_ylabel(r'Coupling Constant, eV',fontsize=15)
-		plt.legend()
-		ax.plot(self.q_path['gamma-k']*self.q_bz[0],self.coupling_qpath['gamma-k'],'-',color='grey')
-		plt.xticks([min(self.q_path['gamma-k']*self.q_bz[0]),max(self.q_path['gamma-k']*self.q_bz[0])],(r'$\Gamma$',r'$K$'),fontsize=20)
-		# ax.axvline(0.08,color='b')
-		# ax.axvline(0.011,color='r')
-		ax.set_ylim([0,BSE_coupling_gamma*1.2])
-		# ax.set_ylim([0.14,max(self.coupling_qpath['gamma-k'])*1.2])
-		ax = fig.add_subplot(132)
-		ax.plot(self.q_path['k-m']*self.q_bz[1],self.coupling_qpath['k-m'],'-',color='grey',label='model')
-		plt.xticks([min(self.q_path['k-m']*self.q_bz[1]),max(self.q_path['k-m']*self.q_bz[1])],(r'$K$',r'$M$'),fontsize=20)
-		ax.set_yticks([])
-		ax.set_ylim([0,BSE_coupling_gamma*1.2])
-		# ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
-		# ax.set_ylim([0.14,max(self.coupling_qpath['gamma-k'])*1.2])
-		plt.legend()
-		ax.set_xlabel(r'$q \ path$',fontsize=15)
-		ax = fig.add_subplot(133)
-		ax.set_yticks([])
-		ax.set_ylim([0,BSE_coupling_gamma*1.2])
-		# ax.set_ylim([0,max(self.coupling_qpath['gamma-k'])*1.2])
-		ax.plot(self.q_path['gamma-m']*self.q_bz[2],self.coupling_qpath['gamma-m'],'-',color='grey',label='exp')
+			plt.xticks([min(self.q_path['gamma-m']*self.q_bz[2]),max(self.q_path['gamma-m']*self.q_bz[2])],(r'$\Gamma$',r'$M$'),fontsize=20)
 
-		plt.xticks([min(self.q_path['gamma-m']*self.q_bz[2]),max(self.q_path['gamma-m']*self.q_bz[2])],(r'$\Gamma$',r'$M$'),fontsize=20)
+			plt.gca().invert_xaxis()
+			plt.tight_layout()
 
-		plt.gca().invert_xaxis()
-		plt.tight_layout()
-		plt.show(block=False)
+		elif name=='05':
+			color = 'b'
+			plt.subplot(131)
+			plt.plot(self.q_path['gamma-k']*self.q_bz[0],self.coupling_qpath['gamma-k'],'-',color=color)
+			plt.subplot(132)
+			plt.plot(self.q_path['k-m']*self.q_bz[1],self.coupling_qpath['k-m'],'-',color=color,label='model')
+			plt.subplot(133)
+			plt.plot(self.q_path['gamma-m']*self.q_bz[2],self.coupling_qpath['gamma-m'],'-',color=color)
+		elif name=='2':
+			color = 'g'
+			plt.subplot(131)
+			plt.plot(self.q_path['gamma-k']*self.q_bz[0],self.coupling_qpath['gamma-k'],'-',color=color)
+			plt.subplot(132)
+			plt.plot(self.q_path['k-m']*self.q_bz[1],self.coupling_qpath['k-m'],'-',color=color,label='model')
+			plt.subplot(133)
+			plt.plot(self.q_path['gamma-m']*self.q_bz[2],self.coupling_qpath['gamma-m'],'-',color=color)
+
+
+
+		if name=='2':
+			# fig = plt.figure(figsize=(10,5))
+			plt.show(block=False)
 
 	def plot_colormap(self):
 

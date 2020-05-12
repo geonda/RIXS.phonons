@@ -372,6 +372,45 @@ class rixs_model_q_2d(object):
         # np.savetxt('1phvsdet',np.vstack((det,list(map(temp,det)))))
         return float(intx[0])**2
 
+    def one_phonon(self,qmap,nph):
+        G=-1.j*np.exp(1.j*(-np.pi*2.*self.dict['input']['energy_ex'])*self.t)
+        print(qmap)
+        self.frx=self.phonon_energy[qmap[0]]*2*np.pi
+        self.gkqx=self.coupling_strength[qmap[0]]
+        log(self.gkqx)
+        Dk=(np.sqrt(self.gkqx))*(np.exp(-1.j*self.frx*self.t)-1)
+        G=G*(Dk**nph)/np.sqrt(factorial(nph))
+        G=G*self.cumulant_kq*np.exp(-2*np.pi*self.dict['input']['gamma']*self.t)
+        # G=G*np.exp(Ck)*np.exp(-2*np.pi*self.dict['input']['gamma']*self.t)
+        omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['omega_in'])
+        det=np.linspace(-1,1,200)
+        def temp(d):
+            omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['omega_in']+d)
+            return abs(intx[0])**2
+        np.savetxt('./_out/1ph_profile_model',np.vstack((det,list(map(temp,det)))))
+        return float(intx[0])**2
+
+    def two_phonon(self,qmap,nph):
+        def temp(d):
+            def nfunc(qmap):
+                G=-1.j*np.exp(-1.j*(np.pi*2.*self.dict['input']['energy_ex'])*self.t)
+                D=1.;
+                for n in range(nph):
+                    Dk=(np.sqrt(self.coupling_strength[qmap[n]]))*(np.exp(-1.j*self.phonon_energy[qmap[n]]*2.*np.pi*self.t)-1.)
+                    D=D*Dk
+                G=G*(D)/np.sqrt(factorial(nph))
+                G=G*self.cumulant_kq*np.exp(-2*np.pi*self.dict['input']['gamma']*self.t)
+                omx,intx=self.goertzel(G,self.nstep/self.maxt,self.dict['input']['omega_in']+d)
+                return abs(intx[0])**2
+            r_temp=list(map(lambda x: nfunc(x), qmap))
+            r_temp=np.array(r_temp)/len(qmap)
+            return sum(r_temp)
+
+        det=np.linspace(-1,1,200)
+
+        np.savetxt('./_out/2ph_profile_model',np.vstack((det,list(map(temp,det)))))
+
+
     def greens_func_cumulant(self):
         self.maxt=self.dict['input']['maxt']
         self.nstep=self.dict['input']['nstep']
@@ -438,6 +477,11 @@ class rixs_model_q_2d(object):
             np.save('./_out/xas.npy',np.vstack((x,y)))
             x,y=self.greens_func_cumulant_gamma()
             np.save('./_out/xas_gamma.npy',np.vstack((x,y)))
+            qmap=init_map_2d(self.qx,self.qy,0,0).phonon_fir()
+            self.one_phonon(qmap,1)
+            qmap=init_map_2d(self.qx,self.qy,0,0).phonon_sec()
+
+            self.two_phonon(qmap,2)
             print('xas done')
         print(max(self.qx),max(self.qy))
         if self.dict['input']['extra']=='q':

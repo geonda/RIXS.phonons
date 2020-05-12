@@ -15,7 +15,7 @@ ws.dict_total['input']['nf']=11
 
 ws.dict_total['input']['gamma']=0.105
 
-for coupling in [0.45,0.85]:
+for coupling in [0.2]:
     ws.dict_total['input']['coupling0']=coupling
     ws.runp()
 
