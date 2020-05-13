@@ -4,7 +4,6 @@ from phlab import experiment
 from phlab import visual
 import json
 import os
-
 class rixs(object):
     """docstring for create_workspace."""
 
@@ -39,54 +38,6 @@ class rixs(object):
                             inp_dir = self.inp_dir,
                             out_dir = self.out_dir,
                             nmodel = self.nmodel)
-        def create_model(self):
-
-            self.nmodel += 1
-            try:
-                temp = self.read_input(file = self.input_name.format(nm = self.nmodel))
-                print('done parsing input')
-            except:
-                print('no input found')
-                print('creating new input')
-                print('waring : please check new input')
-                temp = self.create_default_input(file = self.input_name.format(nm = self.nmodel))
-
-            return model.model(input = temp,
-                                inp_dir = self.inp_dir,
-                                out_dir = self.out_dir,
-                                nmodel = self.nmodel)
-    def single_osc_model(self):
-        self.nmodel += 1
-        try:
-            temp = self.read_input(file = self.input_name.format(nm = self.nmodel))
-            print('done parsing input')
-        except:
-            print('no input found')
-            print('creating new input')
-            print('waring : please check new input')
-            temp = self.create_default_input(file = self.input_name.format(nm = self.nmodel))
-
-        return model.single_osc_model(input = temp,
-                            inp_dir = self.inp_dir,
-                            out_dir = self.out_dir,
-                            nmodel = self.nmodel)
-                            
-        def create_model(self):
-
-            self.nmodel += 1
-            try:
-                temp = self.read_input(file = self.input_name.format(nm = self.nmodel))
-                print('done parsing input')
-            except:
-                print('no input found')
-                print('creating new input')
-                print('waring : please check new input')
-                temp = self.create_default_input(file = self.input_name.format(nm = self.nmodel))
-
-            return model.model(input = temp,
-                                inp_dir = self.inp_dir,
-                                out_dir = self.out_dir,
-                                nmodel = self.nmodel)
 
     def create_experiment(self,file='', col=[0,1],name = ''):
         self.nexp+=1

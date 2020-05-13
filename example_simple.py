@@ -6,7 +6,7 @@ ws=phlab.rixs()
 model1 = ws.create_model()
 model1.run()
 
-exp = ws.creat_experiment(file='fake_exp.csv',name = 'exp test')
+exp = ws.create_experiment(file='fake_exp.csv',name = 'exp test')
 
 plt.figure(figsize = (10,5))
 
