@@ -6,13 +6,13 @@ print(setuptools.find_packages(),)
 setuptools.setup(
     name="phrixs",
     version="0.0.0",
-    author="Andrey Geondzhian",
+    authors="Andrey Geondzhian, Keith Gilmore",
     # author_email="andrey.geondzhian@gmail.com",
     description="Phonon contirbution in RIXS",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    # url="https://github.com/pypa/sampleproject",
+    url="https://github.com/geonda/RIXS.phonons/",
     packages=[],
-    install_requires=['numpy','pyqtgraph','scipy','tqdm','pathos','matplotlib'],
+    install_requires=['numpy','scipy','tqdm','pathos','matplotlib'],
     python_requires='>=3.6',
 )

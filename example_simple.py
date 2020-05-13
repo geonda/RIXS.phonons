@@ -1,24 +1,14 @@
-from src.lib import *
-from tqdm import tqdm
+import phlab
+from  matplotlib import pyplot as plt
 
+ws=phlab.rixs()
 
+model1 = ws.create_model()
+model1.run()
 
-ws = workspace()
-ws.timer_start()
+exp = ws.creat_experiment(file='fake_exp.csv',name = 'exp test')
 
+plt.figure(figsize = (10,5))
 
-ws.initp(type_calc='model')#ws.initp(vib_space=2)
-ws.timer_round('init done [s]: ')
-
-
-ws.inputp('ask') # use ws.inputp('ask') to modify
-ws.timer_round('input done [s]: ')
-
-ws.runp()
-
-
-ws.timer_round('run done [s]: ')
-ws.timer_total('total [s]: ')
-
-ws.plotp()
-ws.clear()
+vitem=ws.connect_visual(model_list=[model1],exp=exp)
+vitem.show(scale = 0)
