@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
      long_description = fh.read()
 print(setuptools.find_packages(),)
 setuptools.setup(
-    name="phrixs",
+    name="phlab",
     version="0.0.0",
     authors="Andrey Geondzhian, Keith Gilmore",
     # author_email="andrey.geondzhian@gmail.com",
