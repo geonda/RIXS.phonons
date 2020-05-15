@@ -20,7 +20,7 @@ class energy(object):
 		self.e2d=[]
 		self.q2d={'x':[],'y':[]}
 		self.dict = dict
-		self.nq=11j
+		self.nq=3j
 
 	def get_phonon(self):
 		sym_directions=['gamma-k','k-m','gamma-m']

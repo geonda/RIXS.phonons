@@ -305,21 +305,46 @@ class rixs_model_q_2d(object):
         self.auto_save=cg.temp_rixs_file\
                             +'_run_'+self.nruns+cg.extension_final
         # self.q=np.linspace(-1,1,self.dict['input']['nq'])
-        self.phonon_info=phonon_info_2d.full_data()
+        # self.phonon_info=phonon_info_2d.full_data()
+        # self.phonon_info.qx=
+        self.phonon_info_qx = [0.,1.]
+        self.phonon_info_qy = [0.,0.]
+        self.phonon_info_phonon_energy = [0.195,0.16]
+        # self.phonon_info_coupling =  [0.329,0.589]
+        self.phonon_info_coupling = [0.75,0.45]
+        self.phonon_info_wi =  [1./3.,2./3]
+
+        self.phonon_info_coupling_strength =  [(self.phonon_info_coupling[0]/self.phonon_info_phonon_energy[0])**2,
+                                        (self.phonon_info_coupling[1]/self.phonon_info_phonon_energy[1])**2]
+
         # self.phonon_info.plot_dispersion()
 
-        self.qx=np.hstack((-np.array(self.phonon_info.qx),np.array(self.phonon_info.qx)))
-        self.qy=np.hstack((-np.array(self.phonon_info.qy),\
-                                        np.array(self.phonon_info.qy)))
-        self.phonon_energy=np.hstack((np.array(self.phonon_info.phonon_energy),\
-                                        np.array(self.phonon_info.phonon_energy)))
+        # self.qx=np.hstack((-np.array(self.phonon_info.qx),np.array(self.phonon_info.qx)))
+        # self.qy=np.hstack((-np.array(self.phonon_info.qy),\
+        #                                 np.array(self.phonon_info.qy)))
+        # self.phonon_energy=np.hstack((np.array(self.phonon_info.phonon_energy),\
+        #                                 np.array(self.phonon_info.phonon_energy)))
+        self.qx=np.hstack((-np.array(self.phonon_info_qx),np.array(self.phonon_info_qx)))
+        self.qy=np.hstack((-np.array(self.phonon_info_qy),\
+                                        np.array(self.phonon_info_qy)))
+        self.phonon_energy=np.hstack((np.array(self.phonon_info_phonon_energy),\
+                                        np.array(self.phonon_info_phonon_energy)))
+        self.coupling_const=\
+                np.hstack((np.array(self.phonon_info_coupling),\
+                            np.array(self.phonon_info_coupling)))
 
         self.coupling_strength=\
-                np.hstack((np.array(self.phonon_info.coupling_strength),\
-                            np.array(self.phonon_info.coupling_strength)))
+                np.hstack((np.array(self.phonon_info_coupling_strength),\
+                            np.array(self.phonon_info_coupling_strength)))
+        self.w=\
+                np.hstack((np.array(self.phonon_info_wi),\
+                            np.array(self.phonon_info_wi)))
         # print(self.qx,self.qy)
         self.qx=np.delete(self.qx,0)
         self.qy=np.delete(self.qy,0)
+        self.w=np.delete(self.w,0)
+
+
         # print(self.coupling_strength)
         # from matplotlib import pyplot as plt
         #
@@ -328,7 +353,17 @@ class rixs_model_q_2d(object):
         #
         # plt.show()
         self.coupling_strength=np.delete(self.coupling_strength,0)
+        self.coupling_const=np.delete(self.coupling_const,0)
         self.phonon_energy=np.delete(self.phonon_energy,0)
+        print('w grid', self.w )
+
+        print('qx grid', self.qx )
+        print('qy grid', self.qy )
+
+        print('Eph', self.phonon_energy )
+        print('M', self.coupling_const )
+        print('g', self.coupling_strength)
+
         # self.fitomega=np.polyfit(self.q,self.omegaq,3)
         # func_omega=np.poly1d(self.fitomega)
         # self.omegax=func_omega
@@ -350,8 +385,8 @@ class rixs_model_q_2d(object):
         t=np.linspace(0.,self.dict['input']['maxt'],int(self.dict['input']['nstep']))
         self.omegaq_cumulant=self.phonon_energy*2*np.pi
         Fkq=1.
-        for gkqi,omegaqi in zip(self.coupling_strength,self.omegaq_cumulant):
-            Fkq=Fkq*np.exp(gkqi*(np.exp(-1.j*omegaqi*t)+1.j*omegaqi*t-1)/len(self.omegaq_cumulant))
+        for gkqi,omegaqi,wi in zip(self.coupling_strength,self.omegaq_cumulant,self.w):
+            Fkq=wi*Fkq*np.exp(gkqi*(np.exp(-1.j*omegaqi*t)+1.j*omegaqi*t-1)/len(self.omegaq_cumulant))
         return Fkq
 
     def single_phonon(self,qmap,nph):
@@ -501,7 +536,7 @@ class rixs_model_q_2d(object):
                 print('1 phonon : ')
                 qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_fir()
                 log(len(qmap))
-                loss_temp,r_temp=[self.phonon_energy[qmap[0]]*nph],[self.single_phonon(qmap,1)]
+                loss_temp,r_temp=[self.phonon_energy[qmap[0]]*nph],[self.w[1]*self.single_phonon(qmap,1)]
                 #log(r_temp)
             elif nph==2:
                 print('2 phonon : ')
@@ -512,7 +547,7 @@ class rixs_model_q_2d(object):
                 qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_sec()
                 # print(qmap)
                 log(len(qmap))
-                r_temp=list(map(lambda x: self.multi_phonon(x,2), qmap))
+                r_temp=list(map(lambda x: self.w[x[0]]*self.w[x[1]]*self.multi_phonon(x,2), qmap))
                 # print('nph=2')
                 # print(r_temp)
                 # print(min(r_temp),max(r_temp))
@@ -527,7 +562,7 @@ class rixs_model_q_2d(object):
                 # #log(r_temp)
                 qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_thr()
                 log(len(qmap))
-                r_temp=list(map(lambda x: self.multi_phonon(x,nph), qmap))
+                r_temp=list(map(lambda x: self.w[x[0]]*self.w[x[1]]*self.w[x[2]]*self.multi_phonon(x,nph), qmap))
                 r_temp=np.array(r_temp)/len(qmap)
                 # print("ici")
                 # print(min(r_temp),max(r_temp))
@@ -536,7 +571,7 @@ class rixs_model_q_2d(object):
             elif nph==4:
                 qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_fou()
                 log(len(qmap))
-                r_temp=list(map(lambda x: self.multi_phonon(x,4), qmap))
+                r_temp=list(map(lambda x: self.w[x[0]]*self.w[x[1]]*self.w[x[2]]*self.w[x[3]]*self.multi_phonon(x,4), qmap))
                 r_temp=np.array(r_temp)/len(qmap)
                 loss_temp=list(map(lambda x: self.phonon_energy[x[0]]+self.phonon_energy[x[1]]\
                             +self.phonon_energy[x[2]]+self.phonon_energy[x[3]], qmap))
