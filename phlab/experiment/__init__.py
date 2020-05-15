@@ -15,8 +15,11 @@ class experiment(object):
         self.max = max(self.y)
         self.y_norm = self.y/self.max
         self.name = name
+        self.xmin=min(self.x)
+        self.xmax=max(self.x)
 
     def filter(self,xmin,xmax):
+        xnew,ynew = [],[]
         for xi,yi in zip(self.x,self.y):
             if (xi>=xmin) and (xi<=xmax):
                 xnew.append(xi)

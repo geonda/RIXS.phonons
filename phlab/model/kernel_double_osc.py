@@ -64,6 +64,8 @@ class kernel(object):
         ws=np.array(ws)
         x,y=np.array(fr), list(tqdm(pool(processes=self.nproc).map(func_temp,tqdm(ws))))
         np.savetxt(self.auto_save,np.column_stack((x,y)))
+        self.x_raw = x
+        self.y_raw = y
         return x,y
 
 

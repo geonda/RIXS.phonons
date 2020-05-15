@@ -48,7 +48,15 @@ class spec(object):
         np.savetxt(self.save_full,np.column_stack([x,full]))
         np.savetxt(self.save_noel,np.column_stack([x,noelastic]))
 
-
+    def run_broad_fit(self,x=[]):
+        full, noelastic=np.zeros_like(x),np.zeros_like(x)
+        for en,int in zip(self.x, self.y):
+            shape=self.voigt(x-en,self.alpha_exp,self.gamma_ph)
+            norm=np.sum(shape)*abs(x[0]-x[1])
+            y=(shape)*int/norm
+            if en!=0: noelastic=noelastic+y
+            full=full+y
+        return x,noelastic,full
 
     def voigt(self,x, alpha, gamma):
 	    sigma = alpha / np.sqrt(2 * np.log(2))

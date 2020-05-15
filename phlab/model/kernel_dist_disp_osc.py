@@ -53,6 +53,8 @@ class kernel(object):
                 return abs(self.amplitude_dd(f,self.i))**2
             x,y=np.array(range(self.f))*self.dict['omega_ph0'], list(map(func_temp,range(self.f)))
         np.savetxt(self.auto_save,np.column_stack((x,y)))
+        self.x_raw = x
+        self.y_raw = y
         return x,y
 
     def X(self,l,k,beta):
