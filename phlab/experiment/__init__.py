@@ -1,6 +1,3 @@
-from phlab.model import *
-from phlab.model import kernelsp
-from phlab.model import specp
 import numpy as np
 import json
 import os

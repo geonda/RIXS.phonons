@@ -12,7 +12,7 @@ from tqdm import tqdm
 from scipy.special import wofz
 from pathos.multiprocessing import ProcessingPool as pool
 
-class model(object):
+class kernel(object):
 
     """docstring for calculations."""
     def __init__(self,dict,
@@ -20,13 +20,13 @@ class model(object):
                     nmodel=1,
                     out_dir='./_output/',
                     temp_rixs_file = 'model_{nm}/{nruns}_rixs_raw.csv'):
-        super(rixs_model, self).__init__()
+        super(kernel, self).__init__()
 
         self.nmodel = nmodel
         self.nruns=nruns
         self.dict=dict
 
-        self.nmodes=int(dict['vib_space'])
+        # print(self.dict)
 
         self.det=1.j*self.dict['gamma']+self.dict['energy_ex']-self.dict['omega_in']
 
@@ -35,10 +35,8 @@ class model(object):
 
         self.auto_save = out_dir+temp_rixs_file.format(nm = self.nmodel,\
                                                             nruns = self.nruns)
-        try:
+        if dict['method']=='fc':
             self.m=int(dict['nm'])
-        except:
-            pass
         self.f=int(dict['nf'])
         self.i=int(0)
         self.nproc=int(dict['nf'])
@@ -56,6 +54,8 @@ class model(object):
 
         x,y = np.array(range(self.f))*self.dict['omega_ph0'], list(map(func_temp,range(self.f)))
         np.savetxt(self.auto_save,np.column_stack((x,y)))
+        self.x_raw = x
+        self.y_raw = y
         return x,y
 
 

@@ -11,24 +11,25 @@ except ImportError:
 lib_pyqgrapth=False
 #######################################
 
-class graph(object):
+class plot(object):
     """docstring for plot."""
     def __init__(self,model_list=[],exp=[]):
-        super(graph, self).__init__()
-        self.model_list=model_list
+        super(plot, self).__init__()
+        self.model_list = model_list
         self.exp = exp
 
     def show(self,scale=1):
-        for model in self.model_list:
-            if scale==0:
+        if scale==0:
+            for model in self.model_list:
                 plt.plot(model.x,model.y_norm, color=model.color,linewidth = 2,
-                    label = 'model #{nm}'.format(nm = model.nmodel))
-                plt.scatter(self.exp.x,self.exp.y_norm, facecolor = 'None', edgecolor = 'w',\
+                    label = 'model #{nm} : {name}'.format(nm = model.nmodel,name=model.name))
+            plt.scatter(self.exp.x,self.exp.y_norm, facecolor = 'None', edgecolor = 'w',\
                     label = self.exp.name)
-            else:
+        else:
+            for model in self.model_list:
                 plt.plot(model.x,model.y*scale, color=model.color,linewidth = 2,
-                    label = 'model #{nm}'.format(nm = model.nmodel))
-                plt.scatter(self.exp.x,self.exp.y, facecolor = 'None', edgecolor = 'w',\
+                    label = 'model #{nm} : {name}'.format(nm = model.nmodel,name=model.name))
+            plt.scatter(self.exp.x,self.exp.y, facecolor = 'None', edgecolor = 'w',\
                     label = self.exp.name)
 
         plt.xlabel("$\mathrm{Energy\ Loss, \ eV}$",fontsize=15)

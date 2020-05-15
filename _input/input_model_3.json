@@ -1,0 +1,15 @@
+{
+ "problem_type": "rixs",
+ "method": "fc",
+ "vib_space": 1,
+ "coupling0": 0.1,
+ "omega_ph0": 0.1,
+ "omega_ph_ex": 0.1,
+ "nf": 10.0,
+ "nm": 3.0,
+ "energy_ex": 10.0,
+ "omega_in": 10.0,
+ "gamma": 0.1,
+ "gamma_ph": 0.01,
+ "alpha_exp": 0.01
+}
