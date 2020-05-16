@@ -30,7 +30,7 @@ class kernel(object):
 
         self.det=1.j*self.dict['gamma']+self.dict['energy_ex']-self.dict['omega_in']
 
-        self.dict['g0'] = (self.dict['coupling0']/self.dict['omega_ph0'])**2
+        self.dict['g0'] = (self.dict['coupling']/self.dict['omega_ph'])**2
 
 
         self.auto_save = out_dir+temp_rixs_file.format(nm = self.nmodel,\
@@ -52,7 +52,7 @@ class kernel(object):
             else:
                 print('error in model method')
 
-        x,y = np.array(range(self.f))*self.dict['omega_ph0'], list(map(func_temp,range(self.f)))
+        x,y = np.array(range(self.f))*self.dict['omega_ph'], list(map(func_temp,range(self.f)))
         np.savetxt(self.auto_save,np.column_stack((x,y)))
         self.x_raw = x
         self.y_raw = y
@@ -72,7 +72,7 @@ class kernel(object):
         def func_temp(m):
             return self.franck_condon_factors(f,m,float(self.dict['g0']))\
                             *self.franck_condon_factors(m,i,float(self.dict['g0']))\
-                                        /(float(self.dict['omega_ph0'])*(m-float(self.dict['g0']))- self.det)
+                                        /(float(self.dict['omega_ph'])*(m-float(self.dict['g0']))- self.det)
         return np.sum(list(map(functools.partial(func_temp),range(self.m))))
 
 
@@ -106,7 +106,7 @@ class kernel(object):
         step = self.maxt/self.nstep
         t = np.linspace(0., self.maxt, self.nstep)
         G  = -1.j*np.exp(-1.j*(np.pi*2.*self.dict['energy_ex'])*t)
-        om = self.dict['omega_ph0']*2*np.pi
+        om = self.dict['omega_ph']*2*np.pi
         gx = self.dict['g0']
         Ck = gx*(np.exp(-1.j*om*t)+1.j*om*t-1)
         Dk = (np.sqrt(gx))*(np.exp(-1.j*om*t)-1)

@@ -75,14 +75,14 @@ class single_osc(object):
                 'model': '1d',
                 'method': 'fc',
                 'vib_space': 1,
-                 "coupling0": 0.1,
-                 "omega_ph0": 0.1,
+                 "coupling": 0.1,
+                 "omega_ph": 0.195,
                  "nf": 10.0,
                  "nm": 100.0,
                  "energy_ex": 10.0,
                  "omega_in": 10.0,
-                 "gamma": 0.1,
-                 "gamma_ph": 0.01,
+                 "gamma": 0.105,
+                 "gamma_ph": 0.05,
                  "alpha_exp": 0.01,
                 }
 

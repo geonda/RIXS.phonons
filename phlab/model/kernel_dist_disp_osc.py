@@ -23,7 +23,7 @@ class kernel(object):
         super(kernel, self).__init__()
 
         # # print('nruns:'+str(nruns)+' coupling:'+str(dict['coupling0'])+\
-        # ' omega:'+str(dict['omega_ph0']))
+        # ' omega:'+str(dict['omega_ph']))
 
 
         self.nmodel = nmodel
@@ -36,14 +36,14 @@ class kernel(object):
         self.auto_save = out_dir+temp_rixs_file.format(nm = self.nmodel,\
                                                             nruns = self.nruns)
 
-        self.beta=np.sqrt(float(dict['omega_ph_ex'])/float(dict['omega_ph0']))
+        self.beta=np.sqrt(float(dict['omega_ph_ex'])/float(dict['omega_ph']))
         # print('beta=',self.beta)
         self.omega_ex=dict['omega_ph_ex']
 
         self.m=int(dict['nm'])
         self.f=int(dict['nf'])
         self.i=int(0)
-        self.dict['g0'] = (self.dict['coupling0']/self.dict['omega_ph0'])**2
+        self.dict['g0'] = (self.dict['coupling']/self.dict['omega_ph'])**2
         # print(self.auto_save)
 
 
@@ -51,7 +51,7 @@ class kernel(object):
         if self.nmodes==1:
             def func_temp(f):
                 return abs(self.amplitude_dd(f,self.i))**2
-            x,y=np.array(range(self.f))*self.dict['omega_ph0'], list(map(func_temp,range(self.f)))
+            x,y=np.array(range(self.f))*self.dict['omega_ph'], list(map(func_temp,range(self.f)))
         np.savetxt(self.auto_save,np.column_stack((x,y)))
         self.x_raw = x
         self.y_raw = y
@@ -77,7 +77,7 @@ class kernel(object):
         return b1*b2*b3*np.sum(out)
 
     def X_chang(self,n,n_p,beta):
-        alpha=self.dict['omega_ph0']
+        alpha=self.dict['omega_ph']
         alphap=self.dict['omega_ph_ex']
         A=2*np.sqrt(float(alpha*alphap))/(alpha+alphap)
         F=A/float((factorial(n)*factorial(n_p)*(2.**(n+n_p))))
@@ -101,7 +101,7 @@ class kernel(object):
             return  np.conj(self.X_chang(i,k,self.beta))*\
                         self.X_chang(l,f,self.beta)*\
                 self.franck_condon_factors(k,m,float(self.dict['g0']))*self.franck_condon_factors(m,l,float(self.dict['g0']))\
-                        / (self.dict['omega_ph0']*(m-self.dict['g0'])-self.det)
+                        / (self.dict['omega_ph']*(m-self.dict['g0'])-self.det)
         workspace=np.array([(m,l,k) for m in range(self.m) for l in range(self.m) for k in range(self.m)])
         return np.sum(list(map(functools.partial(func_temp),workspace)))
 
