@@ -1,3 +1,6 @@
+
+import sys
+sys.path.append('../../')
 import phlab
 from  matplotlib import pyplot as plt
 

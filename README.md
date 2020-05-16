@@ -1,7 +1,7 @@
 # Package for calculating  phonon contribution in RIXS
 currently there are 4 examples:
 
-- example_simple - produces phonon contribution for single displaced harmonic osc
+- example_simple - produces phonon contribution using the model of single displaced harmonic osc
 
 ![img](/img/test.png)
 
