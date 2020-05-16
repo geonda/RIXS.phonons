@@ -16,20 +16,29 @@ class plot(object):
     def __init__(self,model_list=[],exp=[]):
         super(plot, self).__init__()
         self.model_list = model_list
-        self.exp = exp
+        try :
+            self.xexp = exp.x
+            self.exp = exp
+            self.if_exp = True
+        except:
+            print('no experiment in visual')
+            self.if_exp = False
+            pass
 
     def show(self,scale=1):
         if scale==0:
             for model in self.model_list:
                 plt.plot(model.x,model.y_norm, color=model.color,linewidth = 2,
                     label = 'model #{nm} : {name}'.format(nm = model.nmodel,name=model.name))
-            plt.scatter(self.exp.x,self.exp.y_norm, facecolor = 'None', edgecolor = 'w',\
+            if self.if_exp :
+                plt.scatter(self.exp.x,self.exp.y_norm, facecolor = 'None', edgecolor = 'w',\
                     label = self.exp.name)
         else:
             for model in self.model_list:
                 plt.plot(model.x,model.y*scale, color=model.color,linewidth = 2,
                     label = 'model #{nm} : {name}'.format(nm = model.nmodel,name=model.name))
-            plt.scatter(self.exp.x,self.exp.y, facecolor = 'None', edgecolor = 'w',\
+            if self.if_exp :
+                plt.scatter(self.exp.x,self.exp.y, facecolor = 'None', edgecolor = 'w',\
                     label = self.exp.name)
 
         plt.xlabel("$\mathrm{Energy\ Loss, \ eV}$",fontsize=15)
