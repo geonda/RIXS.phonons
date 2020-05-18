@@ -85,6 +85,9 @@ class single_osc(object):
                  "alpha_exp": 0.01,
                 }
 
+        self.npoints = 1000,
+        self.spec_max = 1.,
+        self.spec_min= -0.1,
         self.inp_dir = inp_dir
         self.out_dir = out_dir
         self.nmodel = nmodel
@@ -109,7 +112,10 @@ class single_osc(object):
         spec.spec(self.input,
                 nruns = self.nruns,
                 nmodel = self.nmodel,
-                out_dir = self.out_dir).run_broad()
+                out_dir = self.out_dir,
+                npoints = self.npoints,
+                spec_max = self.spec_max,
+                spec_min= self.spec_min).run_broad()
 
         self.x,self.y=np.transpose(np.loadtxt(self.out_dir\
                                 +'/{nr}_rixs_phonons.csv'.format(\
@@ -230,7 +236,9 @@ class double_osc(object):
                  "gamma_ph": 0.01,
                  "alpha_exp": 0.01,
                 }
-
+        self.npoints = 1000,
+        self.spec_max = 1.,
+        self.spec_min= -0.1,
         self.inp_dir = inp_dir
         self.out_dir = out_dir
         self.nmodel = nmodel
@@ -255,7 +263,10 @@ class double_osc(object):
         spec.spec(self.input,
                 nruns = self.nruns,
                 nmodel = self.nmodel,
-                out_dir = self.out_dir).run_broad()
+                out_dir = self.out_dir,
+                npoints = self.npoints,
+                spec_max = self.spec_max,
+                spec_min= self.spec_min).run_broad()
 
         self.x,self.y=np.transpose(np.loadtxt(self.out_dir\
                                 +'/{nr}_rixs_phonons.csv'.format(\
@@ -360,7 +371,9 @@ class dist_disp_osc(object):
                  "gamma_ph": 0.05,
                  "alpha_exp": 0.01,
                 }
-
+        self.npoints = 1000,
+        self.spec_max = 1.,
+        self.spec_min= -0.1,
         self.inp_dir = inp_dir
         self.out_dir = out_dir
         self.nmodel = nmodel
@@ -385,7 +398,10 @@ class dist_disp_osc(object):
         spec.spec(self.input,
                     nruns = self.nruns,
                     nmodel = self.nmodel,
-                    out_dir = self.out_dir).run_broad()
+                    out_dir = self.out_dir,
+                    npoints = self.npoints,
+                    spec_max = self.spec_max,
+                    spec_min= self.spec_min).run_broad()
         self.x,self.y=np.transpose(np.loadtxt(self.out_dir\
                                 +'/{nr}_rixs_phonons.csv'.format(\
                                                 nm = self.nmodel, nr = self.nruns)))

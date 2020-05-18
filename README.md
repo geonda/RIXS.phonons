@@ -1,12 +1,8 @@
 # Package for calculating  phonon contribution in RIXS
-currently there are 4 examples:
 
-- example_simple - produces phonon contribution using the model of single displaced harmonic osc
+Objective of this package is to create convenient tool for fitting experimental data and subtracting electron-phonon coupling values  from phonon contribution to resonant inelastic X-ray scattering cross-section.
 
-![img](/img/test.png)
-
-
-- example_2d - compares 2 coupled phonon modes problem with single mode solutions
-- example_dd - includes distortion along with displacement of an excited state harmonic osc
-               (takes times to run)
-- example_q - input phonon energy and coupling constant (vs q) are in the phonon_info.py for now;  only three phonon contribution are active; qx - q total vector
+Package currently contains:
+- Model for 1D harmonic oscillator interacting with single electronic level.
+- Model for 2D vibrational space (two modes active).
+- Model for 1D harmonic oscillator which is distorted and displaced in the excited state (accounts for changes in the excited state potential energy surface).

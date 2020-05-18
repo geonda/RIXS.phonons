@@ -10,7 +10,7 @@ with open("README.md", "r") as fh:
 print(setuptools.find_packages(),)
 setuptools.setup(
     name="phlab",
-    version="0.0.2",
+    version="0.0.21",
     authors="Andrey Geondzhian, Keith Gilmore",
     # author_email="andrey.geondzhian@gmail.com",
     description="Phonon contirbution in RIXS",

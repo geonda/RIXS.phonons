@@ -4,29 +4,36 @@ from scipy.special import wofz
 
 class spec(object):
     """docstring for spectra."""
-    def __init__(self,dict,nruns=1,nmodel=1,out_dir='./_output/' ):
+    def __init__(self,dict,nruns=1,nmodel=1,out_dir='./_output/',
+                npoints=1000,
+                spec_max = -0.1,
+                spec_min = 1.):
         super(spec, self).__init__()
         self.nruns=str(nruns)
         self.out_dir=out_dir
+        self.npoints=npoints
+        self.xmax=spec_max
+        self.xmin=spec_min
         self.spec_raw = out_dir+'/{nr}_rixs_raw.csv'.format(nm=nmodel,
                                                                         nr=nruns)
 
         self.x,self.y=np.transpose(np.loadtxt(self.spec_raw))
 
-        if int(dict['vib_space'])==1:
-            # self.xmin=-dict['omega_ph0']
-            # self.xmax=dict['omega_ph0']*dict['nf']
-            self.xmin=-0.1
-            self.xmax=1.
-        elif int(dict['vib_space'])==2:
-            max_=max(dict['omega_ph0'],dict['omega_ph1'])
-            self.xmin=-max_
-            self.xmax=max_*dict['nf']
-        else:
-            print('something went wrong')
-            print(dict['vib_space'])
+        # if int(dict['vib_space'])==1:
+        #     # self.xmin=-dict['omega_ph0']
+        #     # self.xmax=dict['omega_ph0']*dict['nf']
+        #     self.xmax=spec_max
+        #     self.xmin=spec_min
+        #
+        # elif int(dict['vib_space'])==2:
+        #     max_=max(dict['omega_ph0'],dict['omega_ph1'])
+        #     self.xmin=-max_
+        #     self.xmax=max_*dict['nf']
+        # else:
+        #     print('something went wrong')
+        #     print(dict['vib_space'])
 
-        self.nspectra=1000
+        self.nspectra=npoints
         self.gamma_ph=dict['gamma_ph']
         self.alpha_exp=dict['alpha_exp']
         self.save_noel=\
