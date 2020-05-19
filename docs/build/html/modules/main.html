@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>main &mdash; phlab 0.0.0.dev3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="models" href="model.html" />
+    <link rel="prev" title="Modules" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> phlab
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About phlab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../input.html">Input description</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model.html">models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="experiment.html">experiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visual.html">visual</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">phlab</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Modules</a> &raquo;</li>
+        
+      <li>main</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/main.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-phlab">
+<span id="main"></span><h1>main<a class="headerlink" href="#module-phlab" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="phlab.rixs">
+<em class="property">class </em><code class="sig-prename descclassname">phlab.</code><code class="sig-name descname">rixs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">project_name</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">out_dir</span><span class="o">=</span><span class="default_value">'/_output/'</span></em>, <em class="sig-param"><span class="n">inp_dir</span><span class="o">=</span><span class="default_value">'/_input/'</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phlab.html#rixs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phlab.rixs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class rixs exists as a wrapper around    both models and experiment objects.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>problem_name:  str</dt><dd><p>name of the project.</p>
+</dd>
+<dt>out_dir: str</dt><dd><p>name of the ouptu directory.</p>
+</dd>
+<dt>inp_dir: str</dt><dd><p>name of the ouptu directory.</p>
+</dd>
+</dl>
+</dd>
+<dt>Attributes:</dt><dd><dl class="simple">
+<dt>nmodel: int</dt><dd><p>number of models created within this project.</p>
+</dd>
+<dt>nexp: int</dt><dd><p>number of exp created within this project.</p>
+</dd>
+<dt>abs_path: str</dt><dd><p>absolute path to the working directory</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="phlab.rixs.experiment">
+<code class="sig-name descname">experiment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">col</span><span class="o">=</span><span class="default_value">[0, 1]</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phlab.html#rixs.experiment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phlab.rixs.experiment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Experiment.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>file: str</dt><dd><p>path to the file with the exp data</p>
+</dd>
+<dt>col: list</dt><dd><p>[column x ; column y] defines which columns to read from the file</p>
+</dd>
+<dt>name: str</dt><dd><p>name of the experiment</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>experiment.experiment(): object</dt><dd><p>calls experiment sub-package</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phlab.rixs.model_dist_disp_osc">
+<code class="sig-name descname">model_dist_disp_osc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phlab.html#rixs.model_dist_disp_osc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phlab.rixs.model_dist_disp_osc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model describing distorted and displaced in the excited-state harmonic oscillator
+which interacts with a single electronic level.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>name: str</dt><dd><p>name of the model</p>
+</dd>
+</dl>
+</dd>
+<dt>Note:</dt><dd><p>input and output files are located inside  ‘./name/’ directory</p>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>model.dist_disp_osc(): object</dt><dd><p>calls model sub-package</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phlab.rixs.model_double_osc">
+<code class="sig-name descname">model_double_osc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phlab.html#rixs.model_double_osc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phlab.rixs.model_double_osc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model describing 2D harmonic oscillator which interacts
+with a single electronic level.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>name: str</dt><dd><p>name of the model</p>
+</dd>
+</dl>
+</dd>
+<dt>Note:</dt><dd><p>input and output files are located inside  ‘./name/’ directory</p>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>model.double_osc(): object</dt><dd><p>calls model sub-package</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phlab.rixs.model_single_osc">
+<code class="sig-name descname">model_single_osc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phlab.html#rixs.model_single_osc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phlab.rixs.model_single_osc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model describing a harmonic oscillator interacting
+with a single electronic level.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>name: str</dt><dd><p>name of the model</p>
+</dd>
+</dl>
+</dd>
+<dt>Note:</dt><dd><p>input and output files are located inside  ‘./name/’ directory</p>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>model.single_osc(): object</dt><dd><p>calls model sub-package</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phlab.rixs.visual">
+<code class="sig-name descname">visual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model_list</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">exp</span><span class="o">=</span><span class="default_value">[]</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phlab.html#rixs.visual"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phlab.rixs.visual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates visual object within the current project (works space).</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>model_list:  list</dt><dd><p>list of models to plot</p>
+</dd>
+<dt>exp: object</dt><dd><p>experiment to plot</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>visual.plot():  object</dt><dd><p>calls visual sub-package</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="model.html" class="btn btn-neutral float-right" title="models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Modules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Andrey Geondzhian, Keith Gilmore
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

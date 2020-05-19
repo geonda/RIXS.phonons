@@ -1,0 +1,5297 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 39 0 R /F5 41 0 R /F6 45 0 R 
+  /F7 46 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /ZapfDingbats /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/Contents 101 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/Contents 102 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 42 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 40.01575 754.0394 211.7057 766.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 42 0 R /XYZ 40.01575 787.0394 0 ] /Rect [ 549.6998 754.7894 555.2598 766.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 42 0 R /XYZ 40.01575 747.0394 0 ] /Rect [ 60.01575 736.0394 113.3857 748.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 42 0 R /XYZ 40.01575 747.0394 0 ] /Rect [ 549.6998 736.7894 555.2598 748.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 42 0 R /XYZ 40.01575 597.8394 0 ] /Rect [ 60.01575 718.0394 107.8157 730.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 42 0 R /XYZ 40.01575 597.8394 0 ] /Rect [ 549.6998 718.7894 555.2598 730.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 42 0 R /XYZ 40.01575 478.6394 0 ] /Rect [ 60.01575 700.0394 107.8057 712.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+14 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 42 0 R /XYZ 40.01575 478.6394 0 ] /Rect [ 549.6998 700.7894 555.2598 712.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+15 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 490.2394 0 ] /Rect [ 60.01575 682.0394 133.3857 694.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+16 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 490.2394 0 ] /Rect [ 549.6998 682.7894 555.2598 694.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+17 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 455.0394 0 ] /Rect [ 80.01575 664.0394 168.9157 676.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+18 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 455.0394 0 ] /Rect [ 549.6998 664.7894 555.2598 676.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+19 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 422.2394 0 ] /Rect [ 80.01575 646.0394 221.7157 658.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+20 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 422.2394 0 ] /Rect [ 549.6998 646.7894 555.2598 658.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+21 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 389.4394 0 ] /Rect [ 80.01575 628.0394 230.6157 640.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+22 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 389.4394 0 ] /Rect [ 549.6998 628.7894 555.2598 640.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+23 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 356.6394 0 ] /Rect [ 60.01575 610.0394 97.80575 622.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+24 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 356.6394 0 ] /Rect [ 549.6998 610.7894 555.2598 622.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+25 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 321.4394 0 ] /Rect [ 80.01575 592.0394 101.6857 604.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+26 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 321.4394 0 ] /Rect [ 549.6998 592.7894 555.2598 604.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+27 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 49 0 R /XYZ 40.01575 636.0394 0 ] /Rect [ 80.01575 574.0394 112.2457 586.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+28 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 49 0 R /XYZ 40.01575 636.0394 0 ] /Rect [ 549.6998 574.7894 555.2598 586.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+29 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 52 0 R /XYZ 40.01575 753.0394 0 ] /Rect [ 80.01575 556.0394 129.4757 568.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+30 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 52 0 R /XYZ 40.01575 753.0394 0 ] /Rect [ 549.6998 556.7894 555.2598 568.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+31 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 52 0 R /XYZ 40.01575 307.2394 0 ] /Rect [ 80.01575 538.0394 105.5757 550.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+32 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 52 0 R /XYZ 40.01575 307.2394 0 ] /Rect [ 549.6998 538.7894 555.2598 550.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+33 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 75 0 R /XYZ 40.01575 799.0394 0 ] /Rect [ 40.01575 520.0394 66.13575 532.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+34 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 75 0 R /XYZ 40.01575 799.0394 0 ] /Rect [ 549.6998 520.7894 555.2598 532.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+35 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 81 0 R /XYZ 40.01575 799.0394 0 ] /Rect [ 40.01575 502.0394 140.5857 514.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+36 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 81 0 R /XYZ 40.01575 799.0394 0 ] /Rect [ 544.1398 502.7894 555.2598 514.7894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+37 0 obj
+<<
+/Annots [ 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 
+  17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R 24 0 R 25 0 R 26 0 R 
+  27 0 R 28 0 R 29 0 R 30 0 R 31 0 R 32 0 R 33 0 R 34 0 R 35 0 R 36 0 R ] /Contents 103 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+38 0 obj
+<<
+/Contents 104 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+39 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+40 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://jupyter.org/documentation)
+>> /Border [ 0 0 0 ] /Rect [ 315.6957 512.6394 348.4857 524.6394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+41 0 obj
+<<
+/BaseFont /Courier-Bold /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
+endobj
+42 0 obj
+<<
+/Annots [ 40 0 R ] /Contents 105 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+43 0 obj
+<<
+/BitsPerComponent 8 /ColorSpace /DeviceRGB /Filter [ /ASCII85Decode /FlateDecode ] /Height 326 /Length 31955 /SMask 44 0 R 
+  /Subtype /Image /Type /XObject /Width 618
+>>
+stream
+Gb",k#?2C/f7o2'"VjI&5uCK5ULF]M!AfV-Qugt=8'G,fYi[gEQr,SG?3?&jW:3@i7>W3284GjD&D$kb^!&^(BBYbTLAMsOVn9OPl=FS=hR_MX#XK")5nF/b&-P91"@3S%5nF/b&-P91"@3S%5nF/b&-P91"@8,A6t0Wbrt#<!&;3-\M7>H2OTF-?90a$k5q4a>F<Wn`7M#\g.M@,N,!Ka2&-P9K&q"dF5&*Ou"@4LMHupPrC.8a;iKe6/Wi]XCrm[oGV\'Ml%h1]`p]-"4:HgfO+#P8KJoD+Is+:Lb;G^3J=pY.Y%rLgo_=.I4-h>ZApo#&r&;471J3rQ9)u/XT!u+MhUD*/p1En<VC=T=i]/J7j&>\<)qXeL)-1IB*+/&7skkO].#mgpA?G.h9B^afk@:<Rt?bS?Q1FjURFO,h=_hJUB5CT,cP*23"ki:^P\ohek'd6+:5aL4^1,;`t7n9@Be#-!63,rE.<iliR50TgEldj>4fD#1:n&'nk02&"I[^NAH^Wt$GCYQ:7iM1:.D?\HKG>Iu9_&NipVmWr*SND%'UI0eHc_!ET+U<,8$B29rE^W=6]Qs)_'c#ilji<?"p[R:aW`?*?XU@F>:Bbgc1M=uiB[C/Tgq!.Pp.S)lHM(IKBQ<=eWA;&_M2=ga`f1A<,_HN:-_Z$"@J>HK_l-G-R-ihi?p-Zdi\!aqXMDWt5%)R"^Bnm&7$FL<4*PT9m+EB%64j,@C%m:<rU&@K-Vg0;#miV=p2'3S]feMA6UO5cc-6R^na#2oo((ncB@!0#a$E>jlIG@Z]*Ha@Z"(i2^OOR3jHqZ3]Y2#WrVaPET`%QAEmORQkJIUu5C\Ffe'cZrJqF!ulS$(O&5YjjA.WoU<E7T@kKgngoB,>gWt<5>`BA.r]\0,S(M;FPe[9@+@+qu%bj9rN@7im5_?H8X/:J/Ir:?Zf\miX9X]r8TXU@F>NtgC@qtKR(Rl?[tPC)iZ`UW!/+`[#0_-i_9Z#AO62/CdY7aIYh_=\(^<O[;IC=qb-^]0?:5JSHd(qakKL8(Cd,T]'mE87sCUmTf@7ZA=*->\4_(-#9`HeuJb>@1aPE4W9#/m,?.OU_:"InPK8:B;;Z<]lV2Pe)#'2R-i:*'$%KboLhFU!u=<&E;g5ARf5f[6OlR4bCiV8%JX7#up7&BenG@:7Yi8W#?Nk0ja,-k6KbcdHKfX.TNK6\f`:F,m>i?cC?o"Z*F:mi8EP$CY+_Ygp:A&IN(4`KM3M7/T@XNYpUAOQohYAlg)_1pV\GgQ'T.4qnarFj5Z?[W>"'SYsX:5.rfs+2S"M%aijRQ5EFXe&Z#=q_*%r:]>28dM.L\QhgYH>bEa^`Z7Y"+2/Ccr$_bRrLkl<E$]C(,LYW.D)@0*:K^K/_]:dbPiF#n-FO,h4X]i,qP*3D#n(sMiQ!Y4>P(J<fX]bncEjCZ6Un"0?E=`7%-W520>Cq4ih7FKkCY7juUB`b-PHo5j9%^ARZ=9E\R[T[3oEtRgk^-2p6UOaFm!83b9h9rqeCrWf^nL>/kCNjFNZC1c)pOg/PJJWU:/4Q(EH+!!3AE6CP:'.t6"(6D3,g!&4?P;OY_:'*"PpCn0n91Mk!d0blCPTo\T6fS`/,-N`L*N5k'%n6&>VF-l^fEp)EN3:W1_bhaH7\jQA!^n]QaI>'Ih0fjlPTr5(*bWE&kk@K(O6Rg4?ARrqnc:3>o+S+Kt9]c_3^]_YN*'I=hOnmbPKCW7MU16F,9[W1<?S1K#23-q]/g:p4\)>GMWC/nC!Re&3]j8jnaJJLljai<AG:LeQ3k7ut,thqBJ.JkH:\U7n7m*?Et9<@d4q7-^?I]*0;_,!+qZjTOBQOYtFV5G'W;!4_*$1G_6[5JbPeJ.<a5KObaj`M#HuW=Y_LQ4n@97+RHdP=nbOq\`oCnOMQirQN16OdmgeO9u-%B/r9P6tD;>e0!_.3P("f4]T^'"@:09\n=#hpI&O$`ZH4Z3SKW;NL$Rg"K?pEH^5=e:INdD62bds0h:=2q4seh-f!OmJ't,a8kM]R'o*nH"a&(2K'nK:'OZsCe33+4F2FqWX"pfYi.PV&k)UQH\pO1S,0lg2+JL)TpKXt47G1J.0O[;11XO8_kamT(d=b]dLLQ:pY$F+8-"X'Q-Cf.CNfs,,o!5[2Q)[4TW=Y<A4`tmiX&lK2cE]2]1Wt5fEGL6L)X*cK9JMsHVfOR_mHs;3SXl0MTA_V<p?^I&NujRX4p7i5Pj4hl>-rh2BkhDJVb`rQh7Hb'IXU_ng:DEBDJlVl^]2und,lpikSS9u`/.R!?3LN;cC[=Nq!d6M[DB\qE.Y*iWd#g^#BWa0VDq>AEF(@iXf\]g4?O;`q+OSb6-.'*)n0bC/ld`6;B[IA4f_Vc)Aa2KH1GJL"U/IKjX!QcKSG5=rK]h_HPTq0XA,0Bp[@!PNbW?F'9#)N#TkoK`UT8JU3SI`iMMNjMAeX(Zl;/F[\7+r6@u29WDk/f8;3^IpRFBn[Zco=E6@4]O,"2c.UH6ZpFNu@(t`qTGkf"$q^a<NjlGJ.\u-8$ULp;mW\Nh>J4gZ-:<SqTTadMGBbHr([;[9KWV#g+8-P_upY<2og[aILKi>eFk05FEYtukTgp>'ja##V0L(,*aio7hV&:s6u2>F*f.?`Q;4hXHL%2u1gRP]RO+3Mc"6Pb8Q6qVVu>?fi0:S%i8'bh?K6:*_WmOV[IWMul@e(VZsNp5ck0FOX4CY"GI3;^^T)\s2)iY<_5cohuo@0q)&rFIreO.Mb7#hgYXLe#ST$"iAfm="9L.5NcdNZC2f^OH.4X]o8$"d//@2fG'i6Nn5GCY?"iYHKVN/D&%e$;Q+2'RL9\#<lllMSt?tioID9*(<ZC=.T[A*i8S@e^Dn"ZtWH8:_5VBMA7X@<)fY<N%^iN,-jQi28n'W48C?hfj:tA&>[0pEt+BJFAG:od%kQH9h6/"hHN@ns$O)d&>[0pmTE<34V8R*$["ho17pdeT)V'-M@cR-KC2l;cohud;,gMb0O]Rj`/3E,GO![,j&H<54d..k$pc?qVbWd\:f-(R"^chA%R*/:'L"Pi+#P8Ei(&%Xeh))ipW!^]J/]i:=gN#%\h[U8bU6b!P4B0[U9]7HqS@dhUOe:'Ht`#s_$;BYa@@W;ULloENK&q,[l=4']r;_Vdah/g:9Ig19U>I(\O=jY&YpUKX]dT\rulnRNJIjfB^jEc#:TLqo$N<hW#61dnDM-.oB+0V:L.1q&18j'n`.ZVjk:aIP1>_]L`ct$)LQWN5&*OiCu2gMldi32W=R"r'K7t[6%d;o:tjC!Y"2G3JfmTei1gtU;)9Dh8WtJ-#mnAsWs:h5T?[r_',..BXB_',>>Y&&QF'$_6'0N&bDDU?Au#O?-f;28ZhqCM(&212]mY-M\=&af)(u,NrD#m9+Yl3Q(P3cp!:cRmk005dQ7QIQ>IA2LYsWDHmY_l7lBHSd6$Y`iX8k4/."HY^D:hZk`/3B(7%'VP5nHFNM!%/l5s[;=b[@m8h;,cX]cij6oCG%bjp\<UM?_nC!oQRCYbUCu3n"JWZEFO"&4?Z>F/$n&9P-SY)Du7peCgTe%mic1`5]g&/$DLj4o#RURpW-$<Y>:6B"kurm#+1A";(\)S1$BX\R3+#YVBV*Ll@9$k2@8(BNA.LbPI(th37:E;[86ole5e>>4GZh64a9."7_oFcCI&KY?u5%[&Jh9LU4<CP;m:)Up.'W<n.oo\gQAQ8fdE0=P#I.f=km!&:u$\Lkt4^i1&]aiH]]on)(l=2E#.[n(ta)o&NA#`>&Kd-f8',Nn%#Ab43st5nJ]$b2Yn?X&g+oD;Mq9NfHlF'pT9?-f8>J`L\4?j\1`1%W!U]&-NRSnXO:clIGb-q?7N)o^j8s%8isPm`B[qBn*&FjUSl5U5jC_&-QDLnXM!d2qQj?]Kfqq2JjS-%8isPm`B[?)/cL4F`!*V21d/KJBL/OS/<+]=iMoi&-P;O76Ds?bKF\QY$HUs_1Mt?,tVV>7<D=3;hnOhK"..3If/sr>o<2t+^M^'NK9-=d@pf6q@Ecqb(*#X1k,AtLD5P!iPL@:G^4RGA7SrZHs(Jf"e^55RU4K,T87VA(a[+iNTB.CLDZJcEokFG#7du;%m^c&%#Et4[^NWi'SnnX?!X"T3.(AcW`?),oHTM1kaoG!(3Rr5@U3b`BmKaXIGr9`L(>Boio7h\6j,f;dLa`]*$$&ZN/UjT;b#+sH-ICFI#GtT[V!dQWMujSC=EN^R@"Y.qXj$K9:)q8&O?u(2#-9&I+4)\pkKc[fR80+D;#[8&FcJj*Q[<XfWh-DTiJ.NfDc+B&4Cn6E[#F?Dc9S5Atq=2VY'mSpZ+4#W-^EO7h57dp(=[dm5#+XLdkNGL*-b"AjgY`7n:Vrp$9N8M%_6VMa:6-Kg>Cn0<0]dd5<tMb*UE[C;JNS&VV>5+u5ZJOenmcE,]bu=P0ojbCn=R$k+1?HK=8Pp[[E=CMW7q/k>Zs0?pK^Kp4Zk(+eR"+:'/4j`)JSA)j.DHWgecAS"m,<V#_OiSi`b7Rg!B8c\qnbbJR#,=dd<S2h6@+>GW,;A,E1DAc2TmmakZ;'@3Or_mDp'S7H`aGB"Ii,0)Ik2tggrCU5T)X>t[j5%=kRI0)M_4ec%%l=/3i>aL(06T2tZ@E%"cQ-h4'h5NE`^Wu7Jfpd3SeF84ng$1SGjsY-N>aZ0r0:0`*BnlGZ"*fnp)?):m/Ht\"c)aBoE#*s@q&nF;cDGXBu@)c6l%aR/T3*X=l#`Rfs6_TJfolJM!%0oR@+-]$kTV\'&7QEJcuMu/gN:I$jm?)PEQZoE8%[5s.bhJ:`#76Sl*\s`^X"`Bi`YaQ2j2^U_)OrB0\]^R%S[MQLNu/p$:4PldfXU,9e=h)iT<P-\"^aQD_nq<YK1J:2FHp+:'/@i]0m)hS">cIDq[n83oNBS?[PAqFn)dVG3Ne%c+[:B>T=oX$2u>R)I"aZE"l%S=7srdTFYo"3o)_V;)Ub5t"%%-h?ftM3!_DcHZn+#n^[U"D_dg\1g$-gqgf-G1Wp)c`Ap6C23%ukm<[@n*f/CDdRZF,Fm5JqV?4YEmpbnI3AaFpd>Z]qM7;\/^BZ4LrpFsGGj*:0U?<QT=kXF"@:09+.\4KRLqnS_`Q,4KA!A,<+ILT=6cBr:9/pg#U2"ukX9gJ>fg-XDI%:'Ef?D(QsK!>,Ne.NXCSr8]&uC\nj3lj&I#FP9.1;$'c%#0P@*tHdjHt/<(BG+R$uk"4aKLb74BW5PX"=kj]EuH5nKhSM!%1MZpI3u]#)=WHh%P78&mW2jsUk*6`5`AV;G[A*^.Z<F"cgMT&n9(5nHFP`,h[@^G9?@O@+d5779P"4b\JYTR65;-RYgK'.5]8:<1S"iTB97Bk^`LSFpTf.HSk]5nHFP=EL9s)`O?L`F=VF@R9bL(\[Rr?=$r*jlO>CmLmsB7>p6fA9E$;<\j]nhXh0]JfnW[747BNX4O7FT@h;g"OK=-Kn=oneZ2b9bb#D(pS(<I`5G&*4$0l+B;YZ<i@-I4+G_GMkX<%+m<\g34^5I^!4jQHOI)<KCL@-#GA"\k@q0!aF*=AI3KqE%&HkDBJ9Xh2nQ/t#>i*2CS"#njX=ko7coq2\412WUChLA5B"ODsC_6e98k(ojHLr_3mbBgKoVf1*P_Q<8Hh*;DC3+ONc?:>Tp-.6a+p`db$m2$rO.%RZg=5.H'-^NS\Y@K%jrD9^[KqI--,W5#ihPX.:4%i"LE]O8=.6[c">WIY"=XgE3Y<Gk=)u;XK=`7obl)8<*@-h/JfmUHnBm*fW4A(tM&P/qa^fj\Aj/dAR3Muh'F>kPLl[uT3L?\\fh3[`SQ2^WjoKo-NYsWB=]nl_KcgYQquRt2Ll[uT3J#[CgI`T$.k@[m'.4po=,)Hj*^0)bnmZAM,6U;o'&]MunPO@=7aSE<$JRQk-n%JP7?)09%PiN(;m'B9Z=qW0[`^rJ"=XTuSVW>q.l6jtFiI#rkLQb>#6b8cX1(>+&9IR2f?_^d9`da,#_MsU+.\4KRO^1[eCks8+Qpb()b3CgbK7l>VF@j8AAj99[r:/i5Z%f=+MY^d'@j3hf>,1PXkZMKh323iV:P@,A2<oLnX2Oe[PKLEWiE)&YOC]&UErhQJfr/7_kIh+jQ,7afLTE\;JVaLREUYMNC-'#@jY!+,-p@UgTtORABI1L"Si3:SS6fgET>*#B.LG(5kj=UY1,V:,aQ2sK#6Z9/Uu&hMnNs>"HaIIF<Wn`Y0=g\pGA%D&M7Z.+d+AX5nHF$4us8t2-3s<W3:WGj&RF\$6ctPT8Fme5nF/2+LVq4.4Iu\2XT/%A%-@3K)_`DSI-h4C+Bd9:EEq6h=Hom$OWR224&\V#_F0e>UM9]0mWfuI83P_ZY.Ue?b[*NB4kjI77EW5R^0*#0^,)j@MC]-bE=O"KbcLCnc^0BJe2pmkfK#9042F-*hNMgOQ,]rcCVCP620FPCT4:MQ@(ufBgM&1?P%f3#SG[F^3o`3AB9i6M*m%.Klf4@PleNEO)Uhj-AAVT@q\0ROtR),&;5l*6uUqpZ*UbeO>q")W8QTA2FNf3\gNR.PLe`_D.l5=-!q48+:&S2M$=J3*#9=@^3t>o8r!ls+Jj$B.LFHbq19S0T;eeiQ$ca"[%JC*'I@*%Jfok?:?:Hqj./t46:,R-DHpFO5X5>I&)30Il&q5[!8Whle>81k+KaY[dGgTcX#Pr6V+R#P;l=NcY[PnO61XRZ*U\P&LcC4O6mka"E%DI?8JQdDaVT8%4*r0Ribm0'L.SF*ajI1mZO\-A>e5#kmFntoT0N)Bo[M77i*$hH+MT%R'.GC\G4+.rG4""Hcr1_,4o)s2C1kS_<SUVYgfeD,-TO:O4<X-([cQT2S=H,#X]l#B-j6?MbH3Z*5o@OZ,.N-;IJ_U%B2;+_.1>@2Hsn\91T;s,D,6)%,-BiMKW_IqC20c#Jq>,agtY#PP*q^U)&YGKdNf=a+UGq-SeJe`onpY0T[5i5T14eYSNM2g9=JeHB7'OJO\VUoCq$+d.844#W)4ck/PUKPY.]2VAn>O.;j"G&f.JU*Cue-W('6c]7dN=JDr89GhOL'\dEk$f*!69F#a?;K*+BTsIuY_`H?K2_ohm2>M>"L)U]#+Vc(ddik0BO@CdSd1ji\Go:r1PnIJ`"UJ0:@,hJMK:j-,jtR%'Qa'br%M&Jt?",/C?e]DhTc%om@T?tXUteUh1$>?b;=70h91dp*5+8J6j7hn=A\n(taK4*Ll4"i61qWi@O.>.o7TP`ujljWOmr`-!9jF,Q95S"!Wc?G2`hW,HAW1oiZZOM[4gj=Dm)Z4ooo0IeP%G'8%e(GE5$YQt[ImF%hhi6]Q-,N0<u:`G!/KV)#X8'R<V'.6Q!T0If.26q"NW2ZaB-R[NF;b%0`0;F6hO[;W;`89?71,<n.^k').\t_`SqY9S*1etOrKclX$4us8t2-29][VZs*++MGS#`NT/RbHH$B:YQ_Uf4WXFjGik.?%8=cC>ah(mp\XGid)5(+i](3')0F:bOIT39oeob$fL<"@30Hm6i0hNdU?S5u^f__QU0oY=R#'AY/u*#,GI,JrsUb3HFoa@<H]AFlZtC2bK6.@I17-_Zh2)T.XE\kiq?VR55*9,@b4nY!jK>;A.tLdHJuQ^OH.Xf3a$hjlILEG3o"oj%2g6@:<TF=0F7"jd)3u_83s,rj$+Y$60s=@RO$hd-K;ec^d/<Y%C)E]V7mH8OZ(jjegIHoqYi-3N,iP8nr+@^:q<(A^-Z$E-$"I#sjYN&^Q=3r;7NS*9?5C_*-&ebTK>Q;tJ\KB8[Oj4u+1^$4dY+1,;a*;@3[8&7/2F;56UBF4I9Tk7k+&ZR3;Q&S[t182fjVX![M6h5PbpPBscK"*]jA^V=_[kK]X3]Y(c&K-3]f&C61g1GaCMkQ)V_3B>:fTs&&P,9ojp[U[@<GOOC"[[0nqLUM-Y5%VkN$#)l)8J>iI&R6#u>"]6\p9V6#5C^D5Q518L6pjI7#@^Kf&Nt3uc9672%#9uW"=Y)US1$9R[U6eAXa@:qR58J2M)I7M)&X<g?9<Q0n70N<S,.6nfWk>JmhZsaEH)!]p%7m00\4\#P$Q=g1pNbBGuO"ip?L0YA&jV%;pu['SNhTf,UB1=LD[>7OX!A6gpg4jDI#7_\c2R)a2c60D;1@l;$_c<KQp76mFnteM\d$fLKIedgsi<%a,_;a*Zfe1rr#`u/\sSghRn.,l;^8A`VT8n7n6&c(gfLEg9glWaqEYWgp3*SkB<hk)\a!nTOUJ?RX#OWDr8:"4*O;&KubYk.K/eW*tX!8AS(]7q_Lsq;Sa72&VNNiF3b=:3\W@,K#*#%IfKC10/)eioB/S47\sEq_NW`hrq^Ei`/2^HX/g$JG3rD]N(B.Re3,0O[nm//K9%*=C=)^Wfn:aed^jSef<8OS=,$Dt-n&bDC6msTH[GWKDr1EenKTS9D"?Wo0KB8fn./Qi86K*+8sLl;4;k/TLkl=m/t$$59q+$U*3urY4F-KCTl5N*p8hT6HBC4\HcePOe32PZ[nuk9UnsoeWN!S)V73-s_ENDE<4XP)%Q%GL%dMWI)kh,r[r:/uJKfpBiP^SSXfXrW6GgXX*?6&,GQ%C2K*Dco%dhuX.jueo0JLl!cE=\#d62%\Gs]5Cs!hfBMER>.kKJ=%^T"/VH$N,V5$dG',`A:e?QYtQCH?S$!"gW7H4Zlm_FH!5UZP0;6Y]rT>SLJMAkc&scbsD<5eu!.'DLtQcek(Acj6n0[O!)<$.0J[ccXDYd*N=f1G:CW?=$s\ndqU[_ac*6UZP1f+R5PB\J$[1ET<[D<g8l[P>GTXo*;ERs1T%"2ZJl"O,p]V[G]93?+[h!qj%nX#Z@)LUD*/pF/=JVWdQgM!jnqWYB81s5#R@Ok1+;g+Zft?Q1(F,l-UYAL."O%>?P+.X/l![eLNaEI*@s4*%OL?ap0#ZLl[uT'rP_F5F#.V@8oV1ajt_=A!_b"#_o?3b`>#W"mNigi@aorjbpmgIgJ7@&-S+8HupPrC9COKTN-E,dSH)M(TE,qS8&UrM,\a-Sag$R^M18,+ae^!M]``B4us8t2-1h5BSZfa4L]Cm/YsBZEiPgDjQ,C5G3q>(cla>L*C6D(+Wm]S_N/06k_%Y7%j;3&IJE"oI+2DH?tQoscaA]qq2q+^d^X;W[r:.."9dMjF!ih&<Ns+;1Iop#@]l.jO+u".$A'DU_FH!5UZT_:#[5.'i*(jFQ1:9&qiF*M]m;PG`XHIk:7XH7hS&7.ZY)-^5#KurMRa'f1Rt$j>&$A9"=XNjSZ#c%DG?QV@4Sf"5kgLS2U^l='A"uFNIO6N$.gp>e#lug!b4o9c^oRMe>_P/E62$I:S[+2l=C7<3@m3g?=$rUDQ^%@C]FD4fugWlcoks.CUAC0agDQ8$<8jioFn&qY?no64F&-@11J1Xl^'8STS!',Gcc:@I+h2e&eP6q%2PM5HhZr/<`X"fXqaV30-S\*AXR`t'CdfNgchlP'LkGW,:+X)pd*0lgUI4Nh&FiJQ/V;Io^=gl3IM0bPQ<s/&K`l3'"%5-.?K7$/J_<E&(`RoAC@8FZ*CRWQS0F>DVVpPpH1Q#T$#1RTFYX-`?bJKY"%[=+p]AA`,hZ(!s`j+I42\)bgMn[m(Q`J@*g/EQ]N1R<4Q%-,]2;E4`K>0PEXI[.8sCu.Db255p+=:"Y]4(KHOMESeL5Jk!I7:gU:rG-6,.B6hcgJB$a`["P5C3"Ah7P\X$)B>H,nXANkT%4o_A^'d3i\$K='C]mBA&X]tPfh)hjgVb`p[SN=1Fl[+p>FALRX?![E'NXjS($b04]i%T;AKj;eL)28!&&BaG32$s(R_ePajcUAC5,*^Q5HM6]NqXj$rbfnD*5Jr50K`t,\8cmgI#+7]*IWBK"kLQcO"WfZ`BPM:&Xlq,GW@KuM/YckQ;j"m???M`D2+&RF&-OF&<h)]f?f0\qSJe[F&J5$YWIf^)]8`J1ar3/r2Sm5G7eQ('K.5+7h$Zq+Y!r<-KY*L=bK_C`Eg__bNMBS2UYFqnk1?eDO,8_`nF1tsJpiI]JeXrL:=Qt(pCeoLA7T5HUnmA3\$&l:?JDr-:JXbNGO?GT$4DLS.;M%jn6l%\iJ+^'O!d=g9.MSGX_QCd>jM5HTm@VWe]5Tr7`+*c<2!T^o*D<?ie>qR+5Z]H1J:D8S2P5QJUtYQJHNg-_^A6O/.nuiJd<Nk',_],Y$Sd[mSd_DKMeL6.1<7G4ETf6c_!G.Vm.B.T!Cgn?sr<OXTo/,PnP#Qfs"mPNb&fsUne]9C'pu8G3skchO6<;\5lRjZ1LD1/Cq53o\()h(4^N7'$\YEU8+LFj^iLf63O8ILu%5P.Oo2NL(3hAf.VO$f\#uHUIXEG<]oT;ZGrS*LGj&*\;"&H46Te*R$\_I5.rTogU:r,))DIrrCNoNIIZ<N@!5Zji?nNMAr:`uDtMbbrr)05X!aF/Pa#.RB$K><64eeb`,h[9c_&gk>@@7mU8Omo!@\t^8cdaHepuKO_hSbr9q+I\I^E``YYKOlH`fdLY]#=V8(Oaj(kUJD>ITqP?ZI\jLhcS0CTc#6fHO`hh(r,4Fi;(HJj_sn_rTlh#eJ\%M',?OL`Li2S!t3bCt#6jUpD5E'[T!S&84dL<36Lmq40Zq\p*Vg[@Ek&BP:pfAZ6?+9j]Gddfs,f@NsF8rgtW+4b(D&=c!"9Z"*1T[3N$rj6#L4@D`;X'I!f\*9&tU?="[o[gFp9nDL+<,W8&U!kP9<;Nk/A)760!li<0F[C*Cie^g?FATI1l2%K;0Ti\9q9sAu:$Cb"T$s1mtgl.4;,9nAYL)Y+1qXsX3'1&FE85;!jr:l$]Lb[l*LI-62H"CMs>eYSgE`*(6HcdIsZl4/O>"/OoXK:FAj6sEjo2Al6NY$HDC;nHW,W0>d\9ROQAnGY$HM[6rccs_ZFm1\dLl9I*2;'O18.II[FEDWoJLuIE%?[1%f%/E?!jSZ(X/iQ<B@!/T[;&_7lI@1.<<0V.%'kIcj*u)$UG2)i[s)&b%(%;t)0%F:,QfkVGOOBoV+MI.%.3HL'+tpYBPWra)0%@TO7\WScAkR$6->(0:?:X&=Cc>Sl%&1NK.o[la)N]+8-ID\F1!Dfa,V/J/;Logs8M`s#4RJ7^N7p3qT1B>G<Q:aL]efjLl[uT4;"q1Dp#JHip^C=9]2lAdA'4(5C[!!AW`N(kkRQ9]pt%WJ!pL1L`m%%'RY!H5&.7Q<+Q7Tb/U`Y7C%OqgqlqQ-71'ZEH*HX.Y8B7ET;MpJA(k[c&\s&[n[$W+<ik/\$riGW@;ZYq"T(MK>a#R5Nn]E7Si;D:Uucg!r]&a%Y$EMcCDFhmp=%p*?-qT]Q<8]Y:Wt1T&D53mQpk6SDP)JUkqW;,^A-jiku/D@ZZgN+j`A`NMX#U5/=Rb&l?cD:::?s!Yc@aQRl;1lIDrVaN2irehNqHe6'lKJU[Sg=iq1>OKuZf'5;5tZ]\*e5kgL#Y/kRK+T]gF8is1e&A"A=-ooIWL<R/m)"o^Q&>W:DF/#'YB0ntSfl#??<D6([DJnm#(GG('&TsoUEBs8_2*TC@].qnm8nKdmH(8XfJ3R$hLqO5Yo%2K2_-W]=Js;4=:)"BV,a`H'h;-oAgY:$!cHji*baC8gW[f!0:RRpeXg_5?CmLd3[$6OMXYH*'7Yl*LkDFd7c#tP:Gp3Ml!oc4;AnIooKa"/+W'JkcUIPh]QUm-rNFc0tOe@'D'Z4UtI@"^eAV$7O^m%b,bhRNGpCA+W9\II0[KqI!LNlRYS=JB<?U*0[0k*O?7KtZP-?s3)<YimTM?;U4VV"Z0mIa`--jurOe-2@W#bi76Z(3J,><rfL,G#S)\T?s1p$5>A2YHS/E-?D:&gpDB'G_J(Wk+ojpQR*JkKgssqq+cF+o;'4p?e>4Ha]6+QBVP0VZN"e;3X?.3,SmcUks=kA85it*Zgo>QhULXHXgPq-LpN[]-gCGA5c_fTR4fk$A<f(Pr;\g5t%G]SN?d#.K(bE[sZo:$PtE`77A(3)+dcB-MgmD-(2uFE@XQCo(7s&Nc3ghIIuaNY[PEp;]:6eG08i5"m1JVhRn,n)UbQPd62%GVCPD$f.tL)PESpI_hK:Y4Pa;WI(?%S"d54==&A\l)48;*a(6E^ZJ*[LitN1k`l0qt3&GL+FQh)F_83t&s8KW@$:KtJ%3M-sO.%RKdqF_hNb]MD,Vq5tZ%`Gg^.NUM<2l%OSLpP@C=]J3k005H?bUpbp?gSACCoQMam\jPU")*`#`5HJ*1SlZO9fi>@Uc)$,_65QYX3W*#]@kX4aUB4$B*Vq"5QlkkhESMLPJCFkg<44T/&@g>#(JV:/3^N?(77F=,i;F[;'8`A4WF;#W[<]I<Y)4<OHRAF`mAR9:*ABs8I\GU86u+4\=IN:YiV!M/V:cAL?%t&;3KjIdd+'jicH7gq7!F'\4!7#2PJaHM-P<(Dg^o@hU:=#M&K/(Djp_?Wh!u^3u$%No'Sq'ca)AU***%9-55tiKUD+c@&PfJo[>OU:bl@DG`]GH@ciJD=,j&<9YsHM]e8lnXSgbP:+2__1Mt'DUbVIiNKJgYV>:4SE&o"3bm.mAtFZOKUB/`)''_L-R[sG-2`-ilfR>q0Q5goq$I<7JCn!k1JIfIqsXFVmh\_Z2fKlRqHOYe#uR7R>PV>lWOnQ9Tfj&A?G(O\\1C=XKHM!=Z"H]H0OTF`KgNs&bVq((CtZ+*KoZ]_2XJJF+)Tc@/adY$:X8e2nY<h45-qQU*LcQ`e#03GX)]blClE&^p?0=tH$OOh'k(NZ&Ju?5gmgp2L!D1,)O>V?^QcZHa'rLedaHPd\5lU0Q$fhB;X"b=M#m_[L(>)AGpR`]q=*lm,9nEZ,pgX1^`+.c9hfhUpLhgDTmOp;n/^37f^,LNonr\?/"&sbG_%5B5$F+<^diM;jN3,c)qLuekMXLJs2rMte(@LFXNhn%@q]N]GE_(q7$(#uGYZc#GAghq?h).YFmRcNmbRp*F^%TQ55OH7J+i?ghp'CTh,BVjmjL4X3_WHc.dBS7)o@YEiPL:RM\:SDe7*;gZA9u1WpJTU)]BI5aiQ_)2GfoSa2[2hNrEaT;CMu>.Pp'EOcPQ!I!g<bG'6DILo@@a6dU/GfJ-ubm+AS[YD:?Gba@pEkao*+\3YcHQ';)H8LZ\GKQeXJFm,WEh[-82q6K(\Q[to79"liCa/pW8i_6.G*.h-n`,h[4QGtQ#lIa(dVjs7sQtF$Xoggh*3GmKWs%ssbZ";0C<j[bXi`_)hgnaeCi;3ED-^9]rT;j\&0V'kK<-Y2\`te@0<_H(9.4H^/o(D>#f\"j9_G?+RAV"^*MVc@\%'d(6qHjh4<EgDkPPY.P&h8^Bkp6tb]dW5]M>*fJ,(`c\b2YmeVPXneY#qs'<ioQ0gTY,(ZLh$k:f)t(Lo=[q51=;GC"&r5cbV!<ZB#NuUAJs_6Yr"X(G*b>IJ`j3kK1ifB@!/L;c@28P^8#D&b8Z-o)S+;(Flsj`<_'Ok<p4,)Ab&5bfe3,p?c(%DQXit>QuW=G3gX#jjr#6+X&#fiSb7V%^<QorVAg4"ppoPmO@0qV=emfcg0auAnF8?mA%#?WN3(,\8^EBJHKBEVPpFQIJWTJGOPP&cTdU@:M+nqn"9k:NA]aGjZ+nor'=m"Js;"7:3>R<OdMLQ$O[>u+2L;^pREpG_Q-bAfG7Qlkan;#KN?BZ\X$)f!cQuAV/63<\uVm4qruQWZ)<7tEH-9rkg>J86YpRT4?P`rS=Hr0Yb`F@)\tl/NHMU5nXBRcJs;"7:6_!-A8cB^kho0dH\.YXB\(N3TR1_)5$BtMiEA]2JJR0,2)Y.r<p$<1H\sb]?-f**?b_%!i?tr>(*"A:I_``!14R*&>*8#6^RtibMFN\"Jp:&_q=A5lbF]gEL#$gsTL!:+Be8R#$?T(hGtfgP/mQRJ-g/dG4(;jsK+@EJ-cF0M9'h<\ldi2m\8e9_b+<J)dcl'1S@fc+Ve^6=l&E5%*C2.Wi]3-jRiBj>jB)(<Fm@KDgCbNWrZC?qgnI<>jj1<o%BjL$\FIVL\.:D_][iiJI!e'*-5;*cZY,mnHWE,FDoN4,erL92ic4hH^:q!ie^Dgki(ac6<&DO7U97e6If9-9_1N!AVbbX`c!@l#jlt6l^O5k*Y$F-?'c%#0P?[C-VRPYKL5(F8;lBVbp/YD06`X6sk>SKd[D^#%JHH-4];(,iajnl;6-$r``GkZ2H.&)Vc'pX`8P/12l&Lda3.2m#Y_(M&e@BY`-Vp>pjQ&!&PBhJ#641?YM?D[u>>ER\GnJX`=N$:"7C26eZ*Ei/ET;B<l6Y_Y1%>&N%hB0\%LrpW9jG%21AmaYB1OEZGiVr[2*19XX1j"35!K705B5]$Pq,qG'87PDLN5G<WiE)5^-:kXj@TX4P=*+q&uaD]UudnZk[,$"LuY'inaZ-^c^sh&omQMuQ%=KPaVT-acsbD#9rh<s!m`07^8tA;>'4Q51mM\*7k3Lki"hSt8a(0$MMb"m638s<(P3dk5s-Mu]m=h[\QSRsoH9\6;5Jg2aWVCA&onNZGK#L]X02HZ(tRflQb0i?Q>js;4aZ&!HaeJ&qVAc--RL08SiiE4hbCH:UoS>5VG\_dC]6)YYD7m'p[6kJP(Xqm#4\332`K@Dgq5m]Rl5++SIJGmJF:Mc4aQb1F6?<`r:rSSfLTgb40C987[#DWDk*GoUnj6>PZ58<m39j]!t#DDX&>c$ZeM]m_mHeX)Du9:VX%0u^Xc;F>r&enq,^>Z]:u$m[nt><2,dFP`>b(p+G_`23Dj*h?JuA\K*MpAg4g&6V1@t_I4Qs%j5T(<NZIG`U&ls2Eq6$Yh,@mNUd9Xk:NI=u=W&5#4_W38q=Ed1))I$3YUV:ZDdm/WQ4!.oJ]7;PSXmgUgG>&km$>6XiqT./''Qk[EhotFEM#FCi83/"Gr+'H&>UKmOqWfs5Q2f0@SF<$Tb(O:?5XUubkbe3#2N5S4F?c1>":I@-W%4Y[XS5R3S1!-B)AlF?aR5WCOW%j!s]<hE&&mmCB+;3f<8P:`WOk,A7T4qGW<%"_9ST5KeJ4&/i@SHoC4L$Yp1JEV/@@*Z"$0iKX\GbPUTP@<eMS1"Hf4qf%/E?!jSZ(X/iQ<B@!/T[;(tKSd;$:8tYS0^FLfb$Pr2-;Gr\';gN/PV54p3@gDp_3V)`9$Q#\<V[!A/$$sO@Fi&pL]J5((s6.k*g"G&)H@!f_[Vacrds:tdFjZDZ^RtiNdBDmM+_&_]L`f5CLqUN8rVH3?el#Pq4f(qV=BN1Ym4QheGV1i]#f4"d`BL<%WidZqn2I4ZCV)YiNuU/XE+o"6h%4V8DZ/Ji9K>,D`5G%L:B1=jmu%u8VYU+e.4`U(P&7r*>8teo$j<P;nBm*fW1!+uSitj.l-mt!E_m9jY?0'%f6>N13F%K*#g2rNP^I5m@'%`'5Ng@bO,f59IbfMFk09l(Vp:_gC[S,uDrp*>P.QAqE1sgQR"r.G>g#Bo$:]<2aOo.TB@!1#^VZ_Ri^!8!K]=sK5G)]!CmgBHY[iSI=*p5k2$jS_Ng&>0EF":ur:&X\K:bAXB%@t)W`QBqR[U7[Y@!c\2tZ1_KP5G)\HM1rH's=VF]:8N<-6'",#_FhQS2_.k2th)$BA5f^c9b7GcR^=?mUpBN$0A'bSV*Y4id*QNupTXS=CQ:)>X$aIs:/*`Q#p;cd-Oa[V^H`kDjeT^W`*^_F2im:)f!3'bBi)kfK#9_83s?#7k_%W0-&BYcb2akap3-!jH3=".O836u(3oj=1%kJ'PUVUe1#ieZ)WO\m`J\Df>(Lp[><RfC)W:d0C5?Eilc\(,1p^E@h8Y.MC`$;.aG&J,u/l>`\;%I<s?,pC5_0Ul5pl__`au-0+3&d)U6\8]`0pJM%0Sj4'o?^W=i")?f"\i]0k$5eumJ_c[dS7aO;pcTtb5<mG.Ioa'5<B>ONioIlMl?%h]\`hb%^p&m^^<2nm8i:,gLP?YM6g"PH7>QbWPnXQP%n(tdm^.(R]XQq;Ckak[A0n61a(0iBKQH"UMJ0.!!7[u*&+s'\H2u#dIhTsO:gpqL>HM+SMZO70M`2SM'6p/D/+s.o!q"XXNm-Kgq&FWt7?"%0g4f+)pXa"2m/H[F4<TnL9p`<_%*"aI]kia]`LH-''+?W*Zfb00pFbPN8pQRFGBW\muCDfZ'3D%!+CFt!\KQ-ndFW28=NYEWBO5ZiInPM)<Ocu!X;,tl:[;LDq`?=9<4#77tQBlJKVq8+ZGO!\71JJ.l>PRDMI+6A1(+ri/)]P8png%2F+Z4"R/I,^8.(\K^>a(c^Nt`9BQ7Z;V&.lXb-j8KT+urM0@U_Z<85?/bFAF?iGk#8<S=;BOp(%U7;V&#n4;atgjZP,^JMmT8"pG1L`PjucnjGNKZk9+n+d*M@?+Y8SBh2"!!-D".,;1_Mn`*+Q',*aEBZO7A7U'&BG^+20$Rm`Ol,qgBK_0!0X?hIC>g#DE*lCJqihL+7TrkGfSt6E2CMB_fNY"?:^%hAIY&tm=E.rb=dV.be8;2eZ:;fZIr'F.Rmf!%Wk&&hbV_r<eLcn7hIdl7rf=DM/YfNFq8Vq4/#f:BPkX9gJbWD[qRI]>3EN!IojlPl!N;32<UP4C*f:ih"#c%YcMJF(8_JAr17"!M.8%e0;q)LI8K>XHSO*^NdagE+A25X=HHq(S&1c/77=Rl%J;`?YEC"&pcQ=*&kUh'8a7"!M.46k;_-/!t$i`ZZ*3pQMkk4DPJnFZ@cFQnsBKuJQC"$A\.Ubgtd(pn2:qO`9:aj/1lMi1fSI_CmW5'TOVL6#*J8'S^,%pHT:i`ZO1+kG$/f3_>"h;)@uW2?HciPUF_c'iW#9Rr_+hR7:USih;Xm-Hi\o]Us]":1";e^^-GBla+EmGl6JF"Is&m$,tUi-,"b\).Z833[/J.]Ejs6hcg%&=]KDg9hsQ8e;;+N=]\/WL`bV_WcRMrAU)X=/lDelg%&07IAd7Valdh;l<Ab:J\`No;:HEL5&0<EcR'R/So9@/M/P/%Ri?C,U_<VF(\$7LgX:_;tKD2\%0&[8P)K63B:efBu\04'$s_lFAGIaK@[)0>g#AXb"hdbLRX\<-UOoTiR5C@TW6\QCR8G\_o!]F,t6H46UO3s1Gc4A^[C@N)&!\4[V]5$A0R9WOdsMEf6?oQeUlV"ldk1Zj\;1#$+=X!W8[46J,8eOp*CIUh,?X*PCCB%$*../pn4Jgp$,)NocOmD2BgtVJc=6./"omPr:\l`iSiaQMMbY3,Mq;6_R&_!hRskskfoSUB6GF@KgpFdp?e8R)]P:1k\++\NDqAqE[#2rp$^dFYks;%fH!%sCd^YoS)T;+h,=qCCY%jiLCZ"fS__W6ghPHl:f61T'I$\';>:"D]mF:#jN!<']tCur2/:'p(k$i2/R,[=]6E`-dA)aE59;UmN8RO]VG3bX^0nbY<E3%/@q/>>TFq7dIJ``'\n%U7,E`_:Vl0:SeVi+`<im8ss7Ym:.lc7jCY,Yh/=,rD"hLTWGkULWPUTO=,Co#S12GJ3jib1MKh.LJKOiH5gYT`=If9*_.Y6$AnHSZCQ'KnJV+X`c;e'<I)`DL<LK%5P%NRUklKS_rqYg<cq"XW7J:Le/AdMgnoB&bPB+9tY+up7*]OA\^Ap`=CET!G*U$/^h_d[(a=OpQ4$n7E=WMian:1@\,]Y&WA>*m5Ad^+#X(GB*6XUC7NCO^cQ/LMoYB4pDom!S?_`=X=a^ohcir;HBICY,^(lp;g$Z#F`(ZG4/(;Gr[9MbDU#<<Yl_NZ@leku5En>&[ee>A2>U7k0*ELu^r;-;;M&aas/ZK7a95!5l[jK\nX,5(*-tJ,YR\`e'k1Z;0f@[=>ccS=C+l9,H#($0[tGJLZ>kdk@8;:3uKl8KT#rBH*!S59>7R?u",P&KW"M\8c$;'JN6+,GV\agX`K2\%p)m$4>Cg?[r(Qq956_=0>d7;(@6n-71'4Q7SF_D]U_=V5"p-jG<(hbEjl;!&HDee(rhcn.MA??:3(?KHE#)!fI'7;\D?*r_W(?bRCG=EcTd7?!FaR):tSoBeV8kk1a50g-Lp)<E5;U=&W%Ep[2>!G1%5:jR)?j]6A20/d.@%l00*))TA6X#&7phHi3[/4aZn0C"$\EW`@E;LPGc4A&hJF;M<qq,)Cp1UD*/pZg?/Xe24(#,H+'"%N4j.jidPqmgEl-UgbQ=BC1>ThP4T$X]r7A+53u0LZDck2e^P<][,-Yp!BC"@"3-&f:\&+.k<,3;Tb@;\0j,tCY#T/lp;8PR[RC^f5jG-$m2$rO.'XP8[SIjd*u=6Cg!AoIAHSR$]tVHdY1qIjlC<]>:5s/jQ&.GqK,;nfWo)3KS5#<)`PWpD<8p*Y^Pfd.<%E\%hI=,Eoi1UVIg^Pg9P;5qXs0.;_D=b0QH)?p-g3^&0a,sTYkW/5`9X<YIC*V5kee0'geXnH]I5l$,RF,dN?8K'9g/d]/(nLHhU9-8eUQp_]m^9?Pi,hCM.;Cl051BUXQo'G>W_e6G-R=4jT`bc\t4]&BQ)Y'BS?;SND%u<imPm%NdZL?pmCN7RfjMo!,R/$k<aW$O\KSAo5A9"[PF?042G8F`f9EhEQ*X[STt(*AM$AS2kX#kj&-eV*Z9`+dE]u6:.Z&B)MWiggVpC]SME$)),I6_1Mt9,g=KVKR:IQ#9L-A:J\0#]t.TQ5saK,p[@+dGgNm9gZ[j7_5#^29q("(>=8gSj@$n?%?$+$8kVhSrV,1QM=p/aK4ZAGld`%;%1EY;bsYlE5!1s_aN-nD8LYc)^spk5E6,o56;7o,@PW#ebR54>YbE!aNYX3M5kTBrmbP4=2Z9\N!nCn,XsG7HdY2sq9?=a]/\6,m$=3r,i3?e4^bd2aK_Q&F>]k2^neBKS?+\LZ8&K6UZ>/4,[3-Ki&[8pbkLUqh,pA<T8YXook]l//KUD^ag=irM5CWP*kF[5F5(#=9-"YlAETIdh+D!i<-\?\XkK]XOg"F*R^>6DF?aF?=<`W77BW.2]<>flAfWc[NfZa&09&XjL[Y!8"/^6hK]R'6cm+ASIEKs!58cAK?]1?LF,Q0?E,Xd^%Aci,;Ko`gT\1girLk1kXQE.'%=BO5OoB.8rKV+mK]0#Ud=@5FX>2\/DD%f+J#pGY7A,[n=h`ld]#bBk[C"$Y:Q7Z4C5S,((l07Hul\hYV5tXR.-YhMNGsk%gDJnn:n)%3K=s_T8#K)<-LXn#_%Ft.NrVHtp",SO0Xt211FO0NqI"SY3aZQXLAD2P7[r:0d=r5%1nq9-$5DdF6r'"W1TgOTgO"O\IE;/eVd("eN<(4`^*04!bhImJN?G:g?a2\GE9eS0'jQ'iA7n7-%A`cZd6MAb;(hA"?j:!2!WLGCL!aaW6*b?+Cq*rGgU<55K2.a&s?iu?fX:GD!8jWq6W`?)8Zl\i0o&.P!mKj=nOa`gs]'#G8A"Gi1-Ff<D9Uds-J!A$q85V5h"Y__g$OR6h+QOQFKbi&pfD"akk?8\=4gjM+c_"^6o^i4_rIkd<]6>nT-71Q+o_J+AM2@(4G'9_Eetl"UH[C+DZcpWe_4VE-%1XRY8:_G-,K,n$]Oq!n&TW\rAs$$t43e@'0@;ZM"K8B%K?+odAggKKhLOF&5&`uQ_MI9Ecu,@4DdHUNg:MRt"q;J=kkf\qd-U,c*BSG/0XOuMP+UP'mbRcbRlA3.=ZJ>a73XB<%ulYiFmDBUj%G36S/co*ZY.VH=r/@rZmFch25]T:;^)'l#.'V]f':edF)l:(I3)S"C)%g4hlKtep?gU==]lL-R]EKi$^JWqf<:mQ*>]Lsm;68>e'lc=8P'LX++hr:q9-Lb+f$tESUlHA@Rd@1U6V?1If0!,f<5RSG4""k#nnYAp_b2F.>[%Qrr2oS^4"bKH#nOVoWr/SJf=_/GU#\:-oDZO%7W`Re?<5Okqs_+\$g213]oO;e5[R:4]u3%X&`'aj=2SER5+q0;K0t!nNKib)3k0HnX6Lr7RdU;phjte042F-5%i354UDE$d+j'=i'D*ml@K0I*#or-@q3>'T0.DYmd;]pHN@l?jQ,ApQS&TI"YW&\k)<[a@a)I[Z/d(^!P"(FaWG?lJd/$db*=KdCtU"[cDF=*<ioOOqIb=$,pAEb\[o@1C!rfu6T&W.3-FLcDJj>po!,X3%LEFBUP*t'G1Wp)cU>'X%mk'_T2M?T.(3``!75!8e>ZA@'pV=elU@-mJ,JiW^juS2)Wb-@,$Rad\$JMFf@JOHlIDrP-bOs/hV6eSfetN<q"3eagpunVK8/ol8X$qW4*9[/3-j;hE=f]&3HA[$jN6>L;,L3`lIBAS_9JUnFBp,%Yin+W#mmAn5:8jOO?S*h5dO_bH\Mu+eZW=Ed5+7RP$lmu]$b/5,n7G`GSh>;5'uu3C-3SVn#o*55]$Uq,H`GRPe`N2"5QP)I]Zcb@-[%B15B&BDOm&X21GIJAli2@)g7dCSXEbC%<eF6/]ar;oB+D-?EmsnUSB&%WQ^Q4FW+sL7GKEm/SD'4-A6(B63+&[gYjb;/tFFmY$?Ni5L,gRYRVbGLl\!9!C&f`,tjOh2):BH1O0lW2U.\1/IIV_`Y"A$IkVFWDI0n2,U?pCPUStT%Y^2c"Ik"@r@M6^KSJ1)Rl:Ke^4#l:/1aK!]5QT@5QCX[39Q=to.tchD`l3WDiG#oTXd&pU8FXd2XO"SE,`T1Rh847OqT,g-74sJI!iTfU^BB]'E`DtF/[=hm>Sl'bW%P#i*V!4`O.=O#P98eNW*N6^ud\#\o?WFX]r7WIS<L3(+^u5V59HJS^"g*@0!q;o&U8W5BZ6j#QWiH-g2!F+m50h0e"bi5?h/B,:&iB\`).^E6et42F-=B',,HF^k%Y1,pGkt&]om\Y$JZ:1aFGK!4o'Fo^C];hS"7nnqX1A7;!ANm_s`"-.%HkbP=FUDbkfe<sV,WI/'pZd3A?;h7.GL/hYGue$E&T<pJu8A&jU``cdt<I9*OXIJim1R58I_Apkb`hp3[2OKJ.@.uRNlS$MP%+1H1G^3o`37)t9*2;5BL:Jak!1T)+BPQsB5&K`lO:A*o&;a5_YY,i$HM[phiIdPjs3HO>%XUF(s?uphYHW*$MMeNuup?gTV3H>88C"B@g)B'MeQ7RlON;WD:gV\dW4*Bg6I(:6a*TWFaQ4pp@6ZFE;O4j>)K=fLd%NRT`KnUs(-jWQJ1W:)2ORg;`'3SF>gpqK]XkZMKh6ZJ3lKU^D[W(1lP9s$'f=X,n.OboFo]kQ)m/5k^$QMKnLe:<$\<:jI<'h)Cf9[e-f/B=DeV<6o"jT33ZqJQ`hY\G-%1&@V@g;_?nBq('k<fA%amtQdJZ)>>XfZGQB=E-Uio.e1$Pl.7[C(^9o()@=2f"Q\h6W%K*BH#'-0=d`e,/n.cWn!LkIbF7$MUuH]m&r%U.(!_^4%8X'YokC:SB4Mdg3KUaEFd;6L<sC=n'HhKK'Y9?Ka5uSh%rc:9f@0o61,7$U]74J;0ffd5,F\baggsng]_.N^upp]QnR1c4C2if$Mdje'g*32`EEEE7Cg`dchO-mTC=*<2frMBkI'[0oC7`-M^_LIT\DCFV."M=qIti^Y`i6rt5St9h8Uta.!726:`4NrB;D(5!I`0D1ao:8P*XYbaG`@Z.5jSPG/hg@NpsKh7.GL3&nErqt;Kh.ZGB+L(G[T+lUnJ:LhD'Ods;*TR2uYOX!B5pB;KL"Oho3(k<-u&4o]Z`ga$mgp?0WaEa$D#T?4*oPuh;dZ?X=L0sq*<E84?(I*EKS<]B$lK[*1C"$tU])DU%h\RqPS2=pm:9fM/LIb/CJZ&!BHjpuNJ-]-@'oU!7h6SZbg"BZCG&;!nHts:B/mZ&1n(t`_lTu0I+dfKX4WV#Kbf.8'_1MFMhp7cN&"<I"'TlFQ64a?`S-ZdUgtZ/=.k`Od.IGisPCTg!5kcf>"U0VEe#,EXq!dh6a30c#bM'UsM)q!O(Y3#'@GSQU$J7o2@R,B,@A]<nUSF$ARTcUa*Tj;jS=H(<)m4"8Lk2Mm.I<=YHO;D;0-/D&MrXa2oAH)?"q7a&f.U\$=N3Bb7ZQ9<I=$'XoZj!h\JBuD*&'O*aYPI$PtlQj,[g3(aeqq,k"6T0?UT%_P`um@ab:)"85?/bFO).FhnFM,7"hkOZ4\=@9K++T\YC0,/m>VqeZ)VCpE9[=S8>'H6ma(lR@+eg5TCa`p?gVTPq[m+Lu^t#:,IWF%<9J+Ka[YAfi+H'a0_S^,/e3VaA&-^ENKU7A:bKe^.9Usk/nFTjS"QO22[BQ[C<V0E8\P-oB3#IT8o,p,%ZFg:;fZI&u%jT)@$coN/NUPM2Accl^$.R"3aY;Z%TJ-jRh]c^]!jFf,>5h-;YiG4M<g?aihH6HM-CCQOb0%9M%f9G3g($5q?!;(c,dJmG#+B5C\^"L`g8[O&!V`c&t=p=ZJ/iE8SBX7Rfk,NK(V!:AgGR`90ca*Vt44+X*P*p$,f*6kEKeOcV*C5a)MBd\;G\PngYjPEM)t#q\'rio5Q2.3N2QO&!V`c&uJaW)9_#Y-7p2Gp.Z6k9kWRW0!*sLkrNYhfeA=O_]p^,$QH-E\7;3BOA=r0a*u_-O^kJ"<p[Fj<6X;O&!V`c"s)RW]Fe<S3(r_>c'J?3"..p,HVD1#e<*9gk#\;)E2QhZtWIAPp2$C!YOWfHHTh4ZIHZ44?QknP-erPVEK>%d+R+*_o$!]p?h_QqV3MgA/[Wm&K`m:Js):[S!t?RN1kMZIf/uN^qfSn".>8B0qAm1e'iBr^k#b66kEK+b]7@qj-mLBe*$]/4-L.\)'9rmR$]jUlI>7X]Dq]iT2AH_[;4CV<\5MbnBm*fW4AFsWMq<r.ZPE)b2(kog;s\TbTS6+:(H^j*$qG88kN9UR[Z6SIeDukn4H@[Js='fr0b(C/M)LF5.u%#:24NY7RfkjQN+^+pWf<kGOOD5Th%R`iM.(V;7"nskg0>Sb-,0e_G1"*p$2bh(A&a1AU^sGZ$#Baf<2s;042Fu]Qd:L:QK;)#f7tcd<4#hY5b5r3knn.cCI$%#6tX/!&l$r>ePI6cd2(4Z"&b42s*^^,&?\qM>4#P4;p%iOI2CpHLtm,.!9ZT6SD^>goVOUS*pV#6HE(Y02"s]T/.bN7%FT-((Ki(UH+!De^-i]9GAPQZ=hK)BUqni4Ln1U2@^3,#mgpjW;pAbUD*/pF4mNmX4Gk(>J7\^TXfF6d\SO"[Lg"aeE-UQ1J:Sb,pB:1L9ZPj#^fU0+QWaoVEObL=%]5Wc41?.S-b/n29O%_=h8^Si66l_(LFh'H1Bn57un^^2fG:r[Pi?0&WYhF'Ceq@)1_eZh7In.p[@S%XkSL8'0^&@hHI/ADZ5(_Kol*"j&<k4?G(Lp()@Z&(hdZ!b-ba_W?Cg[,W^E$gb4j<"[7C*P*1urR43MYhnFNRJ,es#kW""eoWr2V^460s?G1ZHY+hX7#t^5\V5:#RPngeh[$,.KSdk(%\Gb$]>?@Xn'b_7Ec'pX63,i9PTL&/>dTepMq$A.6Ll[utTLk=o-Vg0;$4=@kp[3_C(Z8UBZnX\'OG(2f);k?cgVs]Qe<6#Z)`26TWDf]qX]f]r*'l%m>(l7>o?"mEQ_pF[7SPK%_hVF'C'dZ)p@aN&L_/pU?G.9D/2T1?4$,Mb3kG5fHSoZoFSYLhM\[lG;sr8@?U@)2]=Y\ERp0?2,-uG*fQZN(S\_g%"ruI)A]oZ/$[dANY?\W4US@p_mbm"'-^7O6;AT&k7"!Kh!-NF,\4s?<[D=oaj5]*IC#6M5SXnTgY@!>D>-oZl-c=8BYcdE#JHMD+l*YB_p;)@da,V2#>!%=8E1.C0;"12I;tJOm#mU#.D50R[rr)Ru_&U"=^-0T]b@B<7)RKMG!=',Vo^VI&6jQHKc^ta4*BSFL]Qiu!Z"'3RWR1KqX+h*)$?;o>VWNaN/&37qgpo4Ue0shGNupUShS&g5TgMN+gU1fuVB@i*Gqs@l!.ecX:(CgXlmaG5]mfo@4[%WCa_BM<D;aR>c_&6k<7:9`M>4#P(hao+XmtPuS$]OZp`FZ&Ym)@-^bhN<qiQB_qETpi6LomB/hSd'ndGg2=gi,a^?%`ol-PKQB7`USVIo+\0r`KjIJ`_4='&IB:1.HPgrk:TYf5DQgjoP4JocL26;7V2KS>,2+l9_K,;qI2dErQoj\r'P\[oA$q!\;8n%sbd]mKJp0k*OiE,\997a7AZRB41qL!,o?AI?oeJggg-$lB!-n)(mPfnJFQi0;np<`\qdo\?ffe%'P_+C*a6FY!1*QNV\X,2R$OfWa>+4aZVR]aHb21c>70r!WuB+ME*olBr_X4J"Co:B&-Tk!$I]ViDXCjfs$uh?%I)+p]AeX9j0:IrE3=Nt!"PNZQG)*&M65Za8U;'qB[;eh%.6"fo#3>."]4d*U-IG'E?-p%@Y&W`?)T]+AA!rqonQc-ah-40u5uR$n%XZ=M)3[r80>S]^;&=]p=1Ju(67@(>asn^*e<G2'E?#=7[<,=_l/5S]M@CY#SY4aY%h<)f)i6#_K/GiqJJ&"8cJP\b2RiV26-:ET@?-R9sRfWYC*s3M[;RgY[Ip#pK&@%)@58jDlnbMOXWVP[r@Sa$?HX@YuTf<8Pb<im:lIgq!/G$5GtKQ]TTYDK<Q&D+!db,SHUc^p-%ZP/iE',1!:rHlBKUIUB.PEY=`Xip(&5CX_t"X?K4S2^Q4GNdD)g"j/Xj-quGm.,4MckXcHcC?o=Y*P@h(bmka'bqHlGM'-.&EJij2i]oP[r5V5g:_iWAf&aDLtLP>?(b`KNZFH=?#jq)H27"WP`*3a=[DbPW%^!*)&eV+diCSt1k_9OL5)CqTar5/KO:gq^OL!5lAQT:i#H;pi5be5rqt":o`\(C4Lc%V/@O-5Y<t\).p&l=M\Mo2eu`.d>7j/3$A]iq6\$WXU^6sJ2`,nqBK/d^D-Fu?T@;8CHR<uaH`*^:$-$F]]m:D3dO$:fbjO&a>9TO'dA$rQgTkB`BNj0CfJ'p3RP]TR0fV.;p?^HgB?l1moZtR^Y-(?YOg-&QDgZqE:7`FA(\ck("",Io'Ztq,".3k.ZtT!kb89.3ZOisb]hY(W&Ls*C9:(5=3/>k<9>[<(77IKPW)R:n1UQSOXfWsEQsaH8"?%&]\T$L/r%+Q3ah5bAe1pRMh4O?,lUo3e#k#2uKNt=dC2J=iJ3+&)K#l#(\Bu/ZjRuA:&>Wj0XZM9!ZZN%M+%$"5Q'?;m[X;n)\4TV<Bqn/ff<9roI]T'sHfr1q".qf-(3Ei4pb=ETcbdPNcki#V(G&+%o-X;'A!]2sgnmce>.<q.WMuB$I[l6d9&7(8WiG<uQGkBgPGk>oTqgYBVKTUih+re:hqYPNqmL>R&J<rdR[T[=6"#gO_[%nA1O&7l+!7,:OH:PKIR(\aDf7;ZO0>9#$VhrsS7pL*f:P9Wrn=bq4*BfkX[i/7H?a\)4aT(A0bNbMn300?=#]lkLVq]oRg=9^oVdQ@(I6(7L(/4mhfi28\8C!/&<hS@p^p\gi5OWk<N9#\rniDPLtI52[O'un6C\=</EC\5njeaif$MLbe]hgZ/A4K1FE@%M",!OANH.((N]&`<2DN>$f?_poK%#Ui>khYIX\pq=^RScYq5gIU=g`!p^&95^#?>>K^CuD^F)uDX%NR$\]m0'VLi]7>"(U`LXW,c%UIL5pDu`4(>?b=%\?(X^HO?NA@CG,rjPo1icThHRR55(sGfe(La,V1p]QnRCG^)hQMVr?#j2R(na2`,bflJ;G-_onLmDAm$C=gb!3R_;'"kp$()MANm$0pa<pu97#B4klP!DDWp5nHH,<$_\8k:(N"kV]<<#`6`sLqYG?dKk+c4"5^smil9K+_(iC"855U4ZX@d^ggE$/IcENisC;!q@,b($Fjr4)Te;2RJZ]+#n7VU.4-Agk1-M6K&+7q#=D;rp$28<gE/S)'HA)tVbS7LD=,W>3u](V9'aCT+-kMB#7VRS0",B:)BBh=ppFA@I/1sP042JC]mfo@(hGrt^mHidi-0><mbR6rln2ST0NWC1djEhqDeIh5>A6<oNsZ3tDLq9Al<h/FfhCS&X[rd4&Ju>jk3MI'%^p`VkY^KU5Ct#C!P$m"&^lc&<ePRkDV1G?SqL4mh3N`D-_qYDN>:a-Qa;0/9E*Oh.DrsZOG\o1+Y=Thq!mCbfWeoiQgEJ9n,)kJK&*hMf=l_43]/effs>=JM2>%`6F1#l9<1RD*_i([@7b'"TQ7VV[;+57KZq]cNJND3b/sd,r:&[_\om>s8#!/h%Lk*O`(VkZ9?8;uo;oWPY8\EJdk9_5%Kl_gnC5uE>I=0`O@b*^-04X9Mk<1]\p!HZpp-fq-`D`"*4Rg&p2Hj6"@8hQA,91#3`r<LP@S69#R1djYA]^Kb^r7jLS@_E9G,LmTVA0$r:k91`5#&04?Oa"L#>p3=1;\[N[n26S3;3WKH;-3ESOJQh%Qk!9U#9t5U6W?@IC$h?*q!Ed"*JB1i&E-^]1q2e^KD$ooNC]hT&B^ee)@Y80^HmH$Nt5B("B\C[0EK2fIQ+TXAt1g(Pi/>eba$NK"B:RL"LaM\72h#hcA^*2';]r$4:b&5QTfghkeh$lph]XU&eCDr888hI2B`3>/%mAn;h`"U1d(0Z5!d[V\*SqK,V5&tEq5kYXkZ%1QUVHF8p!P-M:^U.("&c'p'tXjaL_6a7GOK:p62cqr*DWdapC()@[;GpHeLdaD#I$PV%!"pP9`+h&)\'"TH<\I`TFhnOX\+jT`9`"rlBind)!'(T:&0#ui*GM'.YKJY'PVP`MQp[99:gpqLhDnl8EjN/&o2`LM?CtPrm)JRZt9iFthA*Yd:&-QF.l@de&inC%k[[u>/*JWh68d>Yohm)3kqtCI6BnKLi!`-Wh%\lOTcH40?=Q+c2"299brl6+1(`=3ZR@-A9nFG\aKS0K,@#l9fP+8$N+f_0,*sA]C;,In`K(8g4f3]C5),LXO\@@opR]]f"#&7*cio7q8-71&NFMu5?K3q!-gT=\h6\c/JV56UN7mdatSm8jK#r7#.pbA;RB@!/jkK^p3]mKJrHj2*n5C`[QO!!?)Pa%EWRl>tDK>g4VI-/Wj#aSWn,V,R86F-g/mO_YOlk4c9Tq_+_C=Re>q25dhH26f*V_0Q)`69XXWDb269)(HmT0L)7mp9[:_7/!g5m-nJiL@6]ZbnD1#_MQ.L324@UU'HW7ZIEG[DubuI8P,-imVo-;R^Q29o&gudL.*$?3Wm@jRE'8^Onr^7]j+5dftb,GS"Xs?JaJJF.%TU,=[Uldl_pHA?B%C1c.$355kET1O*9uk07\mXLVl`'%hX-n0*If&G_>,48-ja06!/$3".*bkIS7911U0\<N?<V#u8`uRIItpY:g$qb])8sFm;);qD:>uIJ<0c4aZmU0IJb:f%/E<h+t3e\gQFrira14TrC&0&874(]kLF%p[@UPJ-K#kL(1s4hnFLHc(qSJ0RnS%pt29g<OHRAB_fHqc&=DI&-Ssd-n6^,*Am!0\8b8\g:1+]P&4s&>LWqIDhMZOWqF&(V[N(d3s_6EaMV/e@P:t'f</Bg650].[r1$ff<5>[8B6Z,"!0CLqK-<c+q\e$=gM]p]+BUBrV@6Y<G#<6=81IYDjrY%@Wo/e[D>"e+$\';JtKpJrVQ<mRNX#3MH[7-FNtTeSiqEY.k=9^]GHHcN/V:kk5<BdT&>-eR@2Eb\U!cnI/X\76C>N'f.Qim_(59IgK2(7F[@$BmG#+j(RGDZ<%;Y7Y.]8D`ofjQ]$6Z7GJf0-L(0&Zgc/;&V:7di?e!SG)`.iMe@\LGn9Hs2Sih2_*Ab%`ZqJNu?+WRDhgTRpW;_JB-"KHB:>r*G?!=hH'j]F'9ZrajDqqk3@n02G5C'K,@D]^)5)0ZXJWQ1Zm[BSOSid=%Eb\)Mr%f_]]9cUYX]t0!@K*)cHBeC)FWL<l)T'nRY?ld,$4ikdOP.^rLrE/hEk3VpZXupN8I-p:gppp4DI3;N&HkBL,h8npF)Z*nkF[6!+$Mg8bj<p?`JM3N5O%&iUi5.,C[;"9mr!ZM.b?Y10<fgnTV-!+aI8PqjpEH$3>%-1COlgb2DFCROFk_/UstO<8MuVf<k938=l^t33YA3UL#N=_C6PoQ,:t"S.S(gk]I:#,Gb<0i]n;p4_oK`E=n_k7a#X$gZY,nY=SBK_HZkHYqXcg-\&R9PZIM);3a>q^10KH-G$HB;Q-7o,,I]`o/FU?^=D`?c!'oF8Rl5->\ofN(XRP`K:b%aNNZFmO?;#?\eu,.;^@KF3S=JrufL%AJs8M)Cg=<5SQ7^9Z-uuu5oYJ@\@:?SCreI&8oBkqGI!ff8#$r0/[T"k4PKEGaL334d[>Z,1mc^UW[B8ug\2APP]:WH,]6gN@e&;nDDGHTds"9<O=mk]an*Osg.W8(Q>3G9Y5'1JOQe+qr^KV&aebee3Q`Y,:kq?r.hg\AYP!gdblMUJL3h;;%@7T86i/j(`6/tC&7I1:j0r-/s^jtG0lH6i9HfDu#o\?%*Qq1$5Ek-SJW`;QM*^+N&6pa3AV<pbpIFQWjE:)Aeo^m7Z;PVVr2`DZaL:k13`ufdn.4M7)[^NTOouA/($j[-+5CYkV;dQ8rV+m=2_9^GGgU:t0\[h1BpYMiGUO7H:hLGS(n%SZO,pgObgRGY/]6E]cJ,DU]AC[21s*XLiX2W'3h7KlQj:nb"ZbjiK+#6uDs4q8X-]tO5D+-mI6D:Wm\,ZF$hn,I1-S@#(2)UX7Sq$`bMG[<!5^EJ3$lV#^2YZG)P5F^_5;4dQII+=jR6QO?ba:[L.YQo+S_,D1(I"*oB4oiKfP#"185B3ci62$i'G1qn:4X3%*DP"+[]6.!KUpVUk,5)j!t+9!!!%CL:jU.$`h)Eo?!V<UC&n;7`:0*t!!%Q+14Kp610.FVqYL$q7h#c34tMMNO(UrlAS,PCg&ob:!!)fRP!j&m]"G\gU7u,qqXnqb3B9)V1fW%O2OpkM/=fO[lI78>082Z;!WW4-QC((+=>KpW$mq:-7$^q2!!!ESQC((+=>KpW$mq:-7$^q2!!!ESQC('irqY`F_5OrVRWf&?%XK=RSqs'f@d&YGrR_lX,2Q`6s)Z0]?ch)=k_U.&,)2\FTdN='/V=[bXCCCM(j[B\Sqs'f7\MDd&q6okk_U.&,)2\FTdN='/V?r;Cb5#f"s!8'$p>1i:W1TnUX0bVz!!&+X;Q7s65HiQ#eui<5FkjgL+X84a`f#_3`f(eQX#r".oct\(Trb>s\@=LO0@.\ZLKAc6QthO%4?WQ8mFqXB!Tl%o,Di!C?G)XH/Z#;?HhQgb;B%9dHK+>ZIH8J3hgYH^IY6-b26ZS\fXZ'96UO448Vq]Bk09Bp=4EG5;l?)!0^(;s>MG$m$ACeiS7Q<\Ue,B&>[/71b7)?<^Db?kU*i5m6-dd$['4T48uq669X67ge^a?FZ"#.WT!YNiPj$6!ET8GoL("qdbJT)Gk?"Fh8bD)McT\+2**T"$CHF?CXBDkX*6%/6Y9J".F(ldO0TbEG4A(5iqZ"l\3qu8<KMa4a"U,(lXc#""[XA#Ca7JH<bKnMDWq;P>ai9;ZQS2^kW@jbfHEqtrp,-X:#hp%/(@nGcT.siqLsqQ6Z=M&i@@8J/,=dbNHX4ug&J5U:G3fd+USFSA)@]n>5NpLi7gmN4@a``SP='a\8G%S/_5*kPo@CmK6sJkDotGkOBYiEN;kbYmg"@(4oFd)Ej!p=O;h5oZoRrr)X4?M.qPL,:It)rC"`e*04b*7cLRBr2$Hm^?GujV(A*K)H@bmno<)aPp,s""FR(Y>J9XVjZ`eHfYG\8#\a]?fqij[fo/!nG-I=5mHCYdh&3Rqe\&j8fW86EQO[B+H;=]SQmNuU>0Ee<p'AFPpi1$Lo"cCR2rgpqK,ohLgg<*S/5h!!]oh5Rfip!T[0f(0:mnPDeO9jP2DRBTB2MUSFs1Oj[T8G&^b[+*:B93A?uXL,EC,5gPGOJ-3\LG?J)(>e'FoCHImioB(P;+$b>RJ^eV2i4+SPtIL"NuL$<@sP^X["Ycn\Yhhk<%:mO=rJu;H@"#pe&0(U>F"=sd?EA@gndZ1d_`qZ'BrL4^Dco%R\'-5c!s6QSN:nN7pXJcC:1Xc]UV;srVH2/0f_6S1c1F4*$$'+ZEeR5*W8YH$3flRc,s!]IfB0+bEjlSm?Efu_n/T`1Y!8\g<rnHfoo."2O0PmBsh,jrQ2H:F#2@18WtJ9'GOB>d]ZG;8-nZ>bpkk>]rnN`?ngg;qO!Y;'qL"X>ISLH?I@fOg4"5Gzzzzzzz!1:7PHL&"1<)aS#\r<:[#P^5CIfKB@>-1gfY0gpc?G1)j?ZZ\V0SiROd1^lbSHe48r"&_tI,TbqkdAH:B/6m&[B6X9hmmeUYGqR&T\nSk8>>IT\$tgm>n-`(FE);7Bk_kimC0\;cCR1g,'D2$3P;?n!.]MG&P6>Xp!oHdBBX'E\@@nmiP^Qd?,+5QWMc=KHM$Foldu15l`\W!s4l/Tor]gjT0L)t[+&J;d$?MuC=T?<g033+G'8%JE%hI<dn`31<i\;C3dc@(fl_"s7`*$ZH;uFt]Qg\^X)2WfUK`$<h088Qm"BAYq;B)A=0>f%Rm)&a>^Uq3WPMmqFn`ZHk*tr4nuc3bfWjK-jid9GU:3&^!!!+e&4q%h&lqj82Dd7\4aT(B1,:[CPX9qln_qS;T;8""aN1%LMiNh3Gk'eM]mJErl&)iDg--u9MIp1i7upu\?ie7.eu`.D6:-j!PH1abL%M07dHgI)"2!uU%3+TulWF\V;N9N@g+D\G/M0\n;SE)+lVs?m\fY)<RB?2OhbSAmAB2[.X^/Qie6pTogjR=nWe?qc=Y?%>7W6tcV-!O!!.Y*qkYX^aWN.HNDr/.K:9R-.8QtfV_[k5en`.ZN*'(lZo#ro9d&KSWGso/5=/:aQVG(D;S3D@idY_>c[V_LqT!\F@47?-K<O#O<X<2odTrCpaV<>sa-bIqs!IF(_/P9kU:J\Qq7j!/dlc)C!HUZr^gY:IA2)TgO_$@iWB:jU<<^#uk'7ISH!!!jdKVO8'mNfGD8Kk%]l.D<^a,d,@TXgl)ZSSHCb*=L1>a;a9Df:-q`>=4[l&%<mA65Q9B`"-&HARX.%$@Ba6D<W,kQhM&P5QCg7aD2e1S(*oJYcSK.3ol&naW=O/6]F%`l=mQVP^#ZJ>UZZgr`(kH`l,8s2>d]>e"`==PgH$(VLmRm7dQ\^]<!Rqk!-u9h6^rBJMG[e0sj/Pp@Y%Yq,hMl`]Z4,=[Wb[0md'A0_*Qr[^4SiPUGcrq^D5B@[b3(%o#b#9J,?p(e\jc:/co*GIp_CRQgCgUFA_V1g[nk);p/daVY8FaNk:_h;^;8S'_;2lEIIoR,g%!+6E8OIe'W/eg?b^A6ns1Y)dQI*h'lV<=GUc4>4tOARLTs6LH84YKg&HdZGdNNfr@)j/>*1pK2lqXgUWQY>e91"`UGn%S9'Q-GdW;kR&,O$32=&,-J4!1'>ikt0'PKn[-_ml%T"]<3RJI,FP2JHP7JfCqF>SQ!M)VC%`6hRIRCh;,aTV>g&/0/S5k(LMOV2;ru0]/Em!A-q)[d%Nh=*L%n!pBa9$?!SIFDp-;GHG3S`!3d/,^Fb#6JMP@>S2kY&>?fjb?+[tj_J&eSFQq5TXK:sP`sZ+/drXKbKlgU[7M?CIZ=1Y*$PtGB`EBNZYmk@]NU5?)8%R44k2qI]%3%3!p@g;N?[hh4gpqJ>',+SS>D6R)-Vp=]kg6#jR$aP>+KFC:-_l=29i.L,NHJ0qmlm-o@g;=UVPnFGnOE7;!rr>*1e*P:(#Hfk85D!hqXfCF%oSq*['\0gCX].TDJj@/.WKctQX>2EYLd-rI[qgZM\[nUl_%MA]gDS1\#$C+Mi<VEC:3Hrm;slFo:EjT&#YAeXK83[Xfnp(:J^`Yp,4r[lpRsVh\LWCOAQX7?Vja&7D!m0Tng58'`\5!:Ja+0\8fF.abc!ngpjW#]"7'C52IM@0CJ[6'EA+5NeRu^7^KGaSpN(L31-S)'V-/%7T_NV_Lr(#(0nIp/MSuBDis+YT73LYGuk"H!:X?5DJf[h*,'/)1`-WY2)Qg3.<;t(=I#MN:LT]SOjRNCLC4(^zzzzzzz!!!#Mi'65m2;n~>endstream
+endobj
+44 0 obj
+<<
+/BitsPerComponent 8 /ColorSpace /DeviceGray /Decode [ 0 1 ] /Filter [ /ASCII85Decode /FlateDecode ] /Height 326 /Length 87 
+  /Subtype /Image /Type /XObject /Width 618
+>>
+stream
+Gb"0;!=]#/!5bE.WG`:P'EA+5zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz!!!#7^B"lX(A.~>endstream
+endobj
+45 0 obj
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F6 /Subtype /Type1 /Type /Font
+>>
+endobj
+46 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F7 /Subtype /Type1 /Type /Font
+>>
+endobj
+47 0 obj
+<<
+/Contents 106 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
+/FormXob.4ffad2dc0838f1aa92fe022c6f11dd1c 43 0 R
+>>
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+48 0 obj
+<<
+/Contents 107 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+49 0 obj
+<<
+/Contents 108 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+50 0 obj
+<<
+/Contents 109 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+51 0 obj
+<<
+/Contents 110 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+52 0 obj
+<<
+/Contents 111 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+53 0 obj
+<<
+/Contents 112 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+54 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 49 0 R /XYZ 50.01575 591.2394 0 ] /Rect [ 40.01575 726.6394 200.6257 738.6394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+55 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 50 0 R /XYZ 50.01575 747.0394 0 ] /Rect [ 40.01575 708.6394 191.1857 720.6394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+56 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 52 0 R /XYZ 50.01575 708.2394 0 ] /Rect [ 40.01575 660.2394 211.7357 672.2394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+57 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 48 0 R /XYZ 60.01575 747.0394 0 ] /Rect [ 40.01575 642.2394 184.4957 654.2394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+58 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 50 0 R /XYZ 50.01575 173.0394 0 ] /Rect [ 40.01575 593.8394 200.6357 605.8394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+59 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 48 0 R /XYZ 60.01575 557.0394 0 ] /Rect [ 40.01575 545.4394 228.4057 557.4394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+60 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 48 0 R /XYZ 60.01575 386.0394 0 ] /Rect [ 40.01575 527.4394 218.9657 539.4394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+61 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 48 0 R /XYZ 60.01575 227.0394 0 ] /Rect [ 40.01575 509.4394 215.0657 521.4394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+62 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (file:///Users/lusigeondzian/github/phlab/docs/source/\('','#module-phlab'\))
+>> /Border [ 0 0 0 ] /Rect [ 60.01575 478.4394 84.47575 490.4394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+63 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (file:///Users/lusigeondzian/github/phlab/docs/source/\('','#module-phlab.experiment'\))
+>> /Border [ 0 0 0 ] /Rect [ 60.01575 460.4394 136.7157 472.4394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+64 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (file:///Users/lusigeondzian/github/phlab/docs/source/\('','#module-phlab.model'\))
+>> /Border [ 0 0 0 ] /Rect [ 60.01575 442.4394 114.4857 454.4394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+65 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (file:///Users/lusigeondzian/github/phlab/docs/source/\('','#module-phlab.visual'\))
+>> /Border [ 0 0 0 ] /Rect [ 60.01575 424.4394 112.8157 436.4394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+66 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 51 0 R /XYZ 50.01575 670.0394 0 ] /Rect [ 40.01575 376.0394 203.9557 388.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+67 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (file:///Users/lusigeondzian/github/phlab/docs/source/\('','#module-phlab'\))
+>> /Border [ 0 0 0 ] /Rect [ 60.01575 345.0394 92.80575 357.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+68 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (file:///Users/lusigeondzian/github/phlab/docs/source/\('','#module-phlab.experiment'\))
+>> /Border [ 0 0 0 ] /Rect [ 60.01575 314.0394 92.80575 326.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+69 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (file:///Users/lusigeondzian/github/phlab/docs/source/\('','#module-phlab.model'\))
+>> /Border [ 0 0 0 ] /Rect [ 60.01575 283.0394 92.80575 295.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+70 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (file:///Users/lusigeondzian/github/phlab/docs/source/\('','#module-phlab.visual'\))
+>> /Border [ 0 0 0 ] /Rect [ 60.01575 252.0394 92.80575 264.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+71 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 52 0 R /XYZ 50.01575 262.4394 0 ] /Rect [ 40.01575 234.0394 154.4957 246.0394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+72 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 50.01575 276.6394 0 ] /Rect [ 40.01575 185.6394 125.5857 197.6394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+73 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 51 0 R /XYZ 50.01575 588.0394 0 ] /Rect [ 40.01575 137.2394 187.2857 149.2394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+74 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 49 0 R /XYZ 60.01575 789.0394 0 ] /Rect [ 40.01575 88.83937 160.5957 100.8394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+75 0 obj
+<<
+/Annots [ 54 0 R 55 0 R 56 0 R 57 0 R 58 0 R 59 0 R 60 0 R 61 0 R 62 0 R 63 0 R 
+  64 0 R 65 0 R 66 0 R 67 0 R 68 0 R 69 0 R 70 0 R 71 0 R 72 0 R 73 0 R 
+  74 0 R ] /Contents 113 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+76 0 obj
+<<
+/Contents 114 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+77 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 47 0 R /XYZ 40.01575 324.2394 0 ] /Rect [ 40.01575 727.3894 64.47575 739.3894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+78 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 52 0 R /XYZ 40.01575 755.8394 0 ] /Rect [ 40.01575 709.3894 116.7157 721.3894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+79 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 49 0 R /XYZ 40.01575 638.8394 0 ] /Rect [ 40.01575 691.3894 94.48575 703.3894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+80 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 52 0 R /XYZ 40.01575 310.0394 0 ] /Rect [ 40.01575 673.3894 92.81575 685.3894 ] /Subtype /Link /Type /Annot
+>>
+endobj
+81 0 obj
+<<
+/Annots [ 77 0 R 78 0 R 79 0 R 80 0 R ] /Contents 115 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 100 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+82 0 obj
+<<
+/Outlines 84 0 R /PageLabels 116 0 R /PageMode /UseNone /Pages 100 0 R /Type /Catalog
+>>
+endobj
+83 0 obj
+<<
+/Author () /CreationDate (D:20200520004608-03'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20200520004608-03'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title () /Trapped /False
+>>
+endobj
+84 0 obj
+<<
+/Count 18 /First 85 0 R /Last 99 0 R /Type /Outlines
+>>
+endobj
+85 0 obj
+<<
+/Count 12 /Dest [ 42 0 R /XYZ 40.01575 787.0394 0 ] /First 86 0 R /Last 93 0 R /Next 98 0 R /Parent 84 0 R 
+  /Title (Welcome to phlab\220s documentation!)
+>>
+endobj
+86 0 obj
+<<
+/Dest [ 42 0 R /XYZ 40.01575 747.0394 0 ] /Next 87 0 R /Parent 85 0 R /Title (About phlab)
+>>
+endobj
+87 0 obj
+<<
+/Dest [ 42 0 R /XYZ 40.01575 597.8394 0 ] /Next 88 0 R /Parent 85 0 R /Prev 86 0 R /Title (Installation)
+>>
+endobj
+88 0 obj
+<<
+/Dest [ 42 0 R /XYZ 40.01575 478.6394 0 ] /Next 89 0 R /Parent 85 0 R /Prev 87 0 R /Title (Quick start)
+>>
+endobj
+89 0 obj
+<<
+/Count 3 /Dest [ 47 0 R /XYZ 40.01575 490.2394 0 ] /First 90 0 R /Last 92 0 R /Next 93 0 R /Parent 85 0 R 
+  /Prev 88 0 R /Title (Input description)
+>>
+endobj
+90 0 obj
+<<
+/Dest [ 47 0 R /XYZ 40.01575 455.0394 0 ] /Next 91 0 R /Parent 89 0 R /Title (Basic \(1D oscillator\))
+>>
+endobj
+91 0 obj
+<<
+/Dest [ 47 0 R /XYZ 40.01575 422.2394 0 ] /Next 92 0 R /Parent 89 0 R /Prev 90 0 R /Title (2D oscillator \(2 modes problem\))
+>>
+endobj
+92 0 obj
+<<
+/Dest [ 47 0 R /XYZ 40.01575 389.4394 0 ] /Parent 89 0 R /Prev 91 0 R /Title (Displaced and Distorted Oscillator)
+>>
+endobj
+93 0 obj
+<<
+/Count 4 /Dest [ 47 0 R /XYZ 40.01575 356.6394 0 ] /First 94 0 R /Last 97 0 R /Parent 85 0 R /Prev 89 0 R 
+  /Title (Modules)
+>>
+endobj
+94 0 obj
+<<
+/Dest [ 47 0 R /XYZ 40.01575 321.4394 0 ] /Next 95 0 R /Parent 93 0 R /Title (main)
+>>
+endobj
+95 0 obj
+<<
+/Dest [ 49 0 R /XYZ 40.01575 636.0394 0 ] /Next 96 0 R /Parent 93 0 R /Prev 94 0 R /Title (models)
+>>
+endobj
+96 0 obj
+<<
+/Dest [ 52 0 R /XYZ 40.01575 753.0394 0 ] /Next 97 0 R /Parent 93 0 R /Prev 95 0 R /Title (experiment)
+>>
+endobj
+97 0 obj
+<<
+/Dest [ 52 0 R /XYZ 40.01575 307.2394 0 ] /Parent 93 0 R /Prev 96 0 R /Title (visual)
+>>
+endobj
+98 0 obj
+<<
+/Dest [ 75 0 R /XYZ 40.01575 799.0394 0 ] /Next 99 0 R /Parent 84 0 R /Prev 85 0 R /Title (Index)
+>>
+endobj
+99 0 obj
+<<
+/Dest [ 81 0 R /XYZ 40.01575 799.0394 0 ] /Parent 84 0 R /Prev 98 0 R /Title (Python Module Index)
+>>
+endobj
+100 0 obj
+<<
+/Count 15 /Kids [ 5 0 R 6 0 R 37 0 R 38 0 R 42 0 R 47 0 R 48 0 R 49 0 R 50 0 R 51 0 R 
+  52 0 R 53 0 R 75 0 R 76 0 R 81 0 R ] /Type /Pages
+>>
+endobj
+101 0 obj
+<<
+/Length 916
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 775.0394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 30 re B*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 164.822 0 Td (Sample rst2pdf doc) Tj T* -164.822 0 Td ET
+Q
+Q
+q
+1 0 0 1 40.01575 745.0394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 24 re B*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 3 Tm /F2 15 Tf 18 TL 230.9445 0 Td (version) Tj T* -230.9445 0 Td ET
+Q
+Q
+q
+1 0 0 1 40.01575 650 cm
+Q
+q
+1 0 0 1 40.01575 629.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.4 Tm /F2 12 Tf 14.4 TL 225.948 0 Td (Your Name) Tj T* -225.948 0 Td ET
+Q
+Q
+q
+1 0 0 1 40.01575 544.5606 cm
+Q
+q
+1 0 0 1 40.01575 524.1606 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.4 Tm /F1 12 Tf 14.4 TL 218.904 0 Td /F3 12 Tf 14.4 TL (nnn) Tj /F1 12 Tf 14.4 TL ( 20, 2020) Tj T* -218.904 0 Td ET
+Q
+Q
+q
+1 0 0 1 40.01575 524.1606 cm
+Q
+q
+1 0 0 1 40.01575 524.1606 cm
+Q
+ 
+endstream
+endobj
+102 0 obj
+<<
+/Length 75
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 799.0394 cm
+Q
+ 
+endstream
+endobj
+103 0 obj
+<<
+/Length 3642
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 775.0394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 30 re B*
+Q
+q
+BT 1 0 0 1 0 4 Tm 24 TL /F2 20 Tf .12549 .262745 .360784 rg (Contents) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 499.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 255 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (Welcome to phlab\222s documentation!) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 255 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 66.44 0 Td (1) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 237 cm
+q
+BT 1 0 0 1 20 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (About phlab) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 237 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (1) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 219 cm
+q
+BT 1 0 0 1 20 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Installation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 219 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (1) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 201 cm
+q
+BT 1 0 0 1 20 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Quick start) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 201 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (1) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 183 cm
+q
+BT 1 0 0 1 20 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Input description) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 183 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (2) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 165 cm
+q
+BT 1 0 0 1 40 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Basic \(1D oscillator\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 165 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (2) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 147 cm
+q
+BT 1 0 0 1 40 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (2D oscillator \(2 modes problem\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 147 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (2) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 129 cm
+q
+BT 1 0 0 1 40 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Displaced and Distorted Oscillator) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 129 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (2) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 111 cm
+q
+BT 1 0 0 1 20 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Modules) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 111 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (2) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 93 cm
+q
+BT 1 0 0 1 40 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (main) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 93 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (2) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 75 cm
+q
+BT 1 0 0 1 40 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (models) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 75 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (4) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 57 cm
+q
+BT 1 0 0 1 40 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (experiment) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 57 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (7) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 39 cm
+q
+BT 1 0 0 1 40 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (visual) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 39 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 66.44 0 Td (7) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 21 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (Index) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 21 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 66.44 0 Td (9) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+1 0 0 1 0 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (Python Module Index) Tj T* ET
+Q
+Q
+q
+1 0 0 1 443.2441 3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 60.88 0 Td (11) Tj T* -60.88 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 499.0394 cm
+Q
+q
+1 0 0 1 40.01575 499.0394 cm
+Q
+ 
+endstream
+endobj
+104 0 obj
+<<
+/Length 75
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 799.0394 cm
+Q
+ 
+endstream
+endobj
+105 0 obj
+<<
+/Length 7448
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 763.0394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 30 re B*
+Q
+q
+BT 1 0 0 1 0 4 Tm 24 TL /F2 20 Tf .12549 .262745 .360784 rg (Welcome to phlab\222s documentation!) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 727.8394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 25.2 re B*
+Q
+q
+BT 1 0 0 1 0 3.2 Tm 19.2 TL /F2 16 Tf .12549 .262745 .360784 rg (About phlab) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 697.8394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .624631 Tw (This package aims to create a convenient set of tools for fitting experimental data and subtracting electron-phonon) Tj T* 0 Tw (coupling values from phonon contribution in resonant inelastic X-ray scattering cross-section.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 679.8394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (It currently includes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 673.8394 cm
+Q
+q
+1 0 0 1 40.01575 673.8394 cm
+Q
+q
+1 0 0 1 40.01575 661.8394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Model for 1D harmonic oscillator interacting with a single electronic level.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 655.8394 cm
+Q
+q
+1 0 0 1 40.01575 643.8394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Model for 2D harmonic oscillator \(two modes active\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 637.8394 cm
+Q
+q
+1 0 0 1 40.01575 613.8394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.256721 Tw (Model for 1D harmonic oscillator, distorted and displaced in the excited state \(excited-state potential energy) Tj T* 0 Tw (surface \(PES\), differs from the ground state PES\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 613.8394 cm
+Q
+q
+1 0 0 1 40.01575 578.6394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 25.2 re B*
+Q
+q
+BT 1 0 0 1 0 3.2 Tm 19.2 TL /F2 16 Tf .12549 .262745 .360784 rg (Installation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 560.6394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (It is a python based package and to install it you can simply run in terminal:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 542.6394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg ($pip) Tj ( ) Tj (install) Tj ( ) Tj (phlab) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 512.6394 cm
+q
+BT 1 0 0 1 0 14 Tm .667705 Tw 12 TL /F1 10 Tf 0 0 0 rg (Download examples folder from this page and use it as a template for your projects. You may want to use Jupyter) Tj T* 0 Tw (Notebooks, which comes with the examples. If you don\222t have ) Tj 0 0 .501961 rg (Jupyter) Tj 0 0 0 rg ( install it via ) Tj /F4 10 Tf (pip) Tj /F1 10 Tf ( as well:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 494.6394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg ($pip) Tj ( ) Tj (install) Tj ( ) Tj (jupyterlab) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 459.4394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 25.2 re B*
+Q
+q
+BT 1 0 0 1 0 3.2 Tm 19.2 TL /F2 16 Tf .12549 .262745 .360784 rg (Quick start) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 441.4394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (First things first) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 422.6394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 18 re B*
+Q
+q
+.933333 1 .8 rg
+n 0 0 36 12 re f*
+.933333 1 .8 rg
+n 42 0 30 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F5 10 Tf 0 .501961 0 rg (import) Tj /F4 10 Tf 0 0 0 rg ( ) Tj /F5 10 Tf .054902 .517647 .709804 rg (phlab) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 402.6394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Now let\222s create our work space which is a wrapper for all the experiments and models:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 383.8394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 18 re B*
+Q
+q
+.933333 1 .8 rg
+n 0 0 54 12 re f*
+.933333 1 .8 rg
+n 60 0 6 12 re f*
+.933333 1 .8 rg
+n 72 0 30 12 re f*
+.933333 1 .8 rg
+n 102 0 6 12 re f*
+.933333 1 .8 rg
+n 108 0 24 12 re f*
+.933333 1 .8 rg
+n 132 0 12 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (workspace) Tj ( ) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj (phlab) Tj .188235 .188235 .188235 rg (.) Tj 0 0 0 rg (rixs) Tj (\(\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 351.8394 cm
+q
+BT 1 0 0 1 0 14 Tm .899719 Tw 12 TL /F1 10 Tf 0 0 0 rg (One of the main objects is a model. You can create any number of models and fit them to the exeperiment. Here) Tj T* 0 Tw (were are starting with single harmonic oscillator model. Check ) Tj /F4 10 Tf (./model_name/) Tj /F1 10 Tf ( for input and output files.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 333.0394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 18 re B*
+Q
+q
+.933333 1 .8 rg
+n 0 0 30 12 re f*
+.933333 1 .8 rg
+n 36 0 6 12 re f*
+.933333 1 .8 rg
+n 48 0 54 12 re f*
+.933333 1 .8 rg
+n 102 0 6 12 re f*
+.933333 1 .8 rg
+n 108 0 96 12 re f*
+.933333 1 .8 rg
+n 204 0 6 12 re f*
+.933333 1 .8 rg
+n 210 0 24 12 re f*
+.933333 1 .8 rg
+n 240 0 6 12 re f*
+1 .941176 .941176 rg
+n 252 0 24 12 re f*
+.933333 1 .8 rg
+n 276 0 6 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (model) Tj ( ) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj (workspace) Tj .188235 .188235 .188235 rg (.) Tj 0 0 0 rg (model_single_osc) Tj (\() Tj (name) Tj ( ) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg ('1d') Tj 0 0 0 rg (\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 246.2394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 78 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 62 Tm /F4 10 Tf 12 TL (creating model : /Users/lusigeondzian/github/phlab/examples/01_example/1d) Tj T* (/Users/lusigeondzian/github/phlab/examples/01_example/1d/_input/) Tj T* (no input found) Tj T* (creating new input) Tj T* (warning : please check new input) Tj T* (number of models : 1) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 214.2394 cm
+q
+BT 1 0 0 1 0 14 Tm 1.951281 Tw 12 TL /F1 10 Tf 0 0 0 rg (Input is normally reading from ) Tj /F4 10 Tf (./model_name/_inputs/input_model_{nm}.json) Tj /F1 10 Tf ( and is an atribute of the) Tj T* 0 Tw (model) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 195.4394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 18 re B*
+Q
+q
+.933333 1 .8 rg
+n 0 0 30 12 re f*
+.933333 1 .8 rg
+n 30 0 6 12 re f*
+.933333 1 .8 rg
+n 36 0 30 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (model) Tj .188235 .188235 .188235 rg (.) Tj 0 0 0 rg (input) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 60.63937 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 126 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 110 Tm /F4 10 Tf 12 TL ({'problem_type': 'rixs',) Tj T* ( 'model': '1d',) Tj T* ( 'method': 'fc',) Tj T* ( 'vib_space': 1,) Tj T* ( 'coupling': 0.1,) Tj T* ( 'omega_ph': 0.195,) Tj T* ( 'nf': 10.0,) Tj T* ( 'nm': 100.0,) Tj T* ( 'energy_ex': 10.0,) Tj T* ( 'omega_in': 10.0,) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 34.01575 807.2126 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Welcome to phlab\222s documentation!) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.01575 22.67717 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (1) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+106 0 obj
+<<
+/Length 9659
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 744.2394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 42 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F4 10 Tf 12 TL ( 'gamma': 0.105,) Tj T* ( 'gamma_ph': 0.05,) Tj T* ( 'alpha_exp': 0.01}) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 712.2394 cm
+q
+BT 1 0 0 1 0 14 Tm 1.669243 Tw 12 TL /F1 10 Tf 0 0 0 rg (If you wish to alter input inside your code just call the prameter your want to overwrite. \(Note: input file will be) Tj T* 0 Tw (overwritten when you will run the model ) Tj /F4 10 Tf (model.run\(\)) Tj /F1 10 Tf (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 681.4394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 30 re B*
+Q
+q
+.933333 1 .8 rg
+n 0 12 30 12 re f*
+.933333 1 .8 rg
+n 30 12 6 12 re f*
+.933333 1 .8 rg
+n 36 12 30 12 re f*
+.933333 1 .8 rg
+n 66 12 6 12 re f*
+1 .941176 .941176 rg
+n 72 12 60 12 re f*
+.933333 1 .8 rg
+n 132 12 6 12 re f*
+.933333 1 .8 rg
+n 144 12 6 12 re f*
+.933333 1 .8 rg
+n 156 12 24 12 re f*
+.933333 1 .8 rg
+n 0 0 30 12 re f*
+.933333 1 .8 rg
+n 30 0 6 12 re f*
+.933333 1 .8 rg
+n 36 0 30 12 re f*
+.933333 1 .8 rg
+n 72 0 6 12 re f*
+1 .941176 .941176 rg
+n 84 0 18 12 re f*
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (model) Tj .188235 .188235 .188235 rg (.) Tj 0 0 0 rg (input) Tj ([) Tj .729412 .129412 .129412 rg ('coupling') Tj 0 0 0 rg (]) Tj ( ) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj /F5 10 Tf .376471 0 .878431 rg (0.15) Tj /F4 10 Tf 0 0 0 rg  T* (model) Tj .188235 .188235 .188235 rg (.) Tj 0 0 0 rg (color) Tj ( ) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg ('r') Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 654.6394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 18 re B*
+Q
+q
+.933333 1 .8 rg
+n 0 0 30 12 re f*
+.933333 1 .8 rg
+n 30 0 6 12 re f*
+.933333 1 .8 rg
+n 36 0 18 12 re f*
+.933333 1 .8 rg
+n 54 0 12 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (model) Tj .188235 .188235 .188235 rg (.) Tj 0 0 0 rg (run) Tj (\(\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 634.6394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Now let\222s create the experiment. At the very least you have to specify the path to file with exp data.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 615.8394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 18 re B*
+Q
+q
+.933333 1 .8 rg
+n 0 0 18 12 re f*
+.933333 1 .8 rg
+n 24 0 6 12 re f*
+.933333 1 .8 rg
+n 36 0 54 12 re f*
+.933333 1 .8 rg
+n 90 0 6 12 re f*
+.933333 1 .8 rg
+n 96 0 60 12 re f*
+.933333 1 .8 rg
+n 156 0 6 12 re f*
+.933333 1 .8 rg
+n 162 0 24 12 re f*
+.933333 1 .8 rg
+n 192 0 6 12 re f*
+1 .941176 .941176 rg
+n 204 0 90 12 re f*
+.933333 1 .8 rg
+n 294 0 6 12 re f*
+.933333 1 .8 rg
+n 306 0 24 12 re f*
+.933333 1 .8 rg
+n 330 0 6 12 re f*
+1 .941176 .941176 rg
+n 342 0 42 12 re f*
+.933333 1 .8 rg
+n 384 0 6 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (exp) Tj ( ) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj (workspace) Tj .188235 .188235 .188235 rg (.) Tj 0 0 0 rg (experiment) Tj (\() Tj (file) Tj ( ) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg ('test_data.csv') Tj 0 0 0 rg (,) Tj ( ) Tj (name) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg (' test') Tj 0 0 0 rg (\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 583.8394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .849689 Tw (Now to visulize everything you can create vitem and list the models and experiment objects that you would like to) Tj T* 0 Tw (compare.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 565.0394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 18 re B*
+Q
+q
+.933333 1 .8 rg
+n 0 0 30 12 re f*
+.933333 1 .8 rg
+n 36 0 6 12 re f*
+.933333 1 .8 rg
+n 48 0 54 12 re f*
+.933333 1 .8 rg
+n 102 0 6 12 re f*
+.933333 1 .8 rg
+n 108 0 36 12 re f*
+.933333 1 .8 rg
+n 144 0 6 12 re f*
+.933333 1 .8 rg
+n 150 0 60 12 re f*
+.933333 1 .8 rg
+n 216 0 6 12 re f*
+.933333 1 .8 rg
+n 228 0 6 12 re f*
+.933333 1 .8 rg
+n 234 0 30 12 re f*
+.933333 1 .8 rg
+n 264 0 12 12 re f*
+.933333 1 .8 rg
+n 282 0 18 12 re f*
+.933333 1 .8 rg
+n 306 0 6 12 re f*
+.933333 1 .8 rg
+n 318 0 18 12 re f*
+.933333 1 .8 rg
+n 336 0 6 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (vitem) Tj ( ) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj (workspace) Tj .188235 .188235 .188235 rg (.) Tj 0 0 0 rg (visual) Tj (\() Tj (model_list) Tj ( ) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj ([) Tj (model) Tj (],) Tj ( ) Tj (exp) Tj ( ) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj (exp) Tj (\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 545.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Note: ) Tj /F4 10 Tf (scale) Tj ( ) Tj (=) Tj ( ) Tj (0) Tj /F1 10 Tf ( would normalizes everything by the maximum of intensity.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 526.2394 cm
+q
+q
+q
+1 0 0 1 4.4 .4 cm
+q
+.666667 .8 .6 RG
+.3 w
+.933333 1 .8 rg
+n -4 0 514.4441 18 re B*
+Q
+q
+.933333 1 .8 rg
+n 0 0 30 12 re f*
+.933333 1 .8 rg
+n 30 0 6 12 re f*
+.933333 1 .8 rg
+n 36 0 24 12 re f*
+.933333 1 .8 rg
+n 60 0 6 12 re f*
+.933333 1 .8 rg
+n 66 0 30 12 re f*
+.933333 1 .8 rg
+n 102 0 6 12 re f*
+.933333 1 .8 rg
+n 114 0 6 12 re f*
+.933333 1 .8 rg
+n 120 0 6 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (vitem) Tj .188235 .188235 .188235 rg (.) Tj 0 0 0 rg (show) Tj (\() Tj (scale) Tj ( ) Tj .188235 .188235 .188235 rg (=) Tj 0 0 0 rg ( ) Tj /F5 10 Tf 0 0 .815686 rg (0) Tj /F4 10 Tf 0 0 0 rg (\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 506.2394 cm
+q
+q
+618 0 0 326 0 0 cm
+/FormXob.4ffad2dc0838f1aa92fe022c6f11dd1c Do
+Q
+q
+618 0 0 326 618 0 cm
+/FormXob.4ffad2dc0838f1aa92fe022c6f11dd1c Do
+Q
+q
+618 0 0 326 1236 0 cm
+/FormXob.4ffad2dc0838f1aa92fe022c6f11dd1c Do
+Q
+BT 1 0 0 1 0 2 Tm 12 TL 1854 0 Td /F1 10 Tf 12 TL  T* -1854 0 Td ET
+Q
+Q
+q
+1 0 0 1 40.01575 471.0394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 25.2 re B*
+Q
+q
+BT 1 0 0 1 0 3.2 Tm 19.2 TL /F2 16 Tf .12549 .262745 .360784 rg (Input description) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 438.2394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 22.8 re B*
+Q
+q
+BT 1 0 0 1 0 2.8 Tm 16.8 TL /F6 14 Tf .12549 .262745 .360784 rg (Basic \(1D oscillator\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 405.4394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 22.8 re B*
+Q
+q
+BT 1 0 0 1 0 2.8 Tm 16.8 TL /F6 14 Tf .12549 .262745 .360784 rg (2D oscillator \(2 modes problem\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 372.6394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 22.8 re B*
+Q
+q
+BT 1 0 0 1 0 2.8 Tm 16.8 TL /F6 14 Tf .12549 .262745 .360784 rg (Displaced and Distorted Oscillator) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 337.4394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 25.2 re B*
+Q
+q
+BT 1 0 0 1 0 3.2 Tm 19.2 TL /F2 16 Tf .12549 .262745 .360784 rg (Modules) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 304.6394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 22.8 re B*
+Q
+q
+BT 1 0 0 1 0 2.8 Tm 16.8 TL /F6 14 Tf .12549 .262745 .360784 rg (main) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 292.6394 cm
+Q
+q
+1 0 0 1 40.01575 274.6394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F7 10 Tf 0 0 0 rg (class ) Tj /F4 10 Tf (phlab.) Tj /F5 10 Tf (rixs) Tj /F1 10 Tf ( \() Tj (project_name) Tj (=) Tj ('') Tj (, out_dir) Tj (=) Tj ('/_output/') Tj (, inp_dir) Tj (=) Tj ('/_input/') Tj (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 262.6394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Class rixs exists as a wrapper around both models and experiment objects.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 246.6394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 154.6394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 79 Tm  T* ET
+q
+1 0 0 1 20 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (problem_name: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 62 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the project.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (out_dir: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 31 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the ouptu directory.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (inp_dir: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the ouptu directory.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 138.6394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Attributes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.01575 61.63937 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 64 Tm  T* ET
+q
+1 0 0 1 20 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (nmodel: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 47 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (number of models created within this project.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 31 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (nexp: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 16 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (number of exp created within this project.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (abs_path: str) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 34.01575 807.2126 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Input description) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.01575 22.67717 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+107 0 obj
+<<
+/Length 7839
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 50.01575 769.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 5 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (absolute path to the working directory) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 763.0394 cm
+Q
+q
+1 0 0 1 50.01575 745.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F5 10 Tf 0 0 0 rg (experiment) Tj /F2 10 Tf ( \() Tj /F1 10 Tf (file) Tj (=) Tj ('') Tj /F2 10 Tf (, ) Tj /F1 10 Tf (col) Tj (=) Tj ([0, 1]) Tj /F2 10 Tf (, ) Tj /F1 10 Tf (name) Tj (=) Tj ('') Tj /F2 10 Tf (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 733.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Experiment.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 717.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 625.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 79 Tm  T* ET
+q
+1 0 0 1 20 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (file: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 62 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (path to the file with the exp data) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (col: list) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 31 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ([column x ; column y] defines which columns to read from the file) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (name: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the experiment) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 60.01575 609.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Returns:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 579.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 17 Tm  T* ET
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (experiment.experiment\(\): object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (calls experiment sub-package) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 573.0394 cm
+Q
+q
+1 0 0 1 50.01575 555.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F5 10 Tf 0 0 0 rg (model_dist_disp_osc) Tj /F2 10 Tf ( \() Tj /F1 10 Tf (name) Tj (=) Tj ('') Tj /F2 10 Tf (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 531.0394 cm
+q
+BT 1 0 0 1 0 14 Tm 1.036007 Tw 12 TL /F1 10 Tf 0 0 0 rg (Model describing distorted and displaced in the excited-state harmonic oscillator which interacts with a single) Tj T* 0 Tw (electronic level.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 515.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 485.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 17 Tm  T* ET
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (name: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the model) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 60.01575 469.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Note:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 454.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (input and output files are located inside \221./name/\222 directory) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 60.01575 438.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Returns:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 408.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 17 Tm  T* ET
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (model.dist_disp_osc\(\): object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (calls model sub-package) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 402.0394 cm
+Q
+q
+1 0 0 1 50.01575 384.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F5 10 Tf 0 0 0 rg (model_double_osc) Tj /F2 10 Tf ( \() Tj /F1 10 Tf (name) Tj (=) Tj ('') Tj /F2 10 Tf (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 372.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Model describing 2D harmonic oscillator which interacts with a single electronic level.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 356.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 326.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 17 Tm  T* ET
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (name: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the model) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 60.01575 310.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Note:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 295.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (input and output files are located inside \221./name/\222 directory) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 60.01575 279.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Returns:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 249.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 17 Tm  T* ET
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (model.double_osc\(\): object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (calls model sub-package) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 243.0394 cm
+Q
+q
+1 0 0 1 50.01575 225.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F5 10 Tf 0 0 0 rg (model_single_osc) Tj /F2 10 Tf ( \() Tj /F1 10 Tf (name) Tj (=) Tj ('') Tj /F2 10 Tf (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 213.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Model describing a harmonic oscillator interacting with a single electronic level.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 197.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 167.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 17 Tm  T* ET
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (name: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the model) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 60.01575 151.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Note:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 136.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (input and output files are located inside \221./name/\222 directory) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 60.01575 120.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Returns:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 90.03937 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 17 Tm  T* ET
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (model.single_osc\(\): object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (calls model sub-package) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 84.03937 cm
+Q
+q
+1 0 0 1 50.01575 66.03937 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F5 10 Tf 0 0 0 rg (visual) Tj /F2 10 Tf ( \() Tj /F1 10 Tf (model_list) Tj (=) Tj ([]) Tj /F2 10 Tf (, ) Tj /F1 10 Tf (exp) Tj (=) Tj ([]) Tj /F2 10 Tf (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.01575 807.2126 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Input description) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.01575 22.67717 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (3) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+108 0 obj
+<<
+/Length 7061
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 60.01575 775.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Creates visual object within the current project \(works space\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 759.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 698.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 48 Tm  T* ET
+q
+1 0 0 1 20 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (model_list: list) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 31 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (list of models to plot) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (exp: object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (experiment to plot) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 60.01575 682.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Returns:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 60.01575 652.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 17 Tm  T* ET
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (visual.plot\(\): object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (calls visual sub-package) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 619.2394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 22.8 re B*
+Q
+q
+BT 1 0 0 1 0 2.8 Tm 16.8 TL /F6 14 Tf .12549 .262745 .360784 rg (models) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 607.2394 cm
+Q
+q
+1 0 0 1 40.01575 589.2394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F7 10 Tf 0 0 0 rg (class ) Tj /F4 10 Tf (phlab.model.) Tj /F5 10 Tf (dist_disp_osc) Tj /F1 10 Tf ( \() Tj (inp_dir) Tj (=) Tj ('./_input/') Tj (, out_dir) Tj (=) Tj ('./_output/') Tj (, nmodel) Tj (=) Tj (0) Tj (, name) Tj (=) Tj ('') Tj (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 577.2394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Creates object for distorted and displaced harmonic oscillator model.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 561.2394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 438.2394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 110 Tm  T* ET
+q
+1 0 0 1 20 108 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (inp_dir: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 93 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the input directory.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (out_dir: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 62 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the output directory.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (nmodel: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 31 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (serial number of the model.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (name: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the model.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 422.2394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Attributes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.01575 66.23937 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 343 Tm  T* ET
+q
+1 0 0 1 20 341 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (input_default: dict) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 326 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (dictionary with default input parameters.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 310 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (input: dict) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 295 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (dictionary with current input parameters.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 279 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (npoints: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 264 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (number of points in the spectrum.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 248 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (spec_max: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 233 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (max limt of enrgy loss.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 217 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (spec_min: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 202 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (min limt of enrgy loss.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 186 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (param2fit: object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 171 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (parameters to fit.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 155 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (nruns: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 140 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (number of runs.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 124 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (color: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 109 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (color of the line.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (input_class: object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 78 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (returns input_handler for this model.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (x: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 47 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (energy loss in eV for the phonon contribution.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 31 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (y: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 16 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (rixs intensities \(arb. units\) for the phonon contribution.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (y_norm: float) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 34.01575 807.2126 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Input description) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.01575 22.67717 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (4) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+109 0 obj
+<<
+/Length 7436
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 50.01575 769.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 5 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (normalized rixs intensities \(arb. units\) for the phonon contribution.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 763.0394 cm
+Q
+q
+1 0 0 1 40.01575 745.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F7 10 Tf 0 0 0 rg (class ) Tj /F4 10 Tf (phlab.model.) Tj /F5 10 Tf (double_osc) Tj /F1 10 Tf ( \() Tj (inp_dir) Tj (=) Tj ('./_input/') Tj (, out_dir) Tj (=) Tj ('./_output/') Tj (, nmodel) Tj (=) Tj (0) Tj (, name) Tj (=) Tj ('') Tj (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 733.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Creates object for 2D harmonic oscillator model.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 717.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 594.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 110 Tm  T* ET
+q
+1 0 0 1 20 108 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (inp_dir: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 93 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the input directory.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (out_dir: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 62 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the output directory.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (nmodel: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 31 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (id number of the model.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (name: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the model.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 578.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Attributes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 207.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 358 Tm  T* ET
+q
+1 0 0 1 20 356 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (input_default: dict) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 341 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (dictionary with default input parameters.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 325 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (input: dict) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 310 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (dictionary with current input parameters.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 294 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (npoints: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 279 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (number of points in the spectrum.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 263 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (spec_max: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 248 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (max limt of enrgy loss.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 232 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (spec_min: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 217 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (min limt of enrgy loss.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 201 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (param2fit: object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 186 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (parameters to fit.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 170 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (nruns: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 155 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (number of runs.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 139 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (color: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 124 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (color of the line.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 108 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (input_class: object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 93 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (returns input_handler for this model.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (x: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 62 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (energy loss in eV for the phonon contribution.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (y: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 31 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (rixs intensities \(arb. units\) for the phonon contribution.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (y_norm: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (normalized rixs intensities \(arb. units\) for the phonon contribution.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 201.0394 cm
+Q
+q
+1 0 0 1 40.01575 171.0394 cm
+q
+BT 1 0 0 1 0 14 Tm 32.61352 Tw 12 TL /F7 10 Tf 0 0 0 rg (class ) Tj /F4 10 Tf (phlab.model.) Tj /F5 10 Tf (input_handler) Tj /F1 10 Tf ( \() Tj (input_default) Tj (=) Tj ({}) Tj (, inp_dir) Tj (=) Tj ('./_input/') Tj (, nmodel) Tj (=) Tj (1) Tj (,) Tj T* 0 Tw (inp_name) Tj (=) Tj ('input_model_{nm}.json') Tj (, model_name) Tj (=) Tj ('1d') Tj (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 159.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Contains methods to read and update input.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 143.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.01575 66.03937 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 64 Tm  T* ET
+q
+1 0 0 1 20 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (input_default: dict) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 47 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (dictionary with input parameters) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 31 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (inp_dir: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 16 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the input directory) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (nmodel: int) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 34.01575 807.2126 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Input description) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.01575 22.67717 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (5) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+110 0 obj
+<<
+/Length 7275
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 50.01575 738.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 36 Tm  T* ET
+q
+1 0 0 1 20 31 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (id number of the model) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (model_name: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the model) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 722.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Attributes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 692.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 17 Tm  T* ET
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (input: dict) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (dictionary with input parameters) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 686.0394 cm
+Q
+q
+1 0 0 1 40.01575 668.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F7 10 Tf 0 0 0 rg (class ) Tj /F4 10 Tf (phlab.model.) Tj /F5 10 Tf (parameters2fit) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 656.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Defines paramters to fit.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 640.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Attributes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 610.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 17 Tm  T* ET
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (dict: dict) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (dictionary with parameters to fit) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 604.0394 cm
+Q
+q
+1 0 0 1 40.01575 586.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F7 10 Tf 0 0 0 rg (class ) Tj /F4 10 Tf (phlab.model.) Tj /F5 10 Tf (single_osc) Tj /F1 10 Tf ( \() Tj (inp_dir) Tj (=) Tj ('./_input/') Tj (, out_dir) Tj (=) Tj ('./_output/') Tj (, nmodel) Tj (=) Tj (0) Tj (, name) Tj (=) Tj ('') Tj (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 574.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Creates object for 1D harmonic oscillator model.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 558.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 435.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 110 Tm  T* ET
+q
+1 0 0 1 20 108 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (inp_dir: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 93 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the input directory.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (out_dir: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 62 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the output directory.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (nmodel: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 31 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (id number of the model.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (name: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the model.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 419.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Attributes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 45.01575 63.03937 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 343 Tm  T* ET
+q
+1 0 0 1 20 341 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (input_default: dict) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 326 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (dictionary with default input parameters.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 310 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (input: dict) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 295 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (dictionary with current input parameters.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 279 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (npoints: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 264 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (number of points in the spectrum.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 248 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (spec_max: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 233 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (max limt of enrgy loss.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 217 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (spec_min: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 202 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (min limt of enrgy loss.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 186 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (param2fit: object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 171 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (parameters to fit.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 155 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (nruns: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 140 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (number of runs.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 124 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (color: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 109 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (color of the line) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (input_class: object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 78 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (returns input_handler for this model.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (x: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 47 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (energy loss in eV for the phonon contribution.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 31 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (y: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 16 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (rixs intensity \(arb. units\) for the phonon contribution.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (y_norm: float) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 34.01575 807.2126 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Input description) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.01575 22.67717 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (6) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+111 0 obj
+<<
+/Length 6523
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 50.01575 769.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 5 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (normalized rixs intensity \(arb. units\) for the phonon contribution.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 736.2394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 22.8 re B*
+Q
+q
+BT 1 0 0 1 0 2.8 Tm 16.8 TL /F6 14 Tf .12549 .262745 .360784 rg (experiment) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 724.2394 cm
+Q
+q
+1 0 0 1 40.01575 706.2394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F7 10 Tf 0 0 0 rg (class ) Tj /F4 10 Tf (phlab.experiment.) Tj /F5 10 Tf (experiment) Tj /F1 10 Tf ( \() Tj (expfile) Tj (=) Tj ('') Tj (, columns) Tj (=) Tj ([0, 1]) Tj (, nexp) Tj (=) Tj (1) Tj (, name) Tj (=) Tj ('') Tj (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 694.2394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Experiment.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 678.2394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 555.2394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 110 Tm  T* ET
+q
+1 0 0 1 20 108 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (file: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 93 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (path to the file with the exp data.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (col: list) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 62 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ([column x ; column y] defines which columns to read from the file.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (name: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 31 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the experiment.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (nexp: int) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (id number of the given experiment in the given project.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 539.2394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Attributes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 323.2394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 203 Tm  T* ET
+q
+1 0 0 1 20 201 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (x: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 186 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (energy loss readings from exp file.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 170 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (y: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 155 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (rixs intensity readings from exp file.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 139 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (max: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 124 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (max value of y.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 108 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (y_norm: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 93 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (normalized y.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (name: str) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 62 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (name of the experiment.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (xmin: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 31 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (min value of x.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (xmax: float) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (max value of x.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 290.4394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 525.2441 22.8 re B*
+Q
+q
+BT 1 0 0 1 0 2.8 Tm 16.8 TL /F6 14 Tf .12549 .262745 .360784 rg (visual) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 278.4394 cm
+Q
+q
+1 0 0 1 40.01575 260.4394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F7 10 Tf 0 0 0 rg (class ) Tj /F4 10 Tf (phlab.visual.) Tj /F5 10 Tf (plot) Tj /F1 10 Tf ( \() Tj (model_list) Tj (=) Tj ([]) Tj (, exp) Tj (=) Tj ([]) Tj (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 248.4394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Visualization.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 232.4394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Args:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 171.4394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 48 Tm  T* ET
+q
+1 0 0 1 20 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (model_list: list) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 31 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (list of models.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (exp: object) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (experiment.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 50.01575 155.4394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Attributes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 50.01575 125.4394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 17 Tm  T* ET
+q
+1 0 0 1 20 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (if_exp: boolen) Tj T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (returns True if experiment \(object\) is specified.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 125.4394 cm
+Q
+q
+1 0 0 1 40.01575 125.4394 cm
+Q
+q
+1 0 0 1 34.01575 807.2126 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Input description) Tj T* ET
+Q
+Q
+q
+1 0 0 1 34.01575 22.67717 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (7) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+112 0 obj
+<<
+/Length 75
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 799.0394 cm
+Q
+ 
+endstream
+endobj
+113 0 obj
+<<
+/Length 5286
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 775.0394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 256.3496 30 re B*
+Q
+q
+BT 1 0 0 1 0 4 Tm 24 TL /F2 20 Tf .12549 .262745 .360784 rg (Index) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 744.6394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 256.3496 20.4 re B*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 2.4 Tm /F6 12 Tf 14.4 TL (D) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 726.6394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (dist_disp_osc \(class in phlab.model\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 708.6394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (double_osc \(class in phlab.model\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 678.2394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 256.3496 20.4 re B*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 2.4 Tm /F6 12 Tf 14.4 TL (E) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 660.2394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (experiment \(class in phlab.experiment\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 642.2394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (experiment\(\) \(phlab.rixs method\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 611.8394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 256.3496 20.4 re B*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 2.4 Tm /F6 12 Tf 14.4 TL (I) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 593.8394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (input_handler \(class in phlab.model\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 563.4394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 256.3496 20.4 re B*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 2.4 Tm /F6 12 Tf 14.4 TL (M) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 545.4394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (model_dist_disp_osc\(\) \(phlab.rixs method\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 527.4394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (model_double_osc\(\) \(phlab.rixs method\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 509.4394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (model_single_osc\(\) \(phlab.rixs method\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 493.4394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (module) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 424.4394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 56 Tm  T* ET
+q
+1 0 0 1 20 54 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (phlab) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 20 36 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (phlab.experiment) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 20 18 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (phlab.model) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 20 0 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (phlab.visual) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 394.0394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 256.3496 20.4 re B*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 2.4 Tm /F6 12 Tf 14.4 TL (P) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 376.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (parameters2fit \(class in phlab.model\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 360.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (phlab) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 345.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (module) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 329.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (phlab.experiment) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 314.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (module) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 298.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (phlab.model) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 283.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (module) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 267.0394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (phlab.visual) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 252.0394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (module) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 40.01575 234.0394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (plot \(class in phlab.visual\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 203.6394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 256.3496 20.4 re B*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 2.4 Tm /F6 12 Tf 14.4 TL (R) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 185.6394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (rixs \(class in phlab\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 155.2394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 256.3496 20.4 re B*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 2.4 Tm /F6 12 Tf 14.4 TL (S) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 137.2394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (single_osc \(class in phlab.model\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 106.8394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 256.3496 20.4 re B*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 2.4 Tm /F6 12 Tf 14.4 TL (V) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 88.83937 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (visual\(\) \(phlab.rixs method\)) Tj  T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 88.83937 cm
+Q
+q
+1 0 0 1 40.01575 88.83937 cm
+Q
+ 
+endstream
+endobj
+114 0 obj
+<<
+/Length 75
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 799.0394 cm
+Q
+ 
+endstream
+endobj
+115 0 obj
+<<
+/Length 864
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 775.0394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 256.3496 30 re B*
+Q
+q
+BT 1 0 0 1 0 4 Tm 24 TL /F2 20 Tf .12549 .262745 .360784 rg (Python Module Index) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 744.6394 cm
+q
+.8 .8 .8 RG
+.3 w
+.94902 .94902 .94902 rg
+n -10 0 256.3496 20.4 re B*
+Q
+q
+.12549 .262745 .360784 rg
+BT 1 0 0 1 0 2.4 Tm /F6 12 Tf 14.4 TL (p) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 726.6394 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (phlab) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 708.6394 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (phlab.experiment) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 690.6394 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (phlab.model) Tj T* ET
+Q
+Q
+q
+1 0 0 1 40.01575 672.6394 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (phlab.visual) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+116 0 obj
+<<
+/Nums [ 0 117 0 R 1 118 0 R 2 119 0 R 3 120 0 R 4 121 0 R 
+  5 122 0 R 6 123 0 R 7 124 0 R 8 125 0 R 9 126 0 R 
+  10 127 0 R 11 128 0 R 12 129 0 R 13 130 0 R 14 131 0 R ]
+>>
+endobj
+117 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+118 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+119 0 obj
+<<
+/S /r /St 1
+>>
+endobj
+120 0 obj
+<<
+/S /r /St 2
+>>
+endobj
+121 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+122 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+123 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+124 0 obj
+<<
+/S /D /St 4
+>>
+endobj
+125 0 obj
+<<
+/S /D /St 5
+>>
+endobj
+126 0 obj
+<<
+/S /D /St 6
+>>
+endobj
+127 0 obj
+<<
+/S /D /St 7
+>>
+endobj
+128 0 obj
+<<
+/S /D /St 8
+>>
+endobj
+129 0 obj
+<<
+/S /D /St 9
+>>
+endobj
+130 0 obj
+<<
+/S /D /St 10
+>>
+endobj
+131 0 obj
+<<
+/S /D /St 11
+>>
+endobj
+xref
+0 132
+0000000000 65535 f 
+0000000073 00000 n 
+0000000171 00000 n 
+0000000278 00000 n 
+0000000390 00000 n 
+0000000473 00000 n 
+0000000680 00000 n 
+0000000887 00000 n 
+0000001055 00000 n 
+0000001223 00000 n 
+0000001391 00000 n 
+0000001560 00000 n 
+0000001729 00000 n 
+0000001898 00000 n 
+0000002067 00000 n 
+0000002236 00000 n 
+0000002405 00000 n 
+0000002574 00000 n 
+0000002743 00000 n 
+0000002912 00000 n 
+0000003081 00000 n 
+0000003250 00000 n 
+0000003419 00000 n 
+0000003588 00000 n 
+0000003757 00000 n 
+0000003926 00000 n 
+0000004095 00000 n 
+0000004264 00000 n 
+0000004433 00000 n 
+0000004602 00000 n 
+0000004771 00000 n 
+0000004940 00000 n 
+0000005109 00000 n 
+0000005278 00000 n 
+0000005447 00000 n 
+0000005616 00000 n 
+0000005785 00000 n 
+0000005954 00000 n 
+0000006387 00000 n 
+0000006595 00000 n 
+0000006701 00000 n 
+0000006887 00000 n 
+0000006998 00000 n 
+0000007225 00000 n 
+0000039387 00000 n 
+0000039681 00000 n 
+0000039801 00000 n 
+0000039917 00000 n 
+0000040189 00000 n 
+0000040397 00000 n 
+0000040605 00000 n 
+0000040813 00000 n 
+0000041021 00000 n 
+0000041229 00000 n 
+0000041437 00000 n 
+0000041606 00000 n 
+0000041775 00000 n 
+0000041944 00000 n 
+0000042113 00000 n 
+0000042282 00000 n 
+0000042451 00000 n 
+0000042620 00000 n 
+0000042789 00000 n 
+0000043017 00000 n 
+0000043256 00000 n 
+0000043490 00000 n 
+0000043725 00000 n 
+0000043894 00000 n 
+0000044122 00000 n 
+0000044361 00000 n 
+0000044595 00000 n 
+0000044830 00000 n 
+0000044999 00000 n 
+0000045168 00000 n 
+0000045337 00000 n 
+0000045506 00000 n 
+0000045879 00000 n 
+0000046087 00000 n 
+0000046256 00000 n 
+0000046425 00000 n 
+0000046594 00000 n 
+0000046763 00000 n 
+0000047011 00000 n 
+0000047119 00000 n 
+0000047377 00000 n 
+0000047452 00000 n 
+0000047630 00000 n 
+0000047743 00000 n 
+0000047870 00000 n 
+0000047996 00000 n 
+0000048167 00000 n 
+0000048292 00000 n 
+0000048440 00000 n 
+0000048576 00000 n 
+0000048724 00000 n 
+0000048830 00000 n 
+0000048951 00000 n 
+0000049076 00000 n 
+0000049184 00000 n 
+0000049304 00000 n 
+0000049425 00000 n 
+0000049587 00000 n 
+0000050555 00000 n 
+0000050681 00000 n 
+0000054376 00000 n 
+0000054502 00000 n 
+0000062003 00000 n 
+0000071715 00000 n 
+0000079607 00000 n 
+0000086721 00000 n 
+0000094210 00000 n 
+0000101538 00000 n 
+0000108114 00000 n 
+0000108240 00000 n 
+0000113579 00000 n 
+0000113705 00000 n 
+0000114621 00000 n 
+0000114815 00000 n 
+0000114850 00000 n 
+0000114885 00000 n 
+0000114920 00000 n 
+0000114955 00000 n 
+0000114990 00000 n 
+0000115025 00000 n 
+0000115060 00000 n 
+0000115095 00000 n 
+0000115130 00000 n 
+0000115165 00000 n 
+0000115200 00000 n 
+0000115235 00000 n 
+0000115270 00000 n 
+0000115306 00000 n 
+trailer
+<<
+/ID 
+[<d4abb3e2ef1166aacd064cbf6771325c><d4abb3e2ef1166aacd064cbf6771325c>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 83 0 R
+/Root 82 0 R
+/Size 132
+>>
+startxref
+115342
+%%EOF
+37 0 obj
+<<
+/Annots 136 0 R 
+/Contents 103 0 R 
+/MediaBox 137 0 R 
+/Parent 100 0 R 
+/Resources 138 0 R 
+/Rotate 0 
+/Trans 139 0 R 
+/Type /Page 
+
+>>
+
+endobj
+81 0 obj
+<<
+/Annots 140 0 R 
+/Contents 115 0 R 
+/MediaBox 141 0 R 
+/Parent 100 0 R 
+/Resources 142 0 R 
+/Rotate 0 
+/Trans 143 0 R 
+/Type /Page 
+
+>>
+
+endobj
+133 0 obj
+<<
+/Type /Annot 
+/Dest 144 0 R 
+/Rect 145 0 R 
+/Border 146 0 R 
+/BS 147 0 R 
+/DA <2f2f48656c76657469636120313220546620302067> 
+/F 0 
+/A 148 0 R 
+/Subtype /Link 
+/AAPL:Hash /7b68f233d256a8f4f8eac36f61dbb675 
+>>
+
+endobj
+134 0 obj
+<<
+/Type /Annot 
+/Dest 149 0 R 
+/Rect 150 0 R 
+/Border 151 0 R 
+/BS 152 0 R 
+/DA <2f2f48656c76657469636120313220546620302067> 
+/F 0 
+/A 153 0 R 
+/Subtype /Link 
+/AAPL:Hash /b2b140cd102f3abb789f98c70ff4b7db 
+>>
+
+endobj
+135 0 obj
+<<
+/Type /Annot 
+/Dest 154 0 R 
+/Rect 155 0 R 
+/Border 156 0 R 
+/BS 157 0 R 
+/DA <2f2f48656c76657469636120313220546620302067> 
+/F 0 
+/A 158 0 R 
+/Subtype /Link 
+/AAPL:Hash /d31114217ee7a2c408076966c1ec8eb9 
+>>
+
+endobj
+136 0 obj
+[ 134 0 R  8 0 R  133 0 R  10 0 R  11 0 R  12 0 R  13 0 R  14 0 R  15 0 R  16 0 R  17 0 R  18 0 R  19 0 R  20 0 R  21 0 R  22 0 R  23 0 R  24 0 R  25 0 R  26 0 R  27 0 R  28 0 R  29 0 R  30 0 R  31 0 R  32 0 R  33 0 R  34 0 R  35 0 R  36 0 R  ] 
+endobj
+137 0 obj
+[ 0  0  595.275600  841.889800  ] 
+endobj
+138 0 obj
+<<
+/Font 1 0 R 
+/ProcSet 159 0 R 
+
+>>
+
+endobj
+139 0 obj
+<<
+
+>>
+
+endobj
+140 0 obj
+[ 77 0 R  135 0 R  79 0 R  80 0 R  ] 
+endobj
+141 0 obj
+[ 0  0  595.275600  841.889800  ] 
+endobj
+142 0 obj
+<<
+/Font 1 0 R 
+/ProcSet 160 0 R 
+
+>>
+
+endobj
+143 0 obj
+<<
+
+>>
+
+endobj
+144 0 obj
+[ /#235  /XYZ  40.015750  747.039400  null  ] 
+endobj
+145 0 obj
+[ 60.015750  736.039400  113.385700  748.039400  ] 
+endobj
+146 0 obj
+[ 0.000000  0.000000  0.000000  ] 
+endobj
+147 0 obj
+<<
+/W 0.000000 
+
+>>
+
+endobj
+148 0 obj
+<<
+/S /GoTo 
+/D 161 0 R 
+
+>>
+
+endobj
+149 0 obj
+[ /#235  /XYZ  40.015750  787.039400  null  ] 
+endobj
+150 0 obj
+[ 40.015750  754.039400  211.705700  766.039400  ] 
+endobj
+151 0 obj
+[ 0.000000  0.000000  0.000000  ] 
+endobj
+152 0 obj
+<<
+/W 0.000000 
+
+>>
+
+endobj
+153 0 obj
+<<
+/S /GoTo 
+/D 162 0 R 
+
+>>
+
+endobj
+154 0 obj
+[ /#2311  /XYZ  40.015750  755.839400  null  ] 
+endobj
+155 0 obj
+[ 40.015750  709.389400  116.715700  721.389400  ] 
+endobj
+156 0 obj
+[ 0.000000  0.000000  0.000000  ] 
+endobj
+157 0 obj
+<<
+/W 0.000000 
+
+>>
+
+endobj
+158 0 obj
+<<
+/S /GoTo 
+/D 163 0 R 
+
+>>
+
+endobj
+159 0 obj
+[ /PDF  /Text  /ImageB  /ImageC  /ImageI  ] 
+endobj
+160 0 obj
+[ /PDF  /Text  /ImageB  /ImageC  /ImageI  ] 
+endobj
+161 0 obj
+[ /#235  /XYZ  40.015750  747.039400  null  ] 
+endobj
+162 0 obj
+[ /#235  /XYZ  40.015750  787.039400  null  ] 
+endobj
+163 0 obj
+[ /#2311  /XYZ  40.015750  755.839400  null  ] 
+endobj
+xref
+37 1
+0000118215 00000 n 
+81 1
+0000118371 00000 n 
+133 31
+0000118527 00000 n 
+0000118755 00000 n 
+0000118983 00000 n 
+0000119211 00000 n 
+0000119474 00000 n 
+0000119526 00000 n 
+0000119582 00000 n 
+0000119607 00000 n 
+0000119662 00000 n 
+0000119714 00000 n 
+0000119770 00000 n 
+0000119795 00000 n 
+0000119859 00000 n 
+0000119928 00000 n 
+0000119980 00000 n 
+0000120018 00000 n 
+0000120065 00000 n 
+0000120129 00000 n 
+0000120198 00000 n 
+0000120250 00000 n 
+0000120288 00000 n 
+0000120335 00000 n 
+0000120400 00000 n 
+0000120469 00000 n 
+0000120521 00000 n 
+0000120559 00000 n 
+0000120606 00000 n 
+0000120668 00000 n 
+0000120730 00000 n 
+0000120794 00000 n 
+0000120858 00000 n 
+trailer
+<<
+/ID [ <d4abb3e2ef1166aacd064cbf6771325c>  <d4abb3e2ef1166aacd064cbf6771325c>  ] 
+/Info 83 0 R 
+/Root 82 0 R 
+/Size 163 
+/Prev 115342 
+
+>>
+
+startxref
+120923
+%%EOF

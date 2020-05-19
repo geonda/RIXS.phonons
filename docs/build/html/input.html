@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Input description &mdash; phlab 0.0.0.dev3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Modules" href="modules/index.html" />
+    <link rel="prev" title="Quick start" href="quickstart/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> phlab
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About phlab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart/index.html">Quick start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Input description</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-1d-oscillator">Basic (1D oscillator)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-oscillator-2-modes-problem">2D oscillator (2 modes problem)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#displaced-and-distorted-oscillator">Displaced and Distorted Oscillator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/index.html">Modules</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">phlab</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Input description</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/input.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="input-description">
+<h1>Input description<a class="headerlink" href="#input-description" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="basic-1d-oscillator">
+<h2>Basic (1D oscillator)<a class="headerlink" href="#basic-1d-oscillator" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>problem_type</td>
+<td>problem's description ('rixs')</td>
+</tr>
+<tr>
+<td>method</td>
+<td>short name of a method (fc = Franck - Condon)</td>
+</tr>
+<tr>
+<td>coupling</td>
+<td>electron-phonon coupling constant (eV)</td>
+</tr>
+<tr>
+<td>omega_ph</td>
+<td>energy of the oscillator (eV)</td>
+</tr>
+<tr>
+<td>energy_ex</td>
+<td>energy of the electronic excitation (eV)</td>
+</tr>
+<tr>
+<td>omega_in</td>
+<td>energy of the incoming photon (eV)</td>
+</tr>
+<tr>
+<td>gamma</td>
+<td>half of the inverse core-hole life-time (eV)</td>
+</tr>
+<tr>
+<td>gamma_ph</td>
+<td>half of the inverse phonon life-time (eV)</td>
+</tr>
+<tr>
+<td>alpha_exp</td>
+<td>experimental broadening (eV)</td>
+</tr>
+<tr>
+<td>nf</td>
+<td>number of final state oscillators</td>
+</tr>
+<tr>
+<td>nm</td>
+<td>number of intermediate state oscillators</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="d-oscillator-2-modes-problem">
+<h2>2D oscillator (2 modes problem)<a class="headerlink" href="#d-oscillator-2-modes-problem" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>problem_type</td>
+<td>problem's description  ('rixs')</td>
+</tr>
+<tr>
+<td>method</td>
+<td>short name of a method (fc = Franck - Condon)</td>
+</tr>
+<tr>
+<td>coupling1</td>
+<td>2nd mode electron-phonon coupling constant (eV)</td>
+</tr>
+<tr>
+<td>omega_ph1</td>
+<td>energy of the 2nd mode oscillator (eV)</td>
+</tr>
+<tr>
+<td>coupling0</td>
+<td>1st mode electron-phonon coupling constant (eV)</td>
+</tr>
+<tr>
+<td>omega_ph0</td>
+<td>energy of the 1st mode oscillator (eV)</td>
+</tr>
+<tr>
+<td>energy_ex</td>
+<td>energy of the electronic excitation (eV)</td>
+</tr>
+<tr>
+<td>omega_in</td>
+<td>energy of the incoming photon (eV)</td>
+</tr>
+<tr>
+<td>gamma</td>
+<td>half of the inverse core-hole life-time (eV)</td>
+</tr>
+<tr>
+<td>gamma_ph</td>
+<td>half of the inverse phonon life-time (eV)</td>
+</tr>
+<tr>
+<td>alpha_exp</td>
+<td>experimental broadening (eV)</td>
+</tr>
+<tr>
+<td>nf</td>
+<td>number of final state oscillators</td>
+</tr>
+<tr>
+<td>nm</td>
+<td>number of intermediate state oscillators</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="displaced-and-distorted-oscillator">
+<h2>Displaced and Distorted Oscillator<a class="headerlink" href="#displaced-and-distorted-oscillator" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>problem_type</td>
+<td>problem's description ('rixs')</td>
+</tr>
+<tr>
+<td>method</td>
+<td>short name of a method (fc = Franck - Condon)</td>
+</tr>
+<tr>
+<td>coupling</td>
+<td>electron-phonon coupling constant (eV)</td>
+</tr>
+<tr>
+<td>omega_ph</td>
+<td>energy of the ground state oscillator (eV)</td>
+</tr>
+<tr>
+<td>omega_ph_ex</td>
+<td>energy of the excited state oscillator (eV)</td>
+</tr>
+<tr>
+<td>energy_ex</td>
+<td>energy of the electronic excitation (eV)</td>
+</tr>
+<tr>
+<td>omega_in</td>
+<td>energy of the incoming photon (eV)</td>
+</tr>
+<tr>
+<td>gamma</td>
+<td>half of the inverse core-hole life-time (eV)</td>
+</tr>
+<tr>
+<td>gamma_ph</td>
+<td>half of the inverse phonon life-time (eV)</td>
+</tr>
+<tr>
+<td>alpha_exp</td>
+<td>experimental broadening (eV)</td>
+</tr>
+<tr>
+<td>nf</td>
+<td>number of final state oscillators</td>
+</tr>
+<tr>
+<td>nm</td>
+<td>number of intermediate state oscillators</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="modules/index.html" class="btn btn-neutral float-right" title="Modules" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quickstart/index.html" class="btn btn-neutral float-left" title="Quick start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Andrey Geondzhian, Keith Gilmore
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
