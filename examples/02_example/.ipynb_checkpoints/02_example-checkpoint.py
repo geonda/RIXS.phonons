@@ -1,5 +1,3 @@
-# fitting
-
 import phlab
 from  matplotlib import pyplot as plt
 

@@ -1,3 +1,5 @@
+LICENSE.md
+MANIFEST.in
 README.md
 setup.py
 phlab/__init__.py
@@ -13,4 +15,3 @@ phlab/model/kernel_double_osc.py
 phlab/model/kernel_single_osc.py
 phlab/model/spec.py
 phlab/visual/__init__.py
-test/test.py

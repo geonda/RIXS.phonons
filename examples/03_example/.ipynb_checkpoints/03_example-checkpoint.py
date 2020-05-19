@@ -1,5 +1,3 @@
-# model for 2D problem vs sum of two 1D models
-
 import phlab
 from  matplotlib import pyplot as plt
 
