@@ -22,7 +22,7 @@ copyright = '2020, Andrey Geondzhian, Keith Gilmore'
 author = 'Andrey Geondzhian, Keith Gilmore'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.0.dev3'
+release = '0.0.0.dev4'
 master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
@@ -30,7 +30,8 @@ master_doc = 'index'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['recommonmark','sphinx.ext.todo',
+extensions = ['recommonmark',
+'sphinx.ext.todo',
  'sphinx.ext.viewcode',
   'sphinx.ext.autodoc',
   'sphinx_markdown_tables']
