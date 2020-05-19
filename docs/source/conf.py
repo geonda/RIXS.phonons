@@ -30,7 +30,10 @@ release = '0.0.0.dev3'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['recommonmark','sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc','sphinx_markdown_tables']
+extensions = ['recommonmark','sphinx.ext.todo',
+ 'sphinx.ext.viewcode',
+  'sphinx.ext.autodoc',
+  'sphinx_markdown_tables']
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 latex_documents = [
