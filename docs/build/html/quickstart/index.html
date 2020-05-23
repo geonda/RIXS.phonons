@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Quick start &mdash; phlab 0.0.0.dev3 documentation</title>
+  <title>Quick start &mdash; phlab 0.0.0.dev4 documentation</title>
   
 
   
@@ -161,8 +161,8 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">workspace</span> <span class="o">=</span> <span class="n">phlab</span><span class="o">.</span><span class="n">rixs</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>One of the main objects is a model. You can create any number of models and fit them to the exeperiment.
-Here were are starting with single harmonic oscillator model. Check <code class="docutils literal notranslate"><span class="pre">./model_name/</span></code> for input and output files.</p>
+<p>One of the main objects is a model. You can create any number of models and fit them to the experiment.
+Here were are starting with a single harmonic oscillator model. Check <code class="docutils literal notranslate"><span class="pre">./model_name/</span></code> for input and output files.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">model_single_osc</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;1d&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -174,7 +174,7 @@ Here were are starting with single harmonic oscillator model. Check <code class=
 <span class="n">number</span> <span class="n">of</span> <span class="n">models</span> <span class="p">:</span> <span class="mi">1</span>
 </pre></div>
 </div>
-<p>Input is normally reading from <code class="docutils literal notranslate"><span class="pre">./model_name/_inputs/input_model_{nm}.json</span></code> and is an atribute of the model</p>
+<p>Input is by default reading from <code class="docutils literal notranslate"><span class="pre">./model_name/_inputs/input_model_{nm}.json</span></code> and is an attribute of the model</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">input</span>
 </pre></div>
 </div>
@@ -193,7 +193,7 @@ Here were are starting with single harmonic oscillator model. Check <code class=
  <span class="s1">&#39;alpha_exp&#39;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">}</span>
 </pre></div>
 </div>
-<p>If you wish to alter input inside your code just call the prameter your want to overwrite. (Note: input file will be overwritten when you will run the model <code class="docutils literal notranslate"><span class="pre">model.run()</span></code>)</p>
+<p>If you wish to alter the input inside your code just call the parameter your want to overwrite. (Note: input file will be overwritten when you will execute the model <code class="docutils literal notranslate"><span class="pre">model.run()</span></code>)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">input</span><span class="p">[</span><span class="s1">&#39;coupling&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.15</span>
 <span class="n">model</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span>
 </pre></div>
@@ -205,7 +205,7 @@ Here were are starting with single harmonic oscillator model. Check <code class=
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">exp</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">experiment</span><span class="p">(</span><span class="n">file</span> <span class="o">=</span> <span class="s1">&#39;test_data.csv&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span> <span class="s1">&#39; test&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Now to visulize everything you can create vitem and list the models and experiment objects that you would like to compare.</p>
+<p>To visualize everything you can create vitem and list the models and experiment objects that you would like to compare. Feel free to use matplotlib library’s methods to customize resulting figure.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">vitem</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">visual</span><span class="p">(</span><span class="n">model_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">model</span><span class="p">],</span> <span class="n">exp</span> <span class="o">=</span> <span class="n">exp</span><span class="p">)</span>
 </pre></div>
 </div>

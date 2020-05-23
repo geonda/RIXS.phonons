@@ -30,7 +30,7 @@ class kernel(object):
         self.nruns=nruns
         self.dict=dict
 
-        self.nmodes=int(dict['vib_space'])
+        self.nmodes=1
         self.det=1.j*self.dict['gamma']+self.dict['energy_ex']-self.dict['omega_in']
         self.nproc=int(dict['nf'])
         self.auto_save = out_dir+temp_rixs_file.format(nruns = self.nruns)

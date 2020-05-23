@@ -15,8 +15,8 @@ Now let's create our work space which is a wrapper for all the experiments and m
 workspace = phlab.rixs()
 ```
 
-One of the main objects is a model. You can create any number of models and fit them to the exeperiment.
-Here were are starting with single harmonic oscillator model. Check `./model_name/` for input and output files.
+One of the main objects is a model. You can create any number of models and fit them to the experiment.
+Here were are starting with a single harmonic oscillator model. Check `./model_name/` for input and output files.
 
 
 ```python
@@ -31,7 +31,7 @@ model = workspace.model_single_osc(name = '1d')
     number of models : 1
 
 
-Input is normally reading from `./model_name/_inputs/input_model_{nm}.json` and is an atribute of the model
+Input is by default reading from `./model_name/_inputs/input_model_{nm}.json` and is an attribute of the model
 
 
 ```python
@@ -57,7 +57,7 @@ model.input
 
 
 
-If you wish to alter input inside your code just call the prameter your want to overwrite. (Note: input file will be overwritten when you will run the model `model.run()`)
+If you wish to alter the input inside your code just call the parameter your want to overwrite. (Note: input file will be overwritten when you will execute the model `model.run()`)
 
 
 ```python
@@ -77,7 +77,7 @@ Now let's create the experiment. At the very least you have to specify the  path
 exp = workspace.experiment(file = 'test_data.csv', name= ' test')
 ```
 
-Now to visulize everything you can create vitem and list the models and experiment objects that you would like to compare.
+To visualize everything you can create vitem and list the models and experiment objects that you would like to compare. Feel free to use matplotlib library's methods to customize resulting figure.
 
 
 ```python

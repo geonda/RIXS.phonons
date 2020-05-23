@@ -7,6 +7,8 @@ model = ws.model_single_osc(name = '1d')
 
 model.input['coupling'] = 0.15
 
+model.color = 'r'
+
 model.run()
 
 exp = ws.experiment(file='test_data.csv',name = 'test data')

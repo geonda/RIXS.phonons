@@ -6,6 +6,7 @@ from  matplotlib import pyplot as plt
 ws=phlab.rixs()
 
 model = ws.model_single_osc(name = '1d')
+model.color = 'r'
 exp = ws.experiment(file = 'test_data.csv',name = 'test data')
 
 
