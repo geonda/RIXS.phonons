@@ -81,6 +81,29 @@ class rixs(object):
 
 
     @decorator_model
+    def model_gq_phonons_2d(self,**kwargs):
+        """
+
+        Model describing interaction of q dependent phonons
+        and a single elctornic  level.
+
+        Args:
+            name: str
+                name of the model
+
+        Note:
+            input and output files are located inside  './name/' directory
+
+        Returns:
+            model.single_osc(): object
+                calls model sub-package
+
+        """
+        return model.gq_phonons_2d(**kwargs)
+
+
+
+    @decorator_model
     def model_single_osc(self,**kwargs):
         """
 

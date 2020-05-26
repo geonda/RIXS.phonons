@@ -2,6 +2,7 @@ from phlab.model import spec
 from phlab.model import kernel_single_osc
 from phlab.model import kernel_double_osc
 from phlab.model import kernel_dist_disp_osc
+from phlab.model import kernel_gq_phonons
 from phlab.model.input_handler import input_handler
 from phlab.model import kernel_converge
 from phlab.model import kernel_fit
@@ -130,6 +131,132 @@ class single_osc(object):
 
         results = kernel_fit.execute(kernel = kernel_single_osc, local =self)
         self.fit_report=results.fit_report
+
+
+
+class gq_phonons_2d(object):
+
+    """
+
+    Creates object for RIXS model
+    describing interaction of q dependent phonons and a single elctornic  level.
+
+    Args:
+        inp_dir: str
+            name of the input directory.
+        out_dir: str
+            name of the output directory.
+        nmodel: int
+            id number of the model.
+        name: str
+            name of the model.
+
+
+    Attributes:
+        input_default: dict
+            dictionary with default input parameters.
+        input: dict
+            dictionary with current input parameters.
+        npoints: int
+            number of points in the spectrum.
+        spec_max: float
+            max limt of enrgy loss.
+        spec_min: float
+            min limt of enrgy loss.
+        param2fit: object
+            parameters to fit.
+        nruns: int
+            number of runs.
+        color: str
+            color of the line
+        input_class: object
+            returns input_handler for this model.
+        x: float
+            energy loss in eV for the phonon contribution.
+        y: float
+            rixs intensity (arb. units) for the phonon contribution.
+        y_norm: float
+            normalized rixs intensity (arb. units) for the phonon contribution.
+
+    """
+
+    def __init__(self,
+                    inp_dir = './_input/',
+                    out_dir = './_output/',
+                    nmodel = 0,
+                    name = ''
+                    ):
+        super(gq_phonons_2d, self).__init__()
+
+        self.input_default = {
+                'problem_type': 'rixs',
+                'method': 'gf',
+                'maxt' : 200,
+                'nstep': 1000,
+                 "nf": 10.0,
+                 "energy_ex": 10.0,
+                 "omega_in": 10.0,
+                 "gamma": 0.105,
+                 "gamma_ph": 0.05,
+                 "alpha_exp": 0.01
+                }
+
+        self.npoints = 1000
+        self.spec_max = 1.
+        self.spec_min= -0.1
+        self.inp_dir = inp_dir
+        self.out_dir = out_dir
+        self.nmodel = nmodel
+        self.name = name
+        self.nruns=0
+        self.color=''
+
+        self.param2fit = parameters2fit()
+        self.input_class=input_handler(input_default = self.input_default,
+                inp_dir = self.inp_dir,
+                nmodel = self.nmodel)
+        self.input = self.input_class.input
+
+        print('number of models : {nm}'.format(nm = self.nmodel))
+
+    def run(self):
+
+        self.input_class.input_update(self.input)
+        self.nruns+=1
+        results=execute(kernel = kernel_gq_phonons,
+                        local = self)
+
+        self.x,self.y=np.transpose(np.loadtxt(self.out_dir\
+                                +'/{nr}_rixs_phonons.csv'.format(\
+                                                nm = self.nmodel, nr = self.nruns)))
+        self.y_norm=self.y/max(self.y)
+
+
+    def converge(self,parameter = 'nm', pmin =0 , pmax= 1,steps = 100):
+
+        self.input_class.input_update(self.input)
+        self.param = {
+                    'parameter' : parameter,
+                    'pmin': pmin,
+                    'pmax': pmax,
+                    'steps' : steps}
+        res = kernel_converge.execute(kernel = kernel_gq_phonons, local = self )
+        print(res.kernel)
+
+        self.conv_arr = res.conv_arr
+        self.param_space = res.param_space
+
+
+    def fit(self, experiment={}, method = 'brute' ,verbose = True):
+
+        self.param = {
+                    'experiment' : experiment,
+                    'method': method,
+                    'verbose': verbose}
+
+        results = kernel_fit.execute(kernel = kernel_gq_phonons, local =self)
+        self.fit_report=results.fit_report
+
 
 
 class double_osc(object):
