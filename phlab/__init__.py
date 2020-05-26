@@ -41,7 +41,47 @@ class rixs(object):
         self.abs_path = os.path.abspath('.')
 
 
-    def model_single_osc(self, name = ''):
+
+
+    def decorator_model(function):
+        # @wraps(function)
+        def wrapper(self,name):
+
+            self.nmodel += 1
+            self.name = name
+            if name !='':
+                base = '{name_}'.format(name_ = self.name)
+            else:
+                base = 'model_{nmodel_}'.format(nmodel_ = self.nmodel)
+
+            base = os.path.join(self.abs_path,base)
+
+            if not os.path.isdir(base) :
+                 os.mkdir(base)
+
+            inp_dir = base+self.inp_dir
+            out_dir = base+self.out_dir
+
+            print('creating model : {dir}'.format(dir = base))
+            print(inp_dir)
+
+            if not os.path.isdir(inp_dir):
+                os.mkdir(inp_dir)
+            if not os.path.isdir(out_dir):
+                os.mkdir(out_dir)
+
+            kwargs={'inp_dir': inp_dir,
+                        'out_dir': out_dir,
+                        'nmodel' : self.nmodel,
+                        'name' : name}
+
+            return function(self,**kwargs)
+
+        return wrapper
+
+
+    @decorator_model
+    def model_single_osc(self,**kwargs):
         """
 
         Model describing a harmonic oscillator interacting
@@ -59,36 +99,11 @@ class rixs(object):
                 calls model sub-package
 
         """
+        return model.single_osc(**kwargs)
 
 
-
-        self.nmodel += 1
-        self.name = name
-        if name !='':
-            base = '{name_}'.format(name_ = self.name)
-        else:
-            base = 'model_{nmodel_}'.format(nmodel_ = self.nmodel)
-
-        base = os.path.join(self.abs_path,base)
-
-        if not os.path.isdir(base) :
-             os.mkdir(base)
-
-        inp_dir = base+self.inp_dir
-        out_dir = base+self.out_dir
-        print('creating model : {dir}'.format(dir = base))
-        print(inp_dir)
-        if not os.path.isdir(inp_dir):
-            os.mkdir(inp_dir)
-        if not os.path.isdir(out_dir):
-            os.mkdir(out_dir)
-
-        return model.single_osc(inp_dir = inp_dir,
-                                out_dir = out_dir,
-                                nmodel = self.nmodel,
-                                name = name)
-
-    def model_double_osc(self, name = ''):
+    @decorator_model
+    def model_double_osc(self, **kwargs):
         """
 
         Model describing 2D harmonic oscillator which interacts
@@ -107,35 +122,10 @@ class rixs(object):
 
         """
 
-        self.nmodel += 1
-        self.name = name
-        if name !='':
-            base = '{name_}'.format(name_ = self.name)
-        else:
-            base = 'model_{nm}'.format(nm = self.nmodel)
+        return model.double_osc(**kwargs)
 
-        base = os.path.join(self.abs_path,base)
-
-        if not os.path.isdir(base) :
-             os.mkdir(base)
-        inp_dir = base+self.inp_dir
-        out_dir = base+self.out_dir
-        print('creating model : {dir}'.format(dir = base))
-
-        if not os.path.isdir(inp_dir):
-            os.mkdir(inp_dir)
-        if not os.path.isdir(out_dir):
-            os.mkdir(out_dir)
-
-
-
-
-        return model.double_osc(inp_dir = inp_dir,
-                                out_dir = out_dir,
-                                nmodel = self.nmodel,
-                                name = name)
-
-    def model_dist_disp_osc(self, name = ''):
+    @decorator_model
+    def model_dist_disp_osc(self, **kwargs):
 
         """
 
@@ -155,34 +145,7 @@ class rixs(object):
 
         """
 
-
-        self.nmodel += 1
-        self.name = name
-
-        if name !='':
-            base = '{name_}'.format(name_ = self.name)
-        else:
-            base = 'model_{nm}'.format(nm = self.nmodel)
-
-        base = os.path.join(self.abs_path,base)
-
-        if not os.path.isdir(base) :
-             os.mkdir(base)
-        inp_dir = base+self.inp_dir
-        out_dir = base+self.inp_dir
-        print('creating model : {dir}'.format(dir = base))
-
-        if not os.path.isdir(inp_dir):
-            os.mkdir(inp_dir)
-        if not os.path.isdir(out_dir):
-            os.mkdir(out_dir)
-
-
-
-        return model.dist_disp_osc(inp_dir = inp_dir,
-                                out_dir = out_dir,
-                                nmodel = self.nmodel,
-                                name = name)
+        return model.dist_disp_osc(**kwargs)
 
     def experiment(self,file='', col=[0,1], name = ''):
 
