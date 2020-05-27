@@ -3,11 +3,11 @@ from  matplotlib import pyplot as plt
 
 ws=phlab.rixs()
 
-model = ws.model_single_osc(name = '1d')
-
-model.input['coupling'] = 0.15
+model = ws.model_gq_phonons_2d(name = 'gq')
 
 model.color = 'r'
+
+model.input['nf'] = 4
 
 model.run()
 

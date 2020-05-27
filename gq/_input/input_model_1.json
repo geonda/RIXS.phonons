@@ -1,0 +1,12 @@
+{
+ "problem_type": "rixs",
+ "method": "gf",
+ "maxt": 200,
+ "nstep": 1000,
+ "nf": 4,
+ "energy_ex": 10.0,
+ "omega_in": 10.0,
+ "gamma": 0.105,
+ "gamma_ph": 0.05,
+ "alpha_exp": 0.01
+}
