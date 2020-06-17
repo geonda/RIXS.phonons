@@ -3,7 +3,7 @@ from  matplotlib import pyplot as plt
 
 ws=phlab.rixs()
 
-model = ws.model_gq_phonons_2d(name = 'gq')
+model = ws.model_gq_phonons_2d( name = 'gq')
 
 model.color = 'r'
 

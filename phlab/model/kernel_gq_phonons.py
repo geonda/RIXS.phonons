@@ -8,6 +8,7 @@ from scipy.special import eval_hermite as H
 from scipy.special import binom
 import functools
 from tqdm import tqdm
+from time import time
 from scipy.special import wofz
 from pathos.multiprocessing import ProcessingPool as pool
 import dask.array as da
@@ -16,10 +17,9 @@ import dask.array as da
 
 # import dask.dataframe as dd
 # import dask.array as dp
-# from dask.distributed import Client, progress
-# client = Client(processes=False, threads_per_worker=4,
-#                 n_workers=1, memory_limit='2GB')
-# print(client)
+from dask.distributed import Client, progress
+import dask
+
 
 class kernel(object):
 
@@ -111,6 +111,8 @@ class kernel(object):
     def cross_section(self):
         loss=[];r=[]
         qx =0
+        client = Client(processes=False, threads_per_worker=4,
+                                n_workers=4, memory_limit='2GB')
         for nph in tqdm(range(self.dict['nf'])):
             if nph==0:
                 print('0 phonon : ')
@@ -119,9 +121,13 @@ class kernel(object):
 
             elif nph==1:
                 print('1 phonon : ')
-                qmap=(init_map_2d(self.qx,self.qy,qx,0).phonon_fir())
+                qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_fir()
+                print(qmap)
                 ##log(len(qmap))
-                loss_temp,r_temp=[self.q_phonon[qmap[0]]*nph],[(self.q_weights[1]*self.multi_phonon(qmap,1))]
+                loss_temp,r_temp=[self.q_phonon[qmap[0]]*nph],[self.multi_phonon(qmap,1)]
+                # loss_temp=[self.q_phonon[qmap[0]]*nph]
+                # r_=client.map(lambda x: self.q_weights[x[0]]*self.multi_phonon(x,1),qmap)
+                # r_temp=client.gather(r_)
                 ###log(r_temp)
             elif nph==2:
                 print('2 phonon : ')
@@ -132,7 +138,9 @@ class kernel(object):
                 qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_sec()
                 # print(qmap)
                 ##log(len(qmap))
-                r_temp=list(map(lambda x: self.q_weights[x[0]]*self.q_weights[x[1]]*self.multi_phonon(x,2), qmap))
+
+                r_=client.map(lambda x: self.q_weights[x[0]]*self.q_weights[x[1]]*self.multi_phonon(x,2), qmap)
+                r_temp=client.gather(r_)
                 # print('nph=2')
                 # print(r_temp)
                 # print(min(r_temp),max(r_temp))
@@ -141,13 +149,32 @@ class kernel(object):
                 loss_temp=list(map(lambda x: self.q_phonon[x[0]]+self.q_phonon[x[1]], qmap))
                 #print(loss_temp)
             elif nph==3:
+                print('3 phonon : ')
                 # qmap=init_map_2d(self.qx,self.qy,0,0).phonon_fir()
-                # # ##log(len(qmap))
+
                 # loss_temp,r_temp=[self.q_phonon[qmap[0]]*nph],[self.single_phonon(qmap,3)]
                 # ###log(r_temp)
+                start_time= time()
                 qmap=init_map_2d(self.qx,self.qy,qx,0).phonon_thr()
+                print(len(qmap))
                 ##log(len(qmap))
-                r_temp=list(map(lambda x: self.q_weights[x[0]]*self.q_weights[x[1]]*self.q_weights[x[2]]*self.multi_phonon(x,nph), qmap))
+                r_= []
+                # if __name__ == '__main__':
+
+                # for item in qmap:
+                #     w = self.q_weights[item[0]]*self.q_weights[item[1]]*self.q_weights[item[2]]
+                #     f = lambda x,y : w*self.multi_phonon(x,y)
+                #     temp = dask.delayed(f)(item,nph)
+                #     r_.append(temp)
+                # r_temp=dask.compute(*r_)
+                r_ = client.map(lambda x: self.q_weights[x[0]]*self.q_weights[x[1]]*self.q_weights[x[2]]*self.multi_phonon(x,nph), qmap)
+                r_temp=client.gather(r_)
+                end_time= float(time()) - float(start_time)
+                print(end_time)
+
+
+
+
                 r_temp=np.array(r_temp)/len(qmap)
                 # print("ici")
                 # print(min(r_temp),max(r_temp))
@@ -168,6 +195,7 @@ class kernel(object):
                 r_temp=np.array(r_temp)/len(qmap)
                 loss_temp=list(map(lambda x: self.q_phonon[x[0]]+self.q_phonon[x[1]]\
                             +self.q_phonon[x[2]]+self.q_phonon[x[3]]+self.q_phonon[x[4]], qmap))
+            # client.close()
         # print(len(r),len(loss))
         # print(loss_temp,r_temp)
             loss.extend(loss_temp)
