@@ -33,6 +33,24 @@ class plot(object):
             self.if_exp = False
             pass
 
+    def show_xas(self):
+        plt.figure()
+        for model in self.model_list:
+            try:
+                plt.plot(model.xas_freq - model.input['energy_ex'], model.xas_int,linewidth = 2, color=model.color,
+                    label = 'model #{nm} : {name}'.format(nm = model.nmodel,name=model.name))
+                plt.plot(model.xas_freq_no_q - model.input['energy_ex'], model.xas_int_no_q,linewidth = 2, color='w',
+                    label = 'single q')
+            except:
+                pass
+        plt.xlabel(r"$\mathrm{\omega-E_{ex}, \ eV}$",fontsize=15)
+        plt.ylabel("$\mathrm{XAS\ Intensity, \ arb.\ units}$",fontsize=15)
+        plt.axvline(x=0,linestyle='--',color='w')
+        plt.yticks([])
+        plt.xlim([-1,1.5])
+        plt.legend()
+        plt.show()
+
     def show(self,scale=1):
         if scale==0:
             for model in self.model_list:

@@ -73,8 +73,8 @@ class single_osc(object):
                  "omega_ph": 0.195,
                  "nf": 10.0,
                  "nm": 100.0,
-                 "energy_ex": 10.0,
-                 "omega_in": 10.0,
+                 "energy_ex": 5.0,
+                 "omega_in": 5.0,
                  "gamma": 0.105,
                  "gamma_ph": 0.05,
                  "alpha_exp": 0.01
@@ -194,8 +194,12 @@ class gq_phonons_2d(object):
                 'maxt' : 200,
                 'nstep': 1000,
                  "nf": 10.0,
-                 "energy_ex": 10.0,
-                 "omega_in": 10.0,
+                 "nq": 3,
+                 "m_gamma": 0.1,
+                 "m_k": 0.1,
+                 "r": 0.1,
+                 "energy_ex": 5.0,
+                 "omega_in": 5.0,
                  "gamma": 0.105,
                  "gamma_ph": 0.05,
                  "alpha_exp": 0.01
@@ -219,6 +223,8 @@ class gq_phonons_2d(object):
 
         print('number of models : {nm}'.format(nm = self.nmodel))
 
+
+
     def run(self):
 
         self.input_class.input_update(self.input)
@@ -230,6 +236,13 @@ class gq_phonons_2d(object):
                                 +'/{nr}_rixs_phonons.csv'.format(\
                                                 nm = self.nmodel, nr = self.nruns)))
         self.y_norm=self.y/max(self.y)
+
+        self.xas_freq,self.xas_int = np.transpose(np.loadtxt(self.out_dir\
+                                +'/{nr}_xas.csv'.format(\
+                                                nm = self.nmodel, nr = self.nruns)))
+        self.xas_freq_no_q,self.xas_int_no_q = np.transpose(np.loadtxt(self.out_dir\
+                                +'/{nr}_xas_no_q.csv'.format(\
+                                                nm = self.nmodel, nr = self.nruns)))
 
 
     def converge(self,parameter = 'nm', pmin =0 , pmax= 1,steps = 100):

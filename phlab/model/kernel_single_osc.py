@@ -7,10 +7,25 @@ import math
 from scipy.special import eval_hermite as H
 from scipy.special import binom
 import functools
+import time
 # import phonon_info
 from tqdm import tqdm
 from scipy.special import wofz
 from pathos.multiprocessing import ProcessingPool as pool
+
+def timeit(method):
+    def timed(*args, **kw):
+        ts = time.time()
+        result = method(*args, **kw)
+        te = time.time()
+        if 'log_time' in kw:
+            name = kw.get('log_name', method.__name__.upper())
+            kw['log_time'][name] = int((te - ts) * 1000)
+        else:
+            print('%r  %2.2f ms' % \
+                  (method.__name__, (te - ts) * 1000))
+        return result
+    return timed
 
 class kernel(object):
 
@@ -42,7 +57,7 @@ class kernel(object):
         self.nproc=int(dict['nf'])
 
 
-
+    @timeit
     def cross_section(self):
         def func_temp(f):
             if self.dict['method']=='fc':
