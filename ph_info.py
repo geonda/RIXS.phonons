@@ -17,7 +17,7 @@ class pre_process(object):
 	def __init__(self, nq= 3,m_gamma=0.1,m_k=0.1,r=0.1):
 		super(pre_process, self).__init__()
 
-		self.path_to_file = './temp_exp/TO/'
+		self.path_to_file = './temp_exp/'
 
 		self.r,self.m_gamma,self.m_k=r,m_gamma,m_k
 		self.df = pd.DataFrame()
@@ -25,7 +25,7 @@ class pre_process(object):
 
 		en = self.get_phonon()
 
-		self.df['ph'] =0.195*np.ones(nq)
+		self.df['ph'] =en#0.195*np.ones(nq)
 
 		self.df['mq'] = self.df.apply(lambda x : self.function_coupling(x['qx'],x['qy']), axis=1)
 		self.df['gq'] = self.df.apply(lambda x : (x['mq']/x['ph'])**2, axis=1)
@@ -70,7 +70,7 @@ class pre_process(object):
 				self.q2d['x'].extend(self.q_path[names][:] * transform[names]['x'])
 			self.q2d['y'].extend(self.q_path[names][:] *transform[names]['y'])
 			self.e2d.extend(self.phonon_energy[names])
-		#print(self.e2d)
+		print(self.e2d)
 		# print(self.q2d['x'])
 		# print(self.q2d['y'])
 		# print()
@@ -83,7 +83,7 @@ class pre_process(object):
 		qy = self.df['qy']
 		en = rbfi(qx, qy)
 		#
-		# print(en)
+		#print(en)
 		return en
 
 

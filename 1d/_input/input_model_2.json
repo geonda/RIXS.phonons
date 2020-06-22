@@ -1,13 +1,13 @@
 {
  "problem_type": "rixs",
  "method": "fc",
- "coupling": 0.15,
+ "coupling": 0.2,
  "omega_ph": 0.195,
  "nf": 6,
  "nm": 40,
  "energy_ex": 5.0,
  "omega_in": 5.0,
  "gamma": 0.105,
- "gamma_ph": 0.05,
+ "gamma_ph": 0.02,
  "alpha_exp": 0.01
 }
