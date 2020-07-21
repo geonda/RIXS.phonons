@@ -10,18 +10,20 @@ It currently includes:
 
 If you find this code usefull in your project, please cite following paper:
 
-`@article{PhysRevB.101.214307, \\
-  title = {Generalization of the Franck-Condon model for phonon excitations by resonant \\ inelastic x-ray scattering}, \\
-  author = {Geondzhian, Andrey and Gilmore, Keith}, \\
-  journal = {Phys. Rev. B}, \\
-  volume = {101}, \\
-  issue = {21}, \\
-  pages = {214307}, \\
-  numpages = {12}, \\
-  year = {2020}, \\
-  month = {Jun}, \\
-  publisher = {American Physical Society}, \\
-  doi = {10.1103/PhysRevB.101.214307}, \\
-  url = {https://link.aps.org/doi/10.1103/PhysRevB.101.214307} \\
+```
+@article{PhysRevB.101.214307,
+  title = {Generalization of the Franck-Condon model for phonon excitations by resonant  inelastic x-ray scattering},
+  author = {Geondzhian, Andrey and Gilmore, Keith},
+  journal = {Phys. Rev. B},
+  volume = {101},
+  issue = {21},
+  pages = {214307},
+  numpages = {12},
+  year = {2020},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.101.214307},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.101.214307}
 }
-`
+
+```
