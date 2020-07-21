@@ -7,5 +7,6 @@ Welcome to phlab's documentation!
    about
    installation
    quickstart/index
+   sketch
    input
    modules/index
