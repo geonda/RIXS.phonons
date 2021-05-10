@@ -16,3 +16,13 @@ It is a python based package and to install it you can simply run in terminal:
 Download examples folder from this page and use it as a template for your projects. You may want to use Jupyter Notebooks, which comes with the examples. If you don't have [Jupyter](https://jupyter.org/documentation) install it  via `pip` as well:
 
 `$pip install jupyterlab`
+
+### Binder
+You can try the code online here
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/geonda/RIXS.phonons/HEAD)
+
+or run the code by installing [Docker](https://www.docker.com/) and [jupyter-repo2docker](https://repo2docker.readthedocs.io/) and then running
+
+`$jupyter-repo2docker --editable .`
+
+from inside the code directory.

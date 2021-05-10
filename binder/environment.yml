@@ -1,0 +1,7 @@
+name: rixs_phonons
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - ipython
+  - jupyterlab
