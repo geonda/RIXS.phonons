@@ -3,5 +3,5 @@ lmfit==1.0.1
 matplotlib==3.2.1
 numpy==1.18.4
 pathos==0.2.5
-scipy==1.4.1
+scipy==1.10.0
 tqdm==4.46.0
